@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #059669;
+    --primary-hover: #047857;
+    --primary-light: #ecfdf5;
+    --accent: #f59e0b;
+    --accent-hover: #d97706;
+    --dark: #0f172a;
+    --slate-bg: #f8fafc;
+  }
+
+  html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #1e293b;
+    overflow-x: hidden;
+  }
+}
+
+/* GPU-accelerated pulse wave using transform and opacity (no box-shadow paint lag) */
+@keyframes gpu-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  70% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+.pulse-ring-red::before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: 9999px;
+  background-color: #ef4444;
+  animation: gpu-pulse 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  z-index: -1;
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+
+.pulse-ring-blue::before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: 9999px;
+  background-color: #2563eb;
+  animation: gpu-pulse 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  z-index: -1;
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+
+/* Subtle phone wiggle */
+@keyframes phone-ring {
+  0% { transform: rotate(0) scale(1); }
+  10% { transform: rotate(-15deg) scale(1.08); }
+  20% { transform: rotate(15deg) scale(1.08); }
+  30% { transform: rotate(-15deg) scale(1.08); }
+  40% { transform: rotate(15deg) scale(1.08); }
+  50% { transform: rotate(0) scale(1); }
+  100% { transform: rotate(0) scale(1); }
+}
+
+.animate-phone-ring {
+  animation: phone-ring 2.5s infinite ease-in-out;
+  will-change: transform;
+}
+
+/* Clean, high-performance solid nav without GPU-choking backdrop-filter blur */
+.clean-nav {
+  background-color: #ffffff;
+}
