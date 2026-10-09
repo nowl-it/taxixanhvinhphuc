@@ -7,9 +7,37 @@ export const metadata: Metadata = {
   title: "Giới Thiệu Taxi Xanh Vĩnh Phúc - Đội Xe Đời Mới, Uy Tín Hàng Đầu",
   description:
     "Tìm hiểu về Taxi Xanh Vĩnh Phúc: Đội ngũ hơn 200 xe gia đình đời mới 2022-2025, tài xế bản địa thông thạo đường xá, cam kết giá trọn gói không phụ phí, phục vụ 24/7.",
+  alternates: {
+    canonical: `${siteConfig.domain}/gioi-thieu`,
+  },
+  openGraph: {
+    title: "Về Chúng Tôi - Taxi Xanh Vĩnh Phúc 24/7",
+    description: "Liên minh hơn 200 xe gia đình đời mới tại Vĩnh Phúc cam kết dịch vụ vàng đúng giờ, tận tâm.",
+    url: `${siteConfig.domain}/gioi-thieu`,
+    images: ["/images/hero-banner.jpg"],
+  },
 };
 
 export default function GioiThieuPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Trang chủ",
+        item: siteConfig.domain,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Giới thiệu",
+        item: `${siteConfig.domain}/gioi-thieu`,
+      },
+    ],
+  };
+
   const values = [
     {
       title: "An Toàn Là Trên Hết",
@@ -35,6 +63,10 @@ export default function GioiThieuPage() {
 
   return (
     <div className="bg-slate-50 min-h-screen py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3">

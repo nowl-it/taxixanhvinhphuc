@@ -37,15 +37,26 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${route.title} - Giá Rẻ Đón Tận Nơi 24/7`,
+    title: `${route.title} - Giá Rẻ Đón Tận Nơi 24/7 | Taxi Xanh Vĩnh Phúc`,
     description: `${route.subtitle}. Đưa đón tận nhà tại Vĩnh Phúc, xe đời mới 2022-2025, đúng giờ bay và giờ hẹn. Hotline: 0961 299 934.`,
+    alternates: {
+      canonical: `${siteConfig.domain}/tuyen-duong/${slug}`,
+    },
     keywords: [
       route.title,
       route.subtitle,
       "taxi vĩnh phúc",
       "xe tiện chuyến vĩnh phúc",
       route.slug,
+      "đặt xe taxi vĩnh phúc",
+      "taxi nội bài",
     ],
+    openGraph: {
+      title: `${route.title} | Taxi Xanh Vĩnh Phúc`,
+      description: route.subtitle,
+      url: `${siteConfig.domain}/tuyen-duong/${slug}`,
+      images: ["/images/hero-banner.jpg"],
+    },
   };
 }
 
@@ -63,8 +74,81 @@ export default async function RouteDetailPage({
     notFound();
   }
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Trang chủ",
+            item: siteConfig.domain,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Tuyến đường",
+            item: `${siteConfig.domain}/tuyen-duong`,
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: route.title,
+            item: `${siteConfig.domain}/tuyen-duong/${route.slug}`,
+          },
+        ],
+      },
+      {
+        "@type": "Service",
+        name: route.title,
+        description: route.description,
+        provider: {
+          "@type": "LocalBusiness",
+          name: siteConfig.brandName,
+          telephone: siteConfig.hotlineRaw,
+        },
+        areaServed: {
+          "@type": "AdministrativeArea",
+          name: "Vĩnh Phúc",
+        },
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: `Bảng giá ${route.title}`,
+          itemListElement: route.prices.map((p) => ({
+            "@type": "Offer",
+            name: `${route.title} - ${p.carType}`,
+            price: p.oneWay.replace(/[^0-9]/g, ""),
+            priceCurrency: "VND",
+            description: `Một chiều: ${p.oneWay}, Khứ hồi: ${p.roundTrip}. ${p.notes || ""}`,
+          })),
+        },
+      },
+      ...(route.faqs && route.faqs.length > 0
+        ? [
+            {
+              "@type": "FAQPage",
+              mainEntity: route.faqs.map((f) => ({
+                "@type": "Question",
+                name: f.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: f.answer,
+                },
+              })),
+            },
+          ]
+        : []),
+    ],
+  };
+
   return (
     <div className="bg-slate-50 min-h-screen py-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-xs text-slate-500">

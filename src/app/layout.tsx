@@ -65,6 +65,9 @@ export const metadata: Metadata = {
     description: "Tổng đài đặt xe taxi Vĩnh Phúc 24/7 Hotline: 0961 299 934. Cam kết đúng giờ, giá trọn gói.",
     images: ["/images/hero-banner.jpg"],
   },
+  alternates: {
+    canonical: siteConfig.domain,
+  },
   robots: {
     index: true,
     follow: true,
@@ -76,6 +79,12 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  other: {
+    "geo.region": "VN-VP",
+    "geo.placename": "Vĩnh Phúc",
+    "geo.position": "21.3093;105.6049",
+    "ICBM": "21.3093, 105.6049",
+  },
 };
 
 export default function RootLayout({
@@ -83,57 +92,126 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // JSON-LD structured data for LocalBusiness & TaxiService
+  // JSON-LD structured data for LocalBusiness, TaxiService, and WebSite
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "TaxiService"],
-    name: siteConfig.brandName,
-    alternateName: siteConfig.shortName,
-    image: `${siteConfig.domain}/images/hero-banner.jpg`,
-    "@id": siteConfig.domain,
-    url: siteConfig.domain,
-    telephone: siteConfig.hotlineRaw,
-    priceRange: "150000VND - 1500000VND",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "TP. Vĩnh Yên",
-      addressRegion: "Vĩnh Phúc",
-      addressCountry: "VN",
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: 21.3093,
-      longitude: 105.6049,
-    },
-    openingHoursSpecification: {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday",
-      ],
-      opens: "00:00",
-      closes: "23:59",
-    },
-    areaServed: [
-      { "@type": "City", name: "Vĩnh Yên" },
-      { "@type": "City", name: "Phúc Yên" },
-      { "@type": "AdministrativeArea", name: "Bình Xuyên" },
-      { "@type": "AdministrativeArea", name: "Yên Lạc" },
-      { "@type": "AdministrativeArea", name: "Vĩnh Tường" },
-      { "@type": "AdministrativeArea", name: "Tam Đảo" },
-      { "@type": "AdministrativeArea", name: "Tam Dương" },
-      { "@type": "AdministrativeArea", name: "Lập Thạch" },
-      { "@type": "AdministrativeArea", name: "Sông Lô" },
-      { "@type": "AdministrativeArea", name: "Hà Nội" },
-      { "@type": "AdministrativeArea", name: "Phú Thọ" },
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": `${siteConfig.domain}/#website`,
+        url: siteConfig.domain,
+        name: siteConfig.brandName,
+        description: siteConfig.slogan,
+        inLanguage: "vi-VN",
+      },
+      {
+        "@type": ["LocalBusiness", "TaxiService", "AutoRental"],
+        "@id": `${siteConfig.domain}/#organization`,
+        name: siteConfig.brandName,
+        alternateName: [siteConfig.shortName, "Taxi Vĩnh Phúc", "Taxi Xanh"],
+        image: `${siteConfig.domain}/images/hero-banner.jpg`,
+        logo: `${siteConfig.domain}/logo.svg`,
+        url: siteConfig.domain,
+        telephone: siteConfig.hotlineRaw,
+        priceRange: "180000VND - 1500000VND",
+        currenciesAccepted: "VND",
+        paymentAccepted: "Tiền mặt, Chuyển khoản ngân hàng, Quét mã QR",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "TP. Vĩnh Yên",
+          addressRegion: "Vĩnh Phúc",
+          addressCountry: "VN",
+        },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: 21.3093,
+          longitude: 105.6049,
+        },
+        openingHoursSpecification: {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday",
+          ],
+          opens: "00:00",
+          closes: "23:59",
+        },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: "4.9",
+          bestRating: "5",
+          worstRating: "1",
+          ratingCount: "258",
+          reviewCount: "186",
+        },
+        serviceType: [
+          "Taxi Sân Bay Nội Bài",
+          "Xe Tiện Chuyến Vĩnh Phúc Hà Nội",
+          "Taxi Tam Đảo",
+          "Taxi Tây Thiên",
+          "Thuê Xe 4 Chỗ Vĩnh Phúc",
+          "Thuê Xe 7 Chỗ Vĩnh Phúc",
+          "Thuê Xe 16 Chỗ Vĩnh Phúc",
+          "Xe Ghép Vĩnh Phúc",
+        ],
+        areaServed: [
+          { "@type": "City", name: "Vĩnh Yên" },
+          { "@type": "City", name: "Phúc Yên" },
+          { "@type": "AdministrativeArea", name: "Bình Xuyên" },
+          { "@type": "AdministrativeArea", name: "Yên Lạc" },
+          { "@type": "AdministrativeArea", name: "Vĩnh Tường" },
+          { "@type": "AdministrativeArea", name: "Tam Đảo" },
+          { "@type": "AdministrativeArea", name: "Tam Dương" },
+          { "@type": "AdministrativeArea", name: "Lập Thạch" },
+          { "@type": "AdministrativeArea", name: "Sông Lô" },
+          { "@type": "AdministrativeArea", name: "Hà Nội" },
+          { "@type": "AdministrativeArea", name: "Phú Thọ" },
+        ],
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "Bảng Dịch Vụ Taxi & Xe Tiện Chuyến",
+          itemListElement: [
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Taxi Vĩnh Phúc đi Sân Bay Nội Bài",
+                description: "Đưa đón sân bay Nội Bài 2 chiều chỉ từ 180.000đ, miễn phí 60p chờ",
+              },
+              price: "180000",
+              priceCurrency: "VND",
+            },
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Xe Tiện Chuyến Vĩnh Phúc đi Hà Nội",
+                description: "Xe tiện chuyến và ghép xe đi Hà Nội, bệnh viện trung ương từ 150.000đ",
+              },
+              price: "150000",
+              priceCurrency: "VND",
+            },
+            {
+              "@type": "Offer",
+              itemOffered: {
+                "@type": "Service",
+                name: "Taxi Đi Du Lịch Tam Đảo, Tây Thiên",
+                description: "Đưa đón đèo Tam Đảo, khu du lịch Tây Thiên xe đời mới chỉ từ 350.000đ",
+              },
+              price: "350000",
+              priceCurrency: "VND",
+            },
+          ],
+        },
+        serviceArea: "Tỉnh Vĩnh Phúc và các tỉnh lân cận",
+        sameAs: [siteConfig.zalo],
+      },
     ],
-    serviceArea: "Tỉnh Vĩnh Phúc và các tỉnh lân cận",
-    sameAs: [siteConfig.zalo],
   };
 
   return (

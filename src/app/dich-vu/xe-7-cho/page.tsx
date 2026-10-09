@@ -11,13 +11,70 @@ export const metadata: Metadata = {
   title: "Dịch Vụ Thuê Xe Taxi 7 Chỗ Vĩnh Phúc (Xpander, Fortuner, Innova)",
   description:
     "Thuê xe 7 chỗ MPV/SUV rộng rãi tại Vĩnh Phúc: Mitsubishi Xpander, Toyota Fortuner, Innova Cross. Phù hợp gia đình, du lịch Tam Đảo, cốp rộng chứa 4-6 vali lớn.",
+  alternates: {
+    canonical: `${siteConfig.domain}/dich-vu/xe-7-cho`,
+  },
+  openGraph: {
+    title: "Dịch Vụ Thuê Xe Taxi 7 Chỗ Vĩnh Phúc - Đời Mới Rộng Rãi",
+    description: "Xe 7 chỗ Xpander, Fortuner, Innova đón tận nhà, giá trọn gói cạnh tranh nhất.",
+    url: `${siteConfig.domain}/dich-vu/xe-7-cho`,
+    images: ["/images/hero-banner.jpg"],
+  },
 };
 
 export default function Xe7ChoPage() {
   const car = carFleet.find((c) => c.slug === "xe-7-cho") || carFleet[1];
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Trang chủ",
+            item: siteConfig.domain,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Dịch vụ xe",
+            item: `${siteConfig.domain}/dich-vu`,
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: "Xe 7 Chỗ",
+            item: `${siteConfig.domain}/dich-vu/xe-7-cho`,
+          },
+        ],
+      },
+      {
+        "@type": "Product",
+        name: "Dịch Vụ Thuê Xe Taxi 7 Chỗ Vĩnh Phúc",
+        description: car.description,
+        brand: {
+          "@type": "Brand",
+          name: siteConfig.brandName,
+        },
+        offers: {
+          "@type": "AggregateOffer",
+          priceCurrency: "VND",
+          lowPrice: "250000",
+          highPrice: "850000",
+        },
+      },
+    ],
+  };
+
   return (
     <div className="bg-slate-50 min-h-screen py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-xs text-slate-500">

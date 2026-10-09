@@ -11,13 +11,70 @@ export const metadata: Metadata = {
   title: "Dịch Vụ Thuê Xe Taxi 4 Chỗ Vĩnh Phúc (Vios, Accent, City)",
   description:
     "Dịch vụ thuê xe 4 chỗ sedan đời mới tại Vĩnh Phúc: Toyota Vios, Hyundai Accent, Honda City 2023-2025. Đưa đón sân bay Nội Bài chỉ từ 180K, khám bệnh Hà Nội, giá trọn gói siêu rẻ.",
+  alternates: {
+    canonical: `${siteConfig.domain}/dich-vu/xe-4-cho`,
+  },
+  openGraph: {
+    title: "Dịch Vụ Thuê Xe Taxi 4 Chỗ Vĩnh Phúc - Giá Trọn Gói Rẻ Nhất",
+    description: "Xe đời mới 2023-2025, sạch sẽ không mùi, đón tận nhà sau 10 phút.",
+    url: `${siteConfig.domain}/dich-vu/xe-4-cho`,
+    images: ["/images/hero-banner.jpg"],
+  },
 };
 
 export default function Xe4ChoPage() {
   const car = carFleet.find((c) => c.slug === "xe-4-cho") || carFleet[0];
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Trang chủ",
+            item: siteConfig.domain,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Dịch vụ xe",
+            item: `${siteConfig.domain}/dich-vu`,
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: "Xe 4 Chỗ",
+            item: `${siteConfig.domain}/dich-vu/xe-4-cho`,
+          },
+        ],
+      },
+      {
+        "@type": "Product",
+        name: "Dịch Vụ Thuê Xe Taxi 4 Chỗ Vĩnh Phúc",
+        description: car.description,
+        brand: {
+          "@type": "Brand",
+          name: siteConfig.brandName,
+        },
+        offers: {
+          "@type": "AggregateOffer",
+          priceCurrency: "VND",
+          lowPrice: "180000",
+          highPrice: "600000",
+        },
+      },
+    ],
+  };
+
   return (
     <div className="bg-slate-50 min-h-screen py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-xs text-slate-500">

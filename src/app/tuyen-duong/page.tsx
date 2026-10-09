@@ -9,11 +9,43 @@ export const metadata: Metadata = {
   title: "Danh Sách Tuyến Xe Taxi Vĩnh Phúc - Bảng Giá Trọn Gói 2026",
   description:
     "Tổng hợp các tuyến taxi xuất phát từ Vĩnh Phúc: Sân Bay Nội Bài, Hà Nội & Bệnh Viện, Việt Trì Phú Thọ, Tam Đảo, Tây Thiên, Xe hợp đồng KCN. Đón trả tận nơi 24/7.",
+  alternates: {
+    canonical: `${siteConfig.domain}/tuyen-duong`,
+  },
+  openGraph: {
+    title: "Danh Sách Tuyến Xe Taxi Vĩnh Phúc Trọng Điểm 2026",
+    description: "Đưa đón sân bay Nội Bài chỉ từ 180K, xe tiện chuyến Hà Nội từ 150K, Tam Đảo, Tây Thiên 24/7.",
+    url: `${siteConfig.domain}/tuyen-duong`,
+    images: ["/images/hero-banner.jpg"],
+  },
 };
 
 export default function TuyenDuongPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Trang chủ",
+        item: siteConfig.domain,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Tuyến đường",
+        item: `${siteConfig.domain}/tuyen-duong`,
+      },
+    ],
+  };
+
   return (
     <div className="bg-slate-50 min-h-screen py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         {/* Page Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3">

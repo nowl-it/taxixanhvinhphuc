@@ -11,13 +11,70 @@ export const metadata: Metadata = {
   title: "Dịch Vụ Thuê Xe 16 Chỗ Du Lịch & Hợp Đồng Vĩnh Phúc (Ford Transit, Solati)",
   description:
     "Thuê xe 16 chỗ tại Vĩnh Phúc: Ford Transit, Hyundai Solati đời mới. Phục vụ đoàn du lịch Tam Đảo, Tây Thiên, đám cưới hỏi, hợp đồng đưa đón KCN giá rẻ. Hotline 0961 299 934.",
+  alternates: {
+    canonical: `${siteConfig.domain}/dich-vu/xe-16-cho`,
+  },
+  openGraph: {
+    title: "Dịch Vụ Thuê Xe 16 Chỗ Vĩnh Phúc - Du Lịch & Hợp Đồng",
+    description: "Xe 16 chỗ Ford Transit, Solati đón tận nhà, tài xế bản địa tận tâm.",
+    url: `${siteConfig.domain}/dich-vu/xe-16-cho`,
+    images: ["/images/hero-banner.jpg"],
+  },
 };
 
 export default function Xe16ChoPage() {
   const car = carFleet.find((c) => c.slug === "xe-16-cho") || carFleet[2];
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Trang chủ",
+            item: siteConfig.domain,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Dịch vụ xe",
+            item: `${siteConfig.domain}/dich-vu`,
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: "Xe 16 Chỗ",
+            item: `${siteConfig.domain}/dich-vu/xe-16-cho`,
+          },
+        ],
+      },
+      {
+        "@type": "Product",
+        name: "Dịch Vụ Thuê Xe 16 Chỗ Vĩnh Phúc",
+        description: car.description,
+        brand: {
+          "@type": "Brand",
+          name: siteConfig.brandName,
+        },
+        offers: {
+          "@type": "AggregateOffer",
+          priceCurrency: "VND",
+          lowPrice: "450000",
+          highPrice: "1600000",
+        },
+      },
+    ],
+  };
+
   return (
     <div className="bg-slate-50 min-h-screen py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-xs text-slate-500">

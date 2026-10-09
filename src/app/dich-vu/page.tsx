@@ -7,12 +7,39 @@ import { carFleet } from "@/data/cars";
 import { Car, Briefcase, CheckCircle2, Phone, ArrowRight, ShieldCheck, Sparkles, Plane, Building2, Calendar } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Dịch Vụ Xe 4 Chỗ, 7 Chỗ, 16 Chỗ & Xe Tiện Chuyến",
+  title: "Dịch Vụ Xe 4 Chỗ, 7 Chỗ, 16 Chỗ & Xe Tiện Chuyến | Taxi Xanh Vĩnh Phúc",
   description:
     "Cung cấp đa dạng dịch vụ taxi Vĩnh Phúc: Thuê xe 4 chỗ, 7 chỗ, 16 chỗ đời mới 2022-2025. Xe tiện chuyến Hà Nội, đưa đón sân bay Nội Bài, xe hợp đồng KCN trọn gói giá rẻ. Hotline 0961 299 934.",
+  alternates: {
+    canonical: `${siteConfig.domain}/dich-vu`,
+  },
+  openGraph: {
+    title: "Dịch Vụ Thuê Xe Taxi 4 Chỗ, 7 Chỗ, 16 Chỗ Vĩnh Phúc",
+    description: "Đội xe đời mới 2022 - 2025 phục vụ đưa đón sân bay Nội Bài, đường dài liên tỉnh, hợp đồng du lịch.",
+    url: `${siteConfig.domain}/dich-vu`,
+    images: ["/images/hero-banner.jpg"],
+  },
 };
 
 export default function DichVuPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Trang chủ",
+        item: siteConfig.domain,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Dịch vụ xe",
+        item: `${siteConfig.domain}/dich-vu`,
+      },
+    ],
+  };
   const extraServices = [
     {
       title: "Đưa Đón Sân Bay Nội Bài 24/7",
@@ -39,6 +66,10 @@ export default function DichVuPage() {
 
   return (
     <div className="bg-slate-50 min-h-screen py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         {/* Page Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3">

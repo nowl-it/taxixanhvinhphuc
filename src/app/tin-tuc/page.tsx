@@ -10,13 +10,45 @@ export const metadata: Metadata = {
   title: "Cẩm Nang & Tin Tức Dịch Vụ Taxi Vĩnh Phúc Mới Nhất 2026",
   description:
     "Tổng hợp kinh nghiệm đặt xe taxi giá rẻ, cẩm nang du lịch Tam Đảo - Tây Thiên, so sánh xe 4 chỗ và 7 chỗ, dịch vụ xe tiện chuyến Hà Nội và hợp đồng KCN Vĩnh Phúc.",
+  alternates: {
+    canonical: `${siteConfig.domain}/tin-tuc`,
+  },
+  openGraph: {
+    title: "Cẩm Nang & Kinh Nghiệm Đi Xe Taxi Vĩnh Phúc",
+    description: "Kinh nghiệm đặt xe sân bay, xe tiện chuyến và du lịch Vĩnh Phúc giá rẻ nhất.",
+    url: `${siteConfig.domain}/tin-tuc`,
+    images: ["/images/hero-banner.jpg"],
+  },
 };
 
 export default function TinTucPage() {
   const [featuredPost, ...otherPosts] = blogPosts;
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Trang chủ",
+        item: siteConfig.domain,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Cẩm nang & Tin tức",
+        item: `${siteConfig.domain}/tin-tuc`,
+      },
+    ],
+  };
+
   return (
     <div className="bg-slate-50 min-h-screen py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         {/* Page Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3">

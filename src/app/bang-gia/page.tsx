@@ -8,15 +8,87 @@ import { Phone, Tag, ArrowRight, MoveHorizontal, Plane, Building2, MapPin, Mount
 import ZaloIcon from "@/components/ui/ZaloIcon";
 
 export const metadata: Metadata = {
-  title: "Bảng Giá Cước Taxi Xanh Vĩnh Phúc Trọn Gói 2026",
+  title: "Bảng Giá Cước Taxi Xanh Vĩnh Phúc Trọn Gói 2026 - Rẻ Nhất",
   description:
-    "Cập nhật bảng giá taxi Vĩnh Phúc trọn gói: Tuyến Sân Bay Nội Bài từ 180K, Hà Nội đi ghép 150K, Việt Trì 200K, Tam Đảo 350K. Giảm 40% - 70% cước chiều về. Hotline 0961 299 934.",
+    "Cập nhật bảng giá taxi Vĩnh Phúc trọn gói 2026: Tuyến Sân Bay Nội Bài từ 180K, Hà Nội đi ghép 150K, Việt Trì 200K, Tam Đảo 350K. Giảm 40% - 70% cước chiều về. Hotline 0961 299 934.",
+  alternates: {
+    canonical: `${siteConfig.domain}/bang-gia`,
+  },
+  openGraph: {
+    title: "Bảng Giá Cước Taxi Xanh Vĩnh Phúc Trọn Gói 2026",
+    description: "Bảng giá cước taxi đưa đón sân bay Nội Bài, Hà Nội, Tam Đảo, Tây Thiên trọn gói rẻ nhất Vĩnh Phúc.",
+    url: `${siteConfig.domain}/bang-gia`,
+    images: ["/images/hero-banner.jpg"],
+  },
 };
 
 export default function BangGiaPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Trang chủ",
+            item: siteConfig.domain,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Bảng giá cước",
+            item: `${siteConfig.domain}/bang-gia`,
+          },
+        ],
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "Giá cước taxi Vĩnh Phúc đi sân bay Nội Bài là bao nhiêu?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Tuyến Phúc Yên - Nội Bài: 180.000đ - 220.000đ (4 chỗ) / 250.000đ (7 chỗ). Tuyến Vĩnh Yên/Bình Xuyên - Nội Bài: 250.000đ - 280.000đ (4 chỗ) / 320.000đ (7 chỗ).",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Đi 2 chiều trong ngày có được giảm giá không?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Khách hàng đi 2 chiều khứ hồi trong ngày được giảm từ 40% đến 70% cước chiều về tùy cung đường.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Giá cước có bao gồm phí cầu đường chưa?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Báo giá của Taxi Xanh Vĩnh Phúc là giá trọn gói đã bao gồm phí cầu đường cơ bản, cam kết không phát sinh phụ phí ẩn.",
+            },
+          },
+        ],
+      },
+    ],
+  };
+
   return (
     <div className="bg-slate-50 min-h-screen py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="container mx-auto px-3 sm:px-6 lg:px-8 space-y-8 sm:space-y-12">
+        {/* Breadcrumb Navigation */}
+        <nav className="flex items-center gap-2 text-xs text-slate-500 mb-2">
+          <Link href="/" className="hover:text-emerald-600">Trang chủ</Link>
+          <span>/</span>
+          <span className="text-slate-800 font-semibold">Bảng giá cước</span>
+        </nav>
+
         {/* Page Header */}
         <div className="text-center max-w-3xl mx-auto space-y-2.5 sm:space-y-3">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-[11px] sm:text-xs font-bold uppercase tracking-wider">

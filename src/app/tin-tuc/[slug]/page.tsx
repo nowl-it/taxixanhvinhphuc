@@ -32,7 +32,20 @@ export async function generateMetadata({
     title: `${post.title} | Taxi Xanh Vĩnh Phúc`,
     description: post.excerpt,
     keywords: post.keywords,
+    alternates: {
+      canonical: `${siteConfig.domain}/tin-tuc/${slug}`,
+    },
     openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      url: `${siteConfig.domain}/tin-tuc/${slug}`,
+      type: "article",
+      publishedTime: post.date,
+      authors: [post.author],
+      images: [post.featuredImage],
+    },
+    twitter: {
+      card: "summary_large_image",
       title: post.title,
       description: post.excerpt,
       images: [post.featuredImage],
@@ -197,8 +210,67 @@ export default async function BlogPostPage({
     return elements;
   };
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Trang chủ",
+            item: siteConfig.domain,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Cẩm nang & Tin tức",
+            item: `${siteConfig.domain}/tin-tuc`,
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: post.title,
+            item: `${siteConfig.domain}/tin-tuc/${post.slug}`,
+          },
+        ],
+      },
+      {
+        "@type": "BlogPosting",
+        headline: post.title,
+        description: post.excerpt,
+        image: post.featuredImage.startsWith("http")
+          ? post.featuredImage
+          : `${siteConfig.domain}${post.featuredImage}`,
+        datePublished: post.date,
+        dateModified: post.date,
+        author: {
+          "@type": "Person",
+          name: post.author,
+        },
+        publisher: {
+          "@type": "Organization",
+          name: siteConfig.brandName,
+          logo: {
+            "@type": "ImageObject",
+            url: `${siteConfig.domain}/logo.svg`,
+          },
+        },
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id": `${siteConfig.domain}/tin-tuc/${post.slug}`,
+        },
+      },
+    ],
+  };
+
   return (
     <div className="bg-slate-50 min-h-screen py-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-xs text-slate-500">
