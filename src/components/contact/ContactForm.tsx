@@ -2,13 +2,15 @@
 
 import React, { useState } from "react";
 import { siteConfig } from "@/data/config";
-import { Phone, Send, CheckCircle2, ShieldCheck } from "lucide-react";
+import ZaloIcon from "@/components/ui/ZaloIcon";
+import { Phone, Send, CheckCircle2, ShieldCheck, Check } from "lucide-react";
 
 export default function ContactForm() {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [copied, setCopied] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -17,6 +19,27 @@ export default function ContactForm() {
       return;
     }
     setSubmitted(true);
+  };
+
+  const handleSendZalo = async () => {
+    const text = [
+      `📩 YÊU CẦU TƯ VẤN - TAXI XANH VĨNH PHÚC`,
+      `• Khách hàng: ${name.trim() || "Khách hàng"}`,
+      `• Số điện thoại: ${phone.trim()}`,
+      message.trim() ? `• Nội dung cần hỗ trợ: ${message.trim()}` : `• Yêu cầu: Tư vấn báo giá lộ trình xe`,
+    ].join("\n");
+
+    try {
+      if (navigator?.clipboard?.writeText) {
+        await navigator.clipboard.writeText(text);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 4000);
+      }
+    } catch {
+      // fallback
+    }
+
+    window.open(siteConfig.zalo, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -31,22 +54,54 @@ export default function ContactForm() {
       </div>
 
       {submitted ? (
-        <div className="p-6 rounded-2xl bg-emerald-50 border border-emerald-200 text-center space-y-3 animate-in zoom-in-95">
+        <div className="p-6 rounded-2xl bg-emerald-50 border border-emerald-200 text-center space-y-4 animate-in zoom-in-95">
           <div className="w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center mx-auto">
             <CheckCircle2 className="w-7 h-7" />
           </div>
-          <h3 className="text-lg font-black text-emerald-950">GỬI YÊU CẦU THÀNH CÔNG!</h3>
-          <p className="text-xs sm:text-sm text-emerald-800 max-w-md mx-auto">
-            Tổng đài viên Taxi Xanh Vĩnh Phúc sẽ gọi lại số điện thoại <strong>{phone}</strong> trong vòng 2 phút để hỗ trợ báo giá và điều xe.
-          </p>
-          <div className="pt-2">
+          <div>
+            <h3 className="text-lg font-black text-emerald-950">ĐÃ GHI NHẬN THÔNG TIN!</h3>
+            <p className="text-xs sm:text-sm text-emerald-800 max-w-md mx-auto mt-1">
+              Tổng đài viên đã nhận số điện thoại <strong>{phone}</strong>. Bạn hãy bấm gửi qua Zalo để nhân viên gửi ảnh xe và báo giá ngay nhé!
+            </p>
+          </div>
+
+          {copied && (
+            <div className="p-2.5 rounded-xl bg-blue-50 border border-blue-200 text-blue-800 text-xs flex items-center justify-center gap-2 animate-in fade-in">
+              <Check className="w-4 h-4 text-blue-600 shrink-0" />
+              <span>Đã sao chép nội dung! Bạn chỉ cần dán (Paste) vào Zalo vừa mở để gửi ngay.</span>
+            </div>
+          )}
+
+          <div className="space-y-2.5 pt-1">
+            <button
+              type="button"
+              onClick={handleSendZalo}
+              className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-black text-sm sm:text-base flex items-center justify-center gap-2 shadow-lg shadow-blue-500/25 transition transform hover:-translate-y-0.5 cursor-pointer"
+            >
+              <ZaloIcon className="w-5 h-5 text-white" />
+              <span>GỬI NỘI DUNG QUA ZALO TỔNG ĐÀI</span>
+            </button>
+
             <a
               href={`tel:${siteConfig.hotlineRaw}`}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-red-600 text-white font-bold text-xs"
+              className="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-700 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md transition"
             >
-              <Phone className="w-4 h-4" />
-              <span>Cần gấp? Gọi ngay: {siteConfig.hotline}</span>
+              <Phone className="w-4 h-4 animate-phone-ring" />
+              <span>HOẶC GỌI TRỰC TIẾP: {siteConfig.hotline}</span>
             </a>
+
+            <button
+              type="button"
+              onClick={() => {
+                setSubmitted(false);
+                setName("");
+                setPhone("");
+                setMessage("");
+              }}
+              className="text-xs text-slate-500 hover:text-slate-800 font-medium pt-1 inline-block"
+            >
+              Gửi một yêu cầu khác
+            </button>
           </div>
         </div>
       ) : (
@@ -93,7 +148,7 @@ export default function ContactForm() {
 
           <button
             type="submit"
-            className="w-full py-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-black text-sm sm:text-base flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/30 transition transform hover:-translate-y-0.5"
+            className="w-full py-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-black text-sm sm:text-base flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/30 transition transform hover:-translate-y-0.5 cursor-pointer"
           >
             <Send className="w-4 h-4" />
             <span>GỬI YÊU CẦU GỌI LẠI (2 PHÚT)</span>

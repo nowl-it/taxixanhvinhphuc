@@ -1,10 +1,10 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { siteConfig } from "@/data/config";
 import { BookingRequest } from "@/types";
 import ZaloIcon from "@/components/ui/ZaloIcon";
-import { CheckCircle2, Phone, X, Clock, ShieldCheck, Car } from "lucide-react";
+import { CheckCircle2, Phone, X, Clock, ShieldCheck, Car, Check } from "lucide-react";
 
 interface BookingModalProps {
   isOpen: boolean;
@@ -19,7 +19,41 @@ export default function BookingModal({
   bookingData,
   estimatedPrice,
 }: BookingModalProps) {
+  const [copied, setCopied] = useState(false);
+
   if (!isOpen || !bookingData) return null;
+
+  // Format booking information into a clean message for Zalo
+  const formatZaloMessage = () => {
+    return [
+      `🚖 YÊU CẦU ĐẶT XE - TAXI XANH VĨNH PHÚC`,
+      `• Khách hàng (SĐT): ${bookingData.phone}`,
+      `• Điểm đón: ${bookingData.pickup}`,
+      `• Điểm đến: ${bookingData.dropoff}`,
+      `• Loại xe: Xe ${bookingData.carType} Chỗ ${bookingData.isRoundTrip ? "(Khứ hồi 2 chiều)" : "(Một chiều)"}`,
+      `• Thời gian đón: ${bookingData.time} ngày ${bookingData.date}`,
+      estimatedPrice ? `• Giá tạm tính: ${estimatedPrice}` : null,
+      bookingData.note ? `• Ghi chú: ${bookingData.note}` : null,
+    ]
+      .filter(Boolean)
+      .join("\n");
+  };
+
+  const handleSendZalo = async () => {
+    const text = formatZaloMessage();
+    try {
+      if (navigator?.clipboard?.writeText) {
+        await navigator.clipboard.writeText(text);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 4000);
+      }
+    } catch {
+      // fallback
+    }
+
+    // Open Zalo chat
+    window.open(siteConfig.zalo, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-slate-950/70 backdrop-blur-sm animate-in fade-in duration-200">
@@ -40,22 +74,26 @@ export default function BookingModal({
             </div>
             <div>
               <h3 className="text-lg sm:text-xl font-black">ĐẶT XE THÀNH CÔNG!</h3>
-              <p className="text-[11px] sm:text-xs text-emerald-100">Hệ thống đã chuyển yêu cầu đến điều phối viên</p>
+              <p className="text-[11px] sm:text-xs text-emerald-100">Thông tin chuyến đi đã sẵn sàng</p>
             </div>
           </div>
         </div>
 
         {/* Modal Body */}
-        <div className="p-4 sm:p-6 space-y-3.5 sm:space-y-5">
+        <div className="p-4 sm:p-6 space-y-3.5 sm:space-y-4">
           <div className="flex items-center gap-2.5 sm:gap-3 bg-emerald-50 border border-emerald-200 text-emerald-800 p-3 sm:p-3.5 rounded-xl sm:rounded-2xl text-xs sm:text-sm">
             <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-emerald-600 shrink-0 animate-pulse" />
             <span>
-              Tài xế gần nhất sẽ liên hệ số <strong>{bookingData.phone}</strong> trong vòng <strong>2 phút</strong> để xác nhận đón.
+              Tổng đài viên đang tiếp nhận số <strong>{bookingData.phone}</strong>. Vui lòng bấm gửi qua Zalo bên dưới để nhận tài xế nhanh nhất!
             </span>
           </div>
 
           {/* Booking Summary Card */}
-          <div className="bg-slate-50 border border-slate-200/80 rounded-xl sm:rounded-2xl p-3 sm:p-4 text-xs sm:text-sm space-y-2 sm:space-y-2.5">
+          <div className="bg-slate-50 border border-slate-200/80 rounded-xl sm:rounded-2xl p-3.5 sm:p-4 text-xs sm:text-sm space-y-2">
+            <div className="flex justify-between items-center py-1 border-b border-slate-200">
+              <span className="text-slate-500">Số điện thoại:</span>
+              <span className="font-bold text-slate-900">{bookingData.phone}</span>
+            </div>
             <div className="flex justify-between items-center py-1 border-b border-slate-200">
               <span className="text-slate-500">Điểm đón:</span>
               <span className="font-bold text-slate-800 text-right">{bookingData.pickup}</span>
@@ -68,7 +106,7 @@ export default function BookingModal({
               <span className="text-slate-500">Loại xe:</span>
               <span className="font-bold text-emerald-700 flex items-center gap-1">
                 <Car className="w-4 h-4" />
-                Xe {bookingData.carType} Chỗ
+                Xe {bookingData.carType} Chỗ {bookingData.isRoundTrip && "(Khứ hồi)"}
               </span>
             </div>
             <div className="flex justify-between items-center py-1 border-b border-slate-200">
@@ -78,45 +116,54 @@ export default function BookingModal({
               </span>
             </div>
             {estimatedPrice && (
-              <div className="flex justify-between items-center pt-2 text-emerald-700 font-bold">
+              <div className="flex justify-between items-center pt-1 text-emerald-700 font-bold">
                 <span>Cước tạm tính:</span>
                 <span className="text-base sm:text-lg text-red-600 font-black">{estimatedPrice}</span>
               </div>
             )}
           </div>
 
-          <div className="flex items-center gap-2 text-[11px] sm:text-xs text-slate-500">
-            <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
-            <span>Cam kết giá trọn gói - Xe đời mới sạch sẽ - Không phụ phí ẩn</span>
-          </div>
+          {copied && (
+            <div className="p-2.5 rounded-xl bg-blue-50 border border-blue-200 text-blue-800 text-xs flex items-center gap-2 animate-in fade-in">
+              <Check className="w-4 h-4 text-blue-600 shrink-0" />
+              <span>Đã sao chép lộ trình! Hãy dán (Paste) vào khung chat Zalo vừa mở để gửi ngay cho tổng đài.</span>
+            </div>
+          )}
 
           {/* Quick Actions */}
-          <div className="space-y-2 sm:space-y-2.5 pt-1">
-            <a
-              href={`tel:${siteConfig.hotlineRaw}`}
-              className="w-full py-3 sm:py-3.5 px-3 sm:px-4 rounded-xl bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-700 text-white font-extrabold text-center flex items-center justify-center gap-2 shadow-lg shadow-red-600/30 transition text-xs sm:text-base whitespace-nowrap"
-            >
-              <Phone className="w-4 h-4 sm:w-5 sm:h-5 animate-phone-ring" />
-              <span>GỌI TÀI XẾ NGAY: {siteConfig.hotline}</span>
-            </a>
-
-            <a
-              href={siteConfig.zalo}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full py-2.5 sm:py-3 px-3 sm:px-4 rounded-xl bg-blue-50 hover:bg-blue-100 text-blue-700 border border-blue-200 font-bold text-center flex items-center justify-center gap-2 transition text-xs sm:text-sm whitespace-nowrap"
-            >
-              <ZaloIcon className="w-4 h-4" />
-              <span>Gửi vị trí qua Zalo để đón nhanh</span>
-            </a>
-
+          <div className="space-y-2.5 pt-1">
+            {/* Primary Action: Send to Zalo */}
             <button
               type="button"
-              onClick={onClose}
-              className="w-full py-2 text-xs text-slate-500 hover:text-slate-700 font-semibold transition"
+              onClick={handleSendZalo}
+              className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-black text-center flex items-center justify-center gap-2.5 shadow-lg shadow-blue-500/25 transition transform hover:-translate-y-0.5 text-sm sm:text-base cursor-pointer"
             >
-              Đóng cửa sổ này
+              <ZaloIcon className="w-5 h-5 text-white" />
+              <span>GỬI ĐƠN QUA ZALO NGAY (0961 299 934)</span>
             </button>
+
+            {/* Secondary Action: Call directly */}
+            <a
+              href={`tel:${siteConfig.hotlineRaw}`}
+              className="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-700 text-white font-extrabold text-center flex items-center justify-center gap-2 shadow-md transition text-xs sm:text-sm"
+            >
+              <Phone className="w-4 h-4 animate-phone-ring" />
+              <span>HOẶC GỌI TRỰC TIẾP TÀI XẾ: {siteConfig.hotline}</span>
+            </a>
+
+            <div className="flex items-center justify-between pt-1">
+              <span className="text-[11px] text-slate-400 flex items-center gap-1">
+                <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
+                Bảo mật thông tin 100%
+              </span>
+              <button
+                type="button"
+                onClick={onClose}
+                className="text-xs text-slate-500 hover:text-slate-800 font-semibold"
+              >
+                Đóng cửa sổ
+              </button>
+            </div>
           </div>
         </div>
       </div>
