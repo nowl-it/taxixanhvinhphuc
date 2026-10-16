@@ -129,7 +129,7 @@ export default function BookingForm({
         <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 sm:pb-5 border-b border-slate-100 gap-2">
           <div>
             <div className="flex items-center gap-1.5 sm:gap-2 text-emerald-600 font-extrabold text-[10px] sm:text-xs uppercase tracking-wider mb-1">
-              <Sparkles className="w-3.5 h-3.5 text-amber-500 animate-spin" />
+              <Sparkles className="w-3.5 h-3.5 text-amber-500 shrink-0" />
               <span>ĐẶT XE SIÊU TỐC - CÓ MẶT SAU 10 PHÚT</span>
             </div>
             <h2 className="text-lg sm:text-2xl font-black text-slate-900">

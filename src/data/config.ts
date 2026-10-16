@@ -22,7 +22,7 @@ export const siteConfig: SiteConfig = {
     "Huyện Sông Lô",
   ],
   holidayNotice: {
-    enabled: true,
+    enabled: false, // Bật (true) khi đến các dịp Lễ Tết, tắt (false) vào ngày thường
     badge: "Lễ Tết 2026",
     title: "Phục Vụ Xuyên Lễ Tết 2026",
     message: "Đội xe trực 100% quân số 24/7, cam kết KHÔNG tăng giá cước. Quý khách vui lòng đặt xe sớm để giữ xe đời mới nhất!",
