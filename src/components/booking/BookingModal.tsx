@@ -56,13 +56,13 @@ export default function BookingModal({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-slate-950/70 backdrop-blur-sm animate-in fade-in duration-200">
-      <div className="relative w-full max-w-lg bg-white rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden border border-slate-100 animate-in zoom-in-95 duration-200">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-slate-950/70 backdrop-blur-sm animate-in fade-in duration-200 overflow-y-auto">
+      <div className="relative w-full max-w-lg bg-white rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden border border-slate-100 animate-in zoom-in-95 duration-200 my-auto max-h-[92vh] flex flex-col">
         {/* Top Header */}
-        <div className="bg-gradient-to-r from-emerald-600 to-teal-700 text-white p-4 sm:p-6 relative">
+        <div className="bg-gradient-to-r from-emerald-600 to-teal-700 text-white p-4 sm:p-6 relative shrink-0">
           <button
             onClick={onClose}
-            className="absolute top-3 right-3 sm:top-4 sm:right-4 p-1.5 sm:p-2 text-emerald-100 hover:text-white hover:bg-emerald-700/50 rounded-full transition"
+            className="absolute top-3 right-3 sm:top-4 sm:right-4 p-1.5 sm:p-2 text-emerald-100 hover:text-white hover:bg-emerald-700/50 rounded-full transition cursor-pointer"
             aria-label="Đóng"
           >
             <X className="w-5 h-5" />
@@ -80,7 +80,7 @@ export default function BookingModal({
         </div>
 
         {/* Modal Body */}
-        <div className="p-4 sm:p-6 space-y-3.5 sm:space-y-4">
+        <div className="p-4 sm:p-6 space-y-3.5 sm:space-y-4 overflow-y-auto">
           <div className="flex items-center gap-2.5 sm:gap-3 bg-emerald-50 border border-emerald-200 text-emerald-800 p-3 sm:p-3.5 rounded-xl sm:rounded-2xl text-xs sm:text-sm">
             <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-emerald-600 shrink-0 animate-pulse" />
             <span>

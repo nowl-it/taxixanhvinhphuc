@@ -170,42 +170,42 @@ export default function BookingForm({
             <button
               type="button"
               onClick={() => setCarType("4")}
-              className={`p-2 sm:p-3 rounded-xl sm:rounded-2xl border text-center transition flex flex-col items-center justify-center gap-1 ${
+              className={`p-2 sm:p-3 rounded-xl sm:rounded-2xl border text-center transition flex flex-col items-center justify-center gap-1 min-w-0 ${
                 carType === "4"
                   ? "border-emerald-600 bg-emerald-50 text-emerald-900 shadow-sm ring-2 ring-emerald-500/20"
                   : "border-slate-200 hover:border-slate-300 text-slate-700"
               }`}
             >
-              <Car className={`w-4 h-4 sm:w-5 sm:h-5 ${carType === "4" ? "text-emerald-600" : "text-slate-500"}`} />
-              <span className="font-black text-xs sm:text-sm">Xe 4 Chỗ</span>
+              <Car className={`w-4 h-4 sm:w-5 sm:h-5 shrink-0 ${carType === "4" ? "text-emerald-600" : "text-slate-500"}`} />
+              <span className="font-black text-xs sm:text-sm whitespace-nowrap">Xe 4 Chỗ</span>
               <span className="text-[10px] text-slate-500 hidden sm:inline">Vios, Accent</span>
             </button>
 
             <button
               type="button"
               onClick={() => setCarType("7")}
-              className={`p-2 sm:p-3 rounded-xl sm:rounded-2xl border text-center transition flex flex-col items-center justify-center gap-1 ${
+              className={`p-2 sm:p-3 rounded-xl sm:rounded-2xl border text-center transition flex flex-col items-center justify-center gap-1 min-w-0 ${
                 carType === "7"
                   ? "border-emerald-600 bg-emerald-50 text-emerald-900 shadow-sm ring-2 ring-emerald-500/20"
                   : "border-slate-200 hover:border-slate-300 text-slate-700"
               }`}
             >
-              <Car className={`w-4 h-4 sm:w-5 sm:h-5 ${carType === "7" ? "text-emerald-600" : "text-slate-500"}`} />
-              <span className="font-black text-xs sm:text-sm">Xe 7 Chỗ</span>
+              <Car className={`w-4 h-4 sm:w-5 sm:h-5 shrink-0 ${carType === "7" ? "text-emerald-600" : "text-slate-500"}`} />
+              <span className="font-black text-xs sm:text-sm whitespace-nowrap">Xe 7 Chỗ</span>
               <span className="text-[10px] text-slate-500 hidden sm:inline">Xpander, Fortuner</span>
             </button>
 
             <button
               type="button"
               onClick={() => setCarType("16")}
-              className={`p-2 sm:p-3 rounded-xl sm:rounded-2xl border text-center transition flex flex-col items-center justify-center gap-1 ${
+              className={`p-2 sm:p-3 rounded-xl sm:rounded-2xl border text-center transition flex flex-col items-center justify-center gap-1 min-w-0 ${
                 carType === "16"
                   ? "border-emerald-600 bg-emerald-50 text-emerald-900 shadow-sm ring-2 ring-emerald-500/20"
                   : "border-slate-200 hover:border-slate-300 text-slate-700"
               }`}
             >
-              <Car className={`w-4 h-4 sm:w-5 sm:h-5 ${carType === "16" ? "text-emerald-600" : "text-slate-500"}`} />
-              <span className="font-black text-xs sm:text-sm">Xe 16 Chỗ</span>
+              <Car className={`w-4 h-4 sm:w-5 sm:h-5 shrink-0 ${carType === "16" ? "text-emerald-600" : "text-slate-500"}`} />
+              <span className="font-black text-xs sm:text-sm whitespace-nowrap">Xe 16 Chỗ</span>
               <span className="text-[10px] text-slate-500 hidden sm:inline">Ford Transit</span>
             </button>
           </div>
@@ -278,32 +278,32 @@ export default function BookingForm({
           </div>
 
           {/* Date & Time */}
-          <div className="grid grid-cols-2 gap-3">
-            <div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div className="min-w-0">
               <label htmlFor={dateId} className="block text-xs font-bold text-slate-700 mb-1 flex items-center gap-1">
-                <Calendar className="w-3.5 h-3.5 text-slate-500" />
-                Ngày đón:
+                <Calendar className="w-3.5 h-3.5 text-slate-500 shrink-0" />
+                <span>Ngày đón:</span>
               </label>
               <input
                 id={dateId}
                 type="date"
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
-                className="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm bg-white text-slate-900 font-medium"
+                className="w-full min-w-0 max-w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm bg-white text-slate-900 font-medium box-border"
                 required
               />
             </div>
-            <div>
+            <div className="min-w-0">
               <label htmlFor={timeId} className="block text-xs font-bold text-slate-700 mb-1 flex items-center gap-1">
-                <Clock className="w-3.5 h-3.5 text-slate-500" />
-                Giờ đón:
+                <Clock className="w-3.5 h-3.5 text-slate-500 shrink-0" />
+                <span>Giờ đón:</span>
               </label>
               <input
                 id={timeId}
                 type="time"
                 value={time}
                 onChange={(e) => setTime(e.target.value)}
-                className="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm bg-white text-slate-900 font-medium"
+                className="w-full min-w-0 max-w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm bg-white text-slate-900 font-medium box-border"
                 required
               />
             </div>
@@ -343,12 +343,12 @@ export default function BookingForm({
 
           {/* Estimated price callout if calculated */}
           {estimatedPrice && (
-            <div className="p-3 sm:p-3.5 rounded-xl sm:rounded-2xl bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 flex flex-col xs:flex-row items-start xs:items-center justify-between gap-2 animate-in fade-in">
+            <div className="p-3 sm:p-3.5 rounded-xl sm:rounded-2xl bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 animate-in fade-in">
               <div>
                 <span className="text-[11px] sm:text-xs text-slate-600 block">Cước phí ước tính ({carType} chỗ):</span>
                 <span className="text-base sm:text-lg font-black text-red-600">{estimatedPrice}</span>
               </div>
-              <span className="text-[10px] sm:text-[11px] font-bold text-emerald-800 bg-white px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full shadow-sm border border-emerald-100 shrink-0">
+              <span className="text-[10px] sm:text-[11px] font-bold text-emerald-800 bg-white px-2.5 py-1 rounded-full shadow-sm border border-emerald-100 shrink-0 self-start sm:self-auto">
                 Trọn gói bao gồm vé
               </span>
             </div>
