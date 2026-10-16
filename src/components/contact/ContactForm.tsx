@@ -3,7 +3,8 @@
 import React, { useState } from "react";
 import { siteConfig } from "@/data/config";
 import ZaloIcon from "@/components/ui/ZaloIcon";
-import { Phone, Send, CheckCircle2, ShieldCheck, Check } from "lucide-react";
+import { copyToClipboard, sendToZalo } from "@/lib/zalo";
+import { Phone, Send, CheckCircle2, Copy, Check, ShieldCheck } from "lucide-react";
 
 export default function ContactForm() {
   const [name, setName] = useState("");
@@ -12,34 +13,31 @@ export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
   const [copied, setCopied] = useState(false);
 
+  const formatContactMessage = () => {
+    return [
+      `📩 YÊU CẦU TƯ VẤN - TAXI XANH VĨNH PHÚC`,
+      `• Khách hàng: ${name.trim() || "Khách hàng"}`,
+      `• Số điện thoại: ${phone.trim()}`,
+      message.trim() ? `• Nội dung cần hỗ trợ: ${message.trim()}` : `• Yêu cầu: Tư vấn báo giá lộ trình xe`,
+    ].join("\n");
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!phone.trim()) {
       alert("Vui lòng nhập số điện thoại để tổng đài gọi lại!");
       return;
     }
+    const text = formatContactMessage();
+    sendToZalo(text);
     setSubmitted(true);
   };
 
-  const handleSendZalo = async () => {
-    const text = [
-      `📩 YÊU CẦU TƯ VẤN - TAXI XANH VĨNH PHÚC`,
-      `• Khách hàng: ${name.trim() || "Khách hàng"}`,
-      `• Số điện thoại: ${phone.trim()}`,
-      message.trim() ? `• Nội dung cần hỗ trợ: ${message.trim()}` : `• Yêu cầu: Tư vấn báo giá lộ trình xe`,
-    ].join("\n");
-
-    try {
-      if (navigator?.clipboard?.writeText) {
-        await navigator.clipboard.writeText(text);
-        setCopied(true);
-        setTimeout(() => setCopied(false), 4000);
-      }
-    } catch {
-      // fallback
-    }
-
-    window.open(siteConfig.zalo, "_blank", "noopener,noreferrer");
+  const handleCopyOnly = () => {
+    const text = formatContactMessage();
+    copyToClipboard(text);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 4000);
   };
 
   return (
@@ -73,13 +71,26 @@ export default function ContactForm() {
           )}
 
           <div className="space-y-2.5 pt-1">
-            <button
-              type="button"
-              onClick={handleSendZalo}
+            {/* Primary Action: Send to Zalo (Native link) */}
+            <a
+              href={siteConfig.zalo}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleCopyOnly}
               className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-black text-sm sm:text-base flex items-center justify-center gap-2 shadow-lg shadow-blue-500/25 transition transform hover:-translate-y-0.5 cursor-pointer"
             >
               <ZaloIcon className="w-5 h-5 text-white" />
               <span>GỬI NỘI DUNG QUA ZALO TỔNG ĐÀI</span>
+            </a>
+
+            {/* Quick Copy Button */}
+            <button
+              type="button"
+              onClick={handleCopyOnly}
+              className="w-full py-2 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-xs flex items-center justify-center gap-1.5 transition cursor-pointer"
+            >
+              <Copy className="w-3.5 h-3.5 text-slate-600" />
+              <span>{copied ? "Đã sao chép nội dung!" : "Sao chép lại nội dung tin nhắn"}</span>
             </button>
 
             <a

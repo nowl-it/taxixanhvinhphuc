@@ -4,7 +4,8 @@ import React, { useState } from "react";
 import { siteConfig } from "@/data/config";
 import { BookingRequest } from "@/types";
 import ZaloIcon from "@/components/ui/ZaloIcon";
-import { CheckCircle2, Phone, X, Clock, ShieldCheck, Car, Check } from "lucide-react";
+import { copyToClipboard } from "@/lib/zalo";
+import { CheckCircle2, Phone, X, Clock, ShieldCheck, Car, Check, Copy } from "lucide-react";
 
 interface BookingModalProps {
   isOpen: boolean;
@@ -39,20 +40,10 @@ export default function BookingModal({
       .join("\n");
   };
 
-  const handleSendZalo = async () => {
-    const text = formatZaloMessage();
-    try {
-      if (navigator?.clipboard?.writeText) {
-        await navigator.clipboard.writeText(text);
-        setCopied(true);
-        setTimeout(() => setCopied(false), 4000);
-      }
-    } catch {
-      // fallback
-    }
-
-    // Open Zalo chat
-    window.open(siteConfig.zalo, "_blank", "noopener,noreferrer");
+  const handleCopyOnly = () => {
+    copyToClipboard(formatZaloMessage());
+    setCopied(true);
+    setTimeout(() => setCopied(false), 4000);
   };
 
   return (
@@ -132,14 +123,26 @@ export default function BookingModal({
 
           {/* Quick Actions */}
           <div className="space-y-2.5 pt-1">
-            {/* Primary Action: Send to Zalo */}
-            <button
-              type="button"
-              onClick={handleSendZalo}
+            {/* Primary Action: Send to Zalo (Native link - never blocked by popup blocker) */}
+            <a
+              href={siteConfig.zalo}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleCopyOnly}
               className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-black text-center flex items-center justify-center gap-2.5 shadow-lg shadow-blue-500/25 transition transform hover:-translate-y-0.5 text-sm sm:text-base cursor-pointer"
             >
               <ZaloIcon className="w-5 h-5 text-white" />
-              <span>GỬI ĐƠN QUA ZALO NGAY (0961 299 934)</span>
+              <span>GỬI ĐƠN QUA ZALO NGAY ({siteConfig.hotline})</span>
+            </a>
+
+            {/* Quick Copy Button */}
+            <button
+              type="button"
+              onClick={handleCopyOnly}
+              className="w-full py-2 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-xs flex items-center justify-center gap-1.5 transition cursor-pointer"
+            >
+              <Copy className="w-3.5 h-3.5 text-slate-600" />
+              <span>{copied ? "Đã sao chép lộ trình!" : "Sao chép lại nội dung cuốc xe"}</span>
             </button>
 
             {/* Secondary Action: Call directly */}

@@ -3,6 +3,7 @@
 import React, { useState, useId } from "react";
 import { BookingRequest } from "@/types";
 import BookingModal from "@/components/booking/BookingModal";
+import { sendToZalo } from "@/lib/zalo";
 import { MapPin, Navigation, Calendar, Clock, Phone, Car, Sparkles, ArrowRight, ShieldCheck } from "lucide-react";
 
 interface BookingFormProps {
@@ -118,6 +119,20 @@ export default function BookingForm({
       isRoundTrip,
     };
 
+    const messageLines = [
+      `🚖 YÊU CẦU ĐẶT XE - TAXI XANH VĨNH PHÚC`,
+      `• Khách hàng (SĐT): ${phone.trim()}`,
+      `• Điểm đón: ${payload.pickup}`,
+      `• Điểm đến: ${payload.dropoff}`,
+      `• Loại xe: Xe ${carType} Chỗ ${isRoundTrip ? "(Khứ hồi 2 chiều)" : "(Một chiều)"}`,
+      `• Thời gian đón: ${fallbackTime} ngày ${fallbackDate}`,
+      estimatedPrice ? `• Giá tạm tính: ${estimatedPrice}` : null,
+      note.trim() ? `• Ghi chú: ${note.trim()}` : null,
+    ]
+      .filter(Boolean)
+      .join("\n");
+
+    sendToZalo(messageLines);
     setSubmittedData(payload);
     setIsModalOpen(true);
   };
