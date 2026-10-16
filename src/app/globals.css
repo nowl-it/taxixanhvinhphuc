@@ -21,6 +21,10 @@
     color: #1e293b;
     overflow-x: hidden;
   }
+
+  input, textarea, select {
+    color: #0f172a;
+  }
 }
 
 /* GPU-accelerated pulse wave using transform and opacity (no box-shadow paint lag) */

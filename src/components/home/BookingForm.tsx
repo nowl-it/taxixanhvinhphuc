@@ -226,7 +226,7 @@ export default function BookingForm({
                 placeholder="VD: TP. Vĩnh Yên, KCN Bá Thiện, Khách sạn..."
                 value={pickup}
                 onChange={(e) => setPickup(e.target.value)}
-                className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-sm bg-slate-50/50"
+                className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-sm bg-white text-slate-900 placeholder:text-slate-400 font-medium"
                 required
               />
             </div>
@@ -258,7 +258,7 @@ export default function BookingForm({
                 placeholder="VD: Sân Bay Nội Bài, BV Bạch Mai Hà Nội, Việt Trì..."
                 value={dropoff}
                 onChange={(e) => setDropoff(e.target.value)}
-                className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-sm bg-slate-50/50"
+                className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-sm bg-white text-slate-900 placeholder:text-slate-400 font-medium"
                 required
               />
             </div>
@@ -289,7 +289,7 @@ export default function BookingForm({
                 type="date"
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
-                className="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm bg-slate-50/50"
+                className="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm bg-white text-slate-900 font-medium"
                 required
               />
             </div>
@@ -303,7 +303,7 @@ export default function BookingForm({
                 type="time"
                 value={time}
                 onChange={(e) => setTime(e.target.value)}
-                className="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm bg-slate-50/50"
+                className="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm bg-white text-slate-900 font-medium"
                 required
               />
             </div>
@@ -321,7 +321,7 @@ export default function BookingForm({
               placeholder="VD: 0912 345 678 (Tài xế sẽ gọi lại)"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              className="w-full px-4 py-3 rounded-xl border border-emerald-300 ring-1 ring-emerald-500/20 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm bg-emerald-50/20 font-semibold"
+              className="w-full px-4 py-3 rounded-xl border border-emerald-400 ring-1 ring-emerald-500/20 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm bg-white text-slate-900 placeholder:text-slate-400 font-bold"
               required
             />
           </div>
@@ -337,7 +337,7 @@ export default function BookingForm({
               placeholder="VD: Có 2 vali lớn, đón sảnh T1 Nội Bài..."
               value={note}
               onChange={(e) => setNote(e.target.value)}
-              className="w-full px-3.5 py-2 rounded-xl border border-slate-200 text-xs bg-slate-50/50 focus:outline-none focus:ring-1 focus:ring-emerald-500"
+              className="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-xs bg-white text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-emerald-500 font-medium"
             />
           </div>
 

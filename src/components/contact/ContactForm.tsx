@@ -115,7 +115,7 @@ export default function ContactForm() {
               placeholder="VD: Anh Nam, Chị Trang..."
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white text-slate-900 placeholder:text-slate-400 font-medium"
             />
           </div>
 
@@ -128,7 +128,7 @@ export default function ContactForm() {
               placeholder="VD: 0912 345 678 (Bắt buộc)"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              className="w-full px-4 py-3 rounded-xl border border-emerald-300 ring-1 ring-emerald-500/20 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-emerald-50/20 font-semibold"
+              className="w-full px-4 py-3 rounded-xl border border-emerald-400 ring-1 ring-emerald-500/20 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white text-slate-900 placeholder:text-slate-400 font-bold"
               required
             />
           </div>
@@ -142,7 +142,7 @@ export default function ContactForm() {
               placeholder="VD: Cần thuê xe 7 chỗ đón từ Vĩnh Yên đi Sân bay Nội Bài lúc 5h sáng ngày mai..."
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white text-slate-900 placeholder:text-slate-400 font-medium"
             ></textarea>
           </div>
 
