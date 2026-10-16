@@ -76,8 +76,15 @@ export default function TinTucPage() {
                 sizes="(max-width: 1024px) 100vw, 60vw"
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute top-4 left-4 bg-emerald-600 text-white font-bold text-xs px-3 py-1 rounded-full shadow-md">
-                {featuredPost.category}
+              <div className="absolute top-4 left-4 flex items-center gap-2">
+                <span className={`font-bold text-xs px-3 py-1 rounded-full shadow-md ${featuredPost.isHoliday ? 'bg-gradient-to-r from-red-600 to-amber-600 text-white' : 'bg-emerald-600 text-white'}`}>
+                  {featuredPost.badgeText || featuredPost.category}
+                </span>
+                {featuredPost.isPinned && (
+                  <span className="bg-amber-400 text-slate-950 font-black text-[10px] px-2.5 py-1 rounded-full uppercase tracking-wider shadow-md">
+                    Ghim nổi bật
+                  </span>
+                )}
               </div>
             </div>
 

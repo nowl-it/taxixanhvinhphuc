@@ -1,3 +1,18 @@
+export interface HolidayNotice {
+  enabled: boolean;
+  badge: string;
+  title: string;
+  message: string;
+  linkText?: string;
+  linkHref?: string;
+}
+
+export interface SecurityConfig {
+  blockedIps: string[];
+  enableRateLimit?: boolean;
+  maxRequestsPerMinute?: number;
+}
+
 export interface SiteConfig {
   brandName: string;
   shortName: string;
@@ -10,6 +25,8 @@ export interface SiteConfig {
   workingHours: string;
   domain: string;
   operatingAreas: string[];
+  holidayNotice?: HolidayNotice;
+  security?: SecurityConfig;
 }
 
 export interface RoutePrice {
@@ -79,6 +96,9 @@ export interface BlogPost {
   featuredImage: string;
   keywords: string[];
   content: string;
+  isPinned?: boolean;
+  isHoliday?: boolean;
+  badgeText?: string;
 }
 
 export interface BookingRequest {

@@ -47,8 +47,15 @@ export default function BlogSection() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute top-3 left-3 bg-emerald-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-lg shadow-md">
-                  {post.category}
+                <div className="absolute top-3 left-3 flex items-center gap-1.5">
+                  <span className={`text-[11px] font-bold px-2.5 py-1 rounded-lg shadow-md ${post.isHoliday ? 'bg-gradient-to-r from-red-600 to-amber-600 text-white' : 'bg-emerald-600 text-white'}`}>
+                    {post.badgeText || post.category}
+                  </span>
+                  {post.isPinned && (
+                    <span className="bg-amber-400 text-slate-950 font-black text-[9px] px-2 py-0.5 rounded-full uppercase tracking-wider shadow-md">
+                      Nổi bật
+                    </span>
+                  )}
                 </div>
               </Link>
 

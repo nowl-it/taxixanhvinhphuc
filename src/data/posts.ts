@@ -2,6 +2,66 @@ import { BlogPost } from "@/types";
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "thong-bao-phuc-vu-tet-nguyen-dan-2026",
+    title: "Thông Báo Lịch Phục Vụ Xe Taxi & Tiện Chuyến Dịp Lễ Tết 2026 - Cam Kết Không Tăng Giá",
+    excerpt:
+      "Taxi Xanh Vĩnh Phúc thông báo lịch phục vụ 24/7 xuyên Tết Nguyên Đán 2026. Đội xe hơn 200 xe đời mới trực chiến cả ngày đêm giao thừa & mùng 1-5 Tết. Cam kết giữ nguyên giá cước niêm yết.",
+    category: "Thông Báo & Lễ Tết",
+    author: "Tổng Đài Taxi Xanh Vĩnh Phúc",
+    date: "16/10/2026",
+    readTime: "4 phút đọc",
+    featuredImage: "/images/hero-banner.jpg",
+    isPinned: true,
+    isHoliday: true,
+    badgeText: "Lễ Tết 2026",
+    keywords: ["taxi tết vĩnh phúc", "đặt xe tết vĩnh phúc", "xe tiện chuyến tết 2026", "taxi sân bay nội bài tết"],
+    content: `
+## 1. Lịch Phục Vụ Xuyên Lễ Tết 2026 Của Taxi Xanh Vĩnh Phúc
+
+Kính gửi Quý khách hàng, quý doanh nghiệp và bà con nhân dân tỉnh Vĩnh Phúc!
+
+Nhằm đáp ứng tối đa nhu cầu đi lại, về quê sum họp, thăm hỏi người thân và du xuân đầu năm trong dịp nghỉ lễ Tết, **Tổng Đài Taxi Xanh Vĩnh Phúc (0961 299 934)** xin trân trọng thông báo kế hoạch phục vụ:
+
+* **Thời gian hoạt động:** Phục vụ **liên tục 24/24h**, không nghỉ ca đêm, không nghỉ ngày Tết (kể cả thời khắc Giao thừa và các ngày mùng 1, 2, 3, 4, 5 Tết).
+* **Quy mô lực lượng:** Hơn **200 xe gia đình đời mới 2022 - 2025** (4 chỗ, 7 chỗ, 16 chỗ) túc trực phân bổ đều tại TP. Vĩnh Yên, TP. Phúc Yên, KCN Bình Xuyên, Tam Đảo, Yên Lạc, Vĩnh Tường, Lập Thạch, Sông Lô.
+
+---
+
+## 2. Cam Kết Vàng Về Giá Cước - Tuyệt Đối Không Tăng Giá Vô Lý
+
+Khác với tình trạng "chặt chém" hay nhân hệ số giá cước giờ cao điểm ngày Tết ở các hãng taxi truyền thống, Taxi Xanh Vĩnh Phúc cam kết:
+
+1. **Giữ nguyên bảng giá niêm yết:** Toàn bộ các tuyến đưa đón sân bay Nội Bài, tuyến Hà Nội - Vĩnh Phúc, đi viện và du lịch Tam Đảo vẫn áp dụng mức giá trọn gói tiết kiệm.
+2. **Minh bạch 100%:** Báo giá rõ ràng trước khi khởi hành, đã bao gồm vé cầu đường cơ bản.
+3. **Ưu đãi khứ hồi:** Đặt xe 2 chiều trong ngày vẫn được giảm sâu **từ 40% đến 60%** cước chiều về.
+
+---
+
+## 3. Bảng Giá Đưa Đón Sân Bay & Liên Tỉnh Dịp Lễ Tết 2026
+
+| Tuyến Xe Phổ Biến | Xe 4 Chỗ (Vios/Accent) | Xe 7 Chỗ (Xpander/Fortuner) | Ghi Chú Dịp Tết |
+|---|:---:|:---:|---|
+| **Phúc Yên ⇄ Sân Bay Nội Bài** | **180.000đ – 220.000đ** | **250.000đ – 300.000đ** | Đón tận nhà, miễn phí 60p chờ |
+| **Vĩnh Yên / Bình Xuyên ⇄ Nội Bài** | **280.000đ – 320.000đ** | **380.000đ – 450.000đ** | Hỗ trợ xếp hành lý Tết |
+| **Yên Lạc / Vĩnh Tường ⇄ Nội Bài** | **330.000đ – 380.000đ** | **450.000đ – 500.000đ** | Xe vào tận ngõ thôn xóm |
+| **Vĩnh Phúc ⇄ Các Bệnh Viện Hà Nội** | **450.000đ – 500.000đ** | **600.000đ – 650.000đ** | Đón sớm từ 4h sáng |
+| **Vĩnh Phúc ⇄ Du Lịch Tam Đảo** | **350.000đ – 400.000đ** | **450.000đ – 500.000đ** | Tài xế bản địa quen đèo sương |
+
+---
+
+## 4. Hướng Dẫn Đặt Xe Giữ Chỗ Trước Để Tránh Hết Xe
+
+Vào các ngày cao điểm (27, 28, 29 tháng Chạp và mùng 3, 4, 5 tháng Giêng), nhu cầu di chuyển rất cao. Để đảm bảo có xe đúng giờ bay hoặc giờ xuất hành, Quý khách nên:
+
+* **Đặt lịch trước từ 1 - 3 ngày:** Chỉ cần gọi điện báo ngày giờ, loại xe và điểm đón.
+* **Không bắt buộc cọc với các chuyến nội tỉnh:** Xác nhận lịch là xe có mặt.
+* **Hotline Tổng Đài Ưu Tiên 24/7:** **0961 299 934** (Bấm để gọi ngay).
+* **Kết bạn Zalo điều phối:** **0961 299 934** (Nhắn tin nhận định vị và ảnh xe trước).
+
+*Taxi Xanh Vĩnh Phúc kính chúc Quý khách hàng và gia đình một năm mới An Khang Thịnh Vượng - Vạn Sự Như Ý - Vạn Dặm Bình An!*
+`,
+  },
+  {
     slug: "taxi-vinh-phuc-san-bay-noi-bai-gia-re",
     title: "Bảng Giá Taxi Vĩnh Phúc Đi Sân Bay Nội Bài Trọn Gói Chỉ Từ 180K (Cập Nhật 2026)",
     excerpt:

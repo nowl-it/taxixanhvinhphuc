@@ -5,6 +5,7 @@ import Link from "next/link";
 import { siteConfig, navLinks } from "@/data/config";
 import Logo from "@/components/ui/Logo";
 import ZaloIcon from "@/components/ui/ZaloIcon";
+import HolidayBanner from "@/components/layout/HolidayBanner";
 import { Phone, Clock, Menu, X, ShieldCheck } from "lucide-react";
 
 export default function Navbar() {
@@ -12,6 +13,9 @@ export default function Navbar() {
 
   return (
     <header className="w-full z-40 sticky top-0 shadow-sm">
+      {/* Holiday Announcement Banner */}
+      <HolidayBanner />
+
       {/* Top Bar */}
       <div className="bg-emerald-900 text-emerald-100 text-xs py-1.5 sm:py-2 border-b border-emerald-800">
         <div className="container mx-auto px-3 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-1.5 sm:gap-2">
