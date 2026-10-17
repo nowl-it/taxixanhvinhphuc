@@ -8,7 +8,6 @@ export const siteConfig: SiteConfig = {
   hotlineRaw: "0961299934",
   zalo: "https://zalo.me/0961299934",
   email: "manhrem.hn13@gmail.com",
-  address: "Số 68 Đường Hai Bà Trưng, Phường Tiền Châu, TP. Phúc Yên, Tỉnh Vĩnh Phúc",
   workingHours: "Phục vụ 24/7 (Cả ngày lễ & Tết)",
   domain: "https://taxixanhvinhphuc.com",
   operatingAreas: [

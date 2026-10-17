@@ -126,7 +126,7 @@ export default function CancellationPolicyPage() {
             <div className="space-y-2 text-xs sm:text-sm text-slate-600">
               <p className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-emerald-600 shrink-0" />
-                <span><strong>Địa chỉ:</strong> {siteConfig.address}</span>
+                <span><strong>Khu vực hoạt động:</strong> Tỉnh Vĩnh Phúc (TP. Vĩnh Yên, TP. Phúc Yên và các huyện)</span>
               </p>
               <p className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-emerald-600 shrink-0" />

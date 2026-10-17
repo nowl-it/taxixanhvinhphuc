@@ -32,7 +32,7 @@ export default function Footer() {
             <div className="space-y-2.5 pt-2 text-sm">
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                <span className="text-xs sm:text-sm text-slate-300">{siteConfig.address}</span>
+                <span className="text-xs sm:text-sm text-slate-300">Đón trả tận nơi tại TP. Vĩnh Yên, TP. Phúc Yên &amp; toàn tỉnh Vĩnh Phúc</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-emerald-400 shrink-0" />
