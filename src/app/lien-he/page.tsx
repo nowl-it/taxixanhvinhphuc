@@ -51,6 +51,13 @@ export default function LienHePage() {
           name: siteConfig.brandName,
           telephone: siteConfig.hotlineRaw,
           email: siteConfig.email,
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Số 68 Đường Hai Bà Trưng, Phường Tiền Châu",
+            addressLocality: "Phúc Yên",
+            addressRegion: "Vĩnh Phúc",
+            addressCountry: "VN",
+          },
           contactPoint: {
             "@type": "ContactPoint",
             telephone: siteConfig.hotlineRaw,
@@ -106,8 +113,8 @@ export default function LienHePage() {
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
-                    <strong className="block text-slate-900">Khu vực đón trả:</strong>
-                    <span className="text-slate-600 text-xs leading-relaxed">Đón tận nơi tại toàn bộ các huyện & thành phố tỉnh Vĩnh Phúc</span>
+                    <strong className="block text-slate-900">Địa chỉ văn phòng &amp; Trụ sở:</strong>
+                    <span className="text-slate-600 text-xs leading-relaxed">{siteConfig.address}</span>
                   </div>
                 </div>
 

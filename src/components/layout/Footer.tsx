@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { siteConfig } from "@/data/config";
 import ZaloIcon from "@/components/ui/ZaloIcon";
-import { Phone, Mail, Clock, ShieldCheck, CheckCircle2 } from "lucide-react";
+import { Phone, Mail, Clock, ShieldCheck, CheckCircle2, MapPin } from "lucide-react";
 
 import TaxiCarIcon from "@/components/ui/TaxiCarIcon";
 
@@ -30,6 +30,10 @@ export default function Footer() {
             </p>
 
             <div className="space-y-2.5 pt-2 text-sm">
+              <div className="flex items-start gap-2.5">
+                <MapPin className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                <span className="text-xs sm:text-sm text-slate-300">{siteConfig.address}</span>
+              </div>
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-emerald-400 shrink-0" />
                 <a href={`tel:${siteConfig.hotlineRaw}`} className="text-amber-400 font-bold hover:underline">
@@ -190,8 +194,40 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Disclaimer Banner for Google Ads Transparency */}
+        <div className="border-t border-slate-800/80 pt-6 pb-4">
+          <div className="p-3.5 sm:p-4 rounded-2xl bg-slate-900/90 border border-slate-800 text-[11px] sm:text-xs text-slate-400 space-y-1.5 leading-relaxed">
+            <p className="font-bold text-slate-200 flex items-center gap-1.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+              Tuyên bố minh bạch &amp; Miễn trừ trách nhiệm (Disclaimer):
+            </p>
+            <p>
+              Website <strong>{siteConfig.domain}</strong> là cổng thông tin tiếp nhận đặt xe và điều phối của <strong>{siteConfig.brandName}</strong> – Đơn vị cung cấp dịch vụ taxi gia đình, xe tiện chuyến và xe hợp đồng tư nhân độc lập tại tỉnh Vĩnh Phúc và các tuyến liên tỉnh. Chúng tôi hoạt động độc lập, không trực thuộc, không đại diện và không có mối quan hệ ủy quyền hay liên kết thương hiệu với Công ty Cổ phần Di chuyển Xanh và Thông minh (GSM), VinFast hay bất kỳ tổ chức nào khác.
+            </p>
+          </div>
+        </div>
+
+        {/* Legal Policies Links */}
+        <div className="border-t border-slate-900 pt-5 pb-2 flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-xs text-slate-400">
+          <Link href="/chinh-sach-bao-mat" className="hover:text-emerald-400 hover:underline transition">
+            Chính Sách Bảo Mật
+          </Link>
+          <span>•</span>
+          <Link href="/dieu-khoan-su-dung" className="hover:text-emerald-400 hover:underline transition">
+            Điều Khoản Dịch Vụ
+          </Link>
+          <span>•</span>
+          <Link href="/chinh-sach-hoan-huy" className="hover:text-emerald-400 hover:underline transition">
+            Chính Sách Hủy Chuyến &amp; Hoàn Tiền
+          </Link>
+          <span>•</span>
+          <Link href="/lien-he" className="hover:text-emerald-400 hover:underline transition">
+            Liên Hệ &amp; Khiếu Nại
+          </Link>
+        </div>
+
         {/* Copyright */}
-        <div className="border-t border-slate-900 pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-400 gap-3 sm:gap-4 text-center sm:text-left">
+        <div className="pt-4 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-400 gap-3 sm:gap-4 text-center sm:text-left">
           <p>© 2026 {siteConfig.brandName}. Bản quyền thuộc về Taxi Xanh Vĩnh Phúc. Đơn vị cung cấp dịch vụ vận tải taxi &amp; xe tiện chuyến hàng đầu Vĩnh Phúc.</p>
           <p className="text-slate-400 shrink-0">
             Hotline điều hành: <strong className="text-amber-400">{siteConfig.hotline}</strong> | Zalo: <strong className="text-blue-400">0961 299 934</strong>

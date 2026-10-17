@@ -124,7 +124,8 @@ export default function RootLayout({
         paymentAccepted: "Tiền mặt, Chuyển khoản ngân hàng, Quét mã QR",
         address: {
           "@type": "PostalAddress",
-          addressLocality: "TP. Vĩnh Yên",
+          streetAddress: "Số 68 Đường Hai Bà Trưng, Phường Tiền Châu",
+          addressLocality: "Phúc Yên",
           addressRegion: "Vĩnh Phúc",
           addressCountry: "VN",
         },
