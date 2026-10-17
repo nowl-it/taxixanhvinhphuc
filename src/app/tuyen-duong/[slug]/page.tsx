@@ -36,9 +36,13 @@ export async function generateMetadata({
     };
   }
 
+  const seoTitle = `${route.title} [${siteConfig.hotline}]`;
+
   return {
-    title: `${route.title} - Giá Rẻ Đón Tận Nơi 24/7 | Taxi Xanh Vĩnh Phúc`,
-    description: `${route.subtitle}. Đưa đón tận nhà tại Vĩnh Phúc, xe đời mới 2022-2025, đúng giờ bay và giờ hẹn. Hotline: 0961 299 934.`,
+    title: {
+      absolute: seoTitle,
+    },
+    description: `${route.subtitle}. Đưa đón tận nơi tại Vĩnh Phúc, xe đời mới 2022-2025, đúng giờ bay và giờ hẹn. Tổng đài: ${siteConfig.hotline}.`,
     alternates: {
       canonical: `${siteConfig.domain}/tuyen-duong/${slug}`,
     },
@@ -52,9 +56,15 @@ export async function generateMetadata({
       "taxi nội bài",
     ],
     openGraph: {
-      title: `${route.title} | Taxi Xanh Vĩnh Phúc`,
+      title: seoTitle,
       description: route.subtitle,
       url: `${siteConfig.domain}/tuyen-duong/${slug}`,
+      images: ["/images/hero-banner.jpg"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: seoTitle,
+      description: route.subtitle,
       images: ["/images/hero-banner.jpg"],
     },
   };

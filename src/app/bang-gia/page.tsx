@@ -8,14 +8,16 @@ import { Phone, Tag, ArrowRight, MoveHorizontal, Plane, Building2, MapPin, Mount
 import ZaloIcon from "@/components/ui/ZaloIcon";
 
 export const metadata: Metadata = {
-  title: "Bảng Giá Cước Taxi Xanh Vĩnh Phúc Trọn Gói 2026 - Rẻ Nhất",
+  title: {
+    absolute: `Bảng Giá Cước Taxi Xanh Vĩnh Phúc Trọn Gói [${siteConfig.hotline}]`,
+  },
   description:
     "Cập nhật bảng giá taxi Vĩnh Phúc trọn gói 2026: Tuyến Sân Bay Nội Bài từ 180K, Hà Nội đi ghép 150K, Việt Trì 200K, Tam Đảo 350K. Giảm 40% - 70% cước chiều về. Hotline 0961 299 934.",
   alternates: {
     canonical: `${siteConfig.domain}/bang-gia`,
   },
   openGraph: {
-    title: "Bảng Giá Cước Taxi Xanh Vĩnh Phúc Trọn Gói 2026",
+    title: `Bảng Giá Cước Taxi Xanh Vĩnh Phúc Trọn Gói [${siteConfig.hotline}]`,
     description: "Bảng giá cước taxi đưa đón sân bay Nội Bài, Hà Nội, Tam Đảo, Tây Thiên trọn gói rẻ nhất Vĩnh Phúc.",
     url: `${siteConfig.domain}/bang-gia`,
     images: ["/images/hero-banner.jpg"],

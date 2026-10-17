@@ -28,15 +28,19 @@ export async function generateMetadata({
     };
   }
 
+  const seoTitle = `${post.title} [${siteConfig.hotline}]`;
+
   return {
-    title: `${post.title} | Taxi Xanh Vĩnh Phúc`,
+    title: {
+      absolute: seoTitle,
+    },
     description: post.excerpt,
     keywords: post.keywords,
     alternates: {
       canonical: `${siteConfig.domain}/tin-tuc/${slug}`,
     },
     openGraph: {
-      title: post.title,
+      title: seoTitle,
       description: post.excerpt,
       url: `${siteConfig.domain}/tin-tuc/${slug}`,
       type: "article",
@@ -46,7 +50,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: post.title,
+      title: seoTitle,
       description: post.excerpt,
       images: [post.featuredImage],
     },

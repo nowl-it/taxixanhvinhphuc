@@ -8,14 +8,16 @@ import ZaloIcon from "@/components/ui/ZaloIcon";
 import { Users, Briefcase, CheckCircle2, Phone, ShieldCheck, Tag } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Dịch Vụ Thuê Xe Taxi 7 Chỗ Vĩnh Phúc (Xpander, Fortuner, Innova)",
+  title: {
+    absolute: `Dịch Vụ Thuê Xe Taxi 7 Chỗ Vĩnh Phúc [${siteConfig.hotline}]`,
+  },
   description:
     "Thuê xe 7 chỗ MPV/SUV rộng rãi tại Vĩnh Phúc: Mitsubishi Xpander, Toyota Fortuner, Innova Cross. Phù hợp gia đình, du lịch Tam Đảo, cốp rộng chứa 4-6 vali lớn.",
   alternates: {
     canonical: `${siteConfig.domain}/dich-vu/xe-7-cho`,
   },
   openGraph: {
-    title: "Dịch Vụ Thuê Xe Taxi 7 Chỗ Vĩnh Phúc - Đời Mới Rộng Rãi",
+    title: `Dịch Vụ Thuê Xe Taxi 7 Chỗ Vĩnh Phúc [${siteConfig.hotline}]`,
     description: "Xe 7 chỗ Xpander, Fortuner, Innova đón tận nhà, giá trọn gói cạnh tranh nhất.",
     url: `${siteConfig.domain}/dich-vu/xe-7-cho`,
     images: ["/images/hero-banner.jpg"],

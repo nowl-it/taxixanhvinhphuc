@@ -6,14 +6,16 @@ import { siteConfig } from "@/data/config";
 import { Navigation, Clock, ArrowRight, Phone, Sparkles } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Danh Sách Tuyến Xe Taxi Vĩnh Phúc - Bảng Giá Trọn Gói 2026",
+  title: {
+    absolute: `Danh Sách Tuyến Xe Taxi Vĩnh Phúc Trọn Gói [${siteConfig.hotline}]`,
+  },
   description:
     "Tổng hợp các tuyến taxi xuất phát từ Vĩnh Phúc: Sân Bay Nội Bài, Hà Nội & Bệnh Viện, Việt Trì Phú Thọ, Tam Đảo, Tây Thiên, Xe hợp đồng KCN. Đón trả tận nơi 24/7.",
   alternates: {
     canonical: `${siteConfig.domain}/tuyen-duong`,
   },
   openGraph: {
-    title: "Danh Sách Tuyến Xe Taxi Vĩnh Phúc Trọng Điểm 2026",
+    title: `Danh Sách Tuyến Xe Taxi Vĩnh Phúc Trọng Điểm [${siteConfig.hotline}]`,
     description: "Đưa đón sân bay Nội Bài chỉ từ 180K, xe tiện chuyến Hà Nội từ 150K, Tam Đảo, Tây Thiên 24/7.",
     url: `${siteConfig.domain}/tuyen-duong`,
     images: ["/images/hero-banner.jpg"],

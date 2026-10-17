@@ -8,14 +8,16 @@ import ZaloIcon from "@/components/ui/ZaloIcon";
 import { Users, Briefcase, CheckCircle2, Phone, ShieldCheck, Tag } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Dịch Vụ Thuê Xe Taxi 4 Chỗ Vĩnh Phúc (Vios, Accent, City)",
+  title: {
+    absolute: `Dịch Vụ Thuê Xe Taxi 4 Chỗ Vĩnh Phúc [${siteConfig.hotline}]`,
+  },
   description:
     "Dịch vụ thuê xe 4 chỗ sedan đời mới tại Vĩnh Phúc: Toyota Vios, Hyundai Accent, Honda City 2023-2025. Đưa đón sân bay Nội Bài chỉ từ 180K, khám bệnh Hà Nội, giá trọn gói siêu rẻ.",
   alternates: {
     canonical: `${siteConfig.domain}/dich-vu/xe-4-cho`,
   },
   openGraph: {
-    title: "Dịch Vụ Thuê Xe Taxi 4 Chỗ Vĩnh Phúc - Giá Trọn Gói Rẻ Nhất",
+    title: `Dịch Vụ Thuê Xe Taxi 4 Chỗ Vĩnh Phúc [${siteConfig.hotline}]`,
     description: "Xe đời mới 2023-2025, sạch sẽ không mùi, đón tận nhà sau 10 phút.",
     url: `${siteConfig.domain}/dich-vu/xe-4-cho`,
     images: ["/images/hero-banner.jpg"],
