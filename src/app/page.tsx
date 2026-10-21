@@ -23,7 +23,7 @@ export default function HomePage() {
       },
       {
         "@type": "Question",
-        name: "Taxi Xanh Vĩnh Phúc có đón tận nhà và phục vụ ban đêm không?",
+        name: "Taxi Xanh Vĩnh Phúc - Phú Thọ có đón tận nhà và phục vụ ban đêm không?",
         acceptedAnswer: {
           "@type": "Answer",
           text: "Có. Đội xe chúng tôi hoạt động liên tục 24/7 kể cả ngày lễ, Tết và ban đêm. Lái xe đón tận nhà tại tất cả các xã, huyện, thành phố thuộc tỉnh Vĩnh Phúc và đưa đến đúng điểm đến.",
@@ -39,7 +39,7 @@ export default function HomePage() {
       },
       {
         "@type": "Question",
-        name: "Đặt xe Taxi Xanh Vĩnh Phúc như thế nào?",
+        name: "Đặt xe Taxi Xanh Vĩnh Phúc - Phú Thọ như thế nào?",
         acceptedAnswer: {
           "@type": "Answer",
           text: "Quý khách có thể gọi trực tiếp Hotline 24/7: 0961 299 934, nhắn tin Zalo số 0961 299 934 hoặc điền form đặt xe trên website taxixanhvinhphuc.com. Tổng đài sẽ điều phối xe có mặt sau 10 - 15 phút.",

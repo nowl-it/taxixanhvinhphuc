@@ -7,14 +7,14 @@ import ContactForm from "@/components/contact/ContactForm";
 import { MapPin, Phone, Mail, Clock, Car } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Liên Hệ Tổng Đài Taxi Xanh Vĩnh Phúc 24/7 - 0961 299 934",
+  title: "Liên Hệ Tổng Đài Taxi Xanh Vĩnh Phúc - Phú Thọ 24/7 - 0961 299 934",
   description:
     "Tổng đài hỗ trợ và điều phối xe taxi Vĩnh Phúc 24/7: Hotline 0961 299 934, Zalo 0961 299 934. Đón tận nhà tại tất cả các huyện, thành phố tỉnh Vĩnh Phúc. Đặt xe nhanh sau 2 phút.",
   alternates: {
     canonical: `${siteConfig.domain}/lien-he`,
   },
   openGraph: {
-    title: "Liên Hệ Tổng Đài Taxi Xanh Vĩnh Phúc 24/7",
+    title: "Liên Hệ Tổng Đài Taxi Xanh Vĩnh Phúc - Phú Thọ 24/7",
     description: "Hotline 0961 299 934 - Zalo 0961 299 934. Xe đón tận nơi các huyện thành phố Vĩnh Phúc.",
     url: `${siteConfig.domain}/lien-he`,
     images: ["/images/hero-banner.jpg"],
@@ -44,7 +44,7 @@ export default function LienHePage() {
       },
       {
         "@type": "ContactPage",
-        name: "Liên Hệ Tổng Đài Taxi Xanh Vĩnh Phúc",
+        name: "Liên Hệ Tổng Đài Taxi Xanh Vĩnh Phúc - Phú Thọ",
         url: `${siteConfig.domain}/lien-he`,
         mainEntity: {
           "@type": "LocalBusiness",
@@ -90,7 +90,7 @@ export default function LienHePage() {
             <span>KẾT NỐI 24/7 VỚI CHÚNG TÔI</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
-            Liên Hệ Tổng Đài Taxi Xanh Vĩnh Phúc
+            Liên Hệ Tổng Đài Taxi Xanh Vĩnh Phúc - Phú Thọ
           </h1>
           <p className="text-slate-600 text-sm sm:text-base">
             Tổng đài điều hành và đội xe hoạt động liên tục 24/7 kể cả ban đêm, ngày nghỉ lễ và Tết Nguyên Đán.

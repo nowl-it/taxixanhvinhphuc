@@ -1,7 +1,7 @@
 import { SiteConfig } from "@/types";
 
 export const siteConfig: SiteConfig = {
-  brandName: "Taxi Xanh Vĩnh Phúc",
+  brandName: "Taxi Xanh Vĩnh Phúc - Phú Thọ",
   shortName: "Taxi Vĩnh Phúc 24/7",
   slogan: "Dịch Vụ Taxi & Xe Tiện Chuyến Trọn Gói Giá Rẻ - Đón Đúng Giờ, Phục Vụ Tận Tâm",
   hotline: "0961 299 934",

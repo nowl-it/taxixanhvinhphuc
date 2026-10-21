@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.brandName}`,
   },
   description:
-    "Tổng đài Taxi Xanh Vĩnh Phúc 0961 299 934 - Dịch vụ taxi đưa đón sân bay Nội Bài chỉ từ 180K, xe tiện chuyến Vĩnh Phúc Hà Nội, Tam Đảo, Tây Thiên, xe hợp đồng KCN. Xe đời mới 2022-2025, đúng giờ, giá trọn gói không phụ phí.",
+    "Tổng đài Taxi Xanh Vĩnh Phúc - Phú Thọ 0961 299 934 - Dịch vụ taxi đưa đón sân bay Nội Bài chỉ từ 180K, xe tiện chuyến Vĩnh Phúc Hà Nội, Tam Đảo, Tây Thiên, xe hợp đồng KCN. Xe đời mới 2022-2025, đúng giờ, giá trọn gói không phụ phí.",
   keywords: [
     "taxi vĩnh phúc",
     "taxi vĩnh yên",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "taxi kcn bình xuyên",
     "thuê xe 4 chỗ vĩnh phúc",
     "thuê xe 7 chỗ vĩnh phúc",
-    "taxi xanh vĩnh phúc",
+    "taxi xanh vĩnh phúc - phú thọ",
   ],
   authors: [{ name: siteConfig.brandName }],
   creator: siteConfig.brandName,
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
         url: "/images/hero-banner.jpg",
         width: 1200,
         height: 630,
-        alt: "Dịch Vụ Taxi Xanh Vĩnh Phúc",
+        alt: "Dịch Vụ Taxi Xanh Vĩnh Phúc - Phú Thọ",
       },
     ],
   },

@@ -140,7 +140,7 @@ export default function Xe4ChoPage() {
           <div className="lg:col-span-5 relative h-80 sm:h-96 rounded-3xl overflow-hidden shadow-xl border border-slate-200 bg-slate-900">
             <Image
               src={car.image}
-              alt="Xe 4 chỗ Taxi Xanh Vĩnh Phúc"
+              alt="Xe 4 chỗ Taxi Xanh Vĩnh Phúc - Phú Thọ"
               fill
               priority
               sizes="(max-width: 1024px) 100vw, 40vw"

@@ -25,7 +25,7 @@ export default function Logo({ className = "", isCompact = false }: LogoProps) {
               TAXI XANH
             </span>
             <span className="text-base sm:text-2xl font-black tracking-tight text-emerald-600 whitespace-nowrap">
-              VĨNH PHÚC
+              VĨNH PHÚC - PHÚ THỌ
             </span>
           </div>
           <span className="text-[9px] sm:text-[11px] font-bold text-slate-500 uppercase tracking-wider mt-0.5 sm:mt-1 truncate max-w-[170px] sm:max-w-none">

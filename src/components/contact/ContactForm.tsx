@@ -15,7 +15,7 @@ export default function ContactForm() {
 
   const formatContactMessage = () => {
     return [
-      `📩 YÊU CẦU TƯ VẤN - TAXI XANH VĨNH PHÚC`,
+      `📩 YÊU CẦU TƯ VẤN - TAXI XANH VĨNH PHÚC - PHÚ THỌ`,
       `• Khách hàng: ${name.trim() || "Khách hàng"}`,
       `• Số điện thoại: ${phone.trim()}`,
       message.trim() ? `• Nội dung cần hỗ trợ: ${message.trim()}` : `• Yêu cầu: Tư vấn báo giá lộ trình xe`,

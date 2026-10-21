@@ -1,5 +1,5 @@
 # HƯỚNG DẪN CHỐNG CLICK TẶC & CHẶN IP PHÁ HOẠI CHO GOOGLE ADS
-### Website: Taxi Xanh Vĩnh Phúc (taxixanhvinhphuc.com)
+### Website: Taxi Xanh Vĩnh Phúc - Phú Thọ (taxixanhvinhphuc.com)
 
 > **Lưu ý sống còn:** Khi chạy Google Ads ngành Taxi, tiền quảng cáo bị trừ **ngay tại trang tìm kiếm Google** khi người dùng click vào quảng cáo. Vì vậy, để bảo vệ 100% ngân sách không bị đối thủ đốt tiền, bạn cần áp dụng **Bộ giải pháp 3 lớp** dưới đây.
 

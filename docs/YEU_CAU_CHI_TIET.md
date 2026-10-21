@@ -1,11 +1,11 @@
 # 📋 ĐẶC TẢ YÊU CẦU CHI TIẾT (SPECIFICATION)
 
-> **Mục tiêu:** Xây dựng website dịch vụ Taxi Xanh Vĩnh Phúc chuyên nghiệp, sao chép cấu trúc và trải nghiệm người dùng từ website mẫu **[https://s8taxi.com/](https://s8taxi.com/)**, tối ưu hóa cho tỷ lệ chuyển đổi cuộc gọi và đặt xe trên điện thoại di động.
+> **Mục tiêu:** Xây dựng website dịch vụ Taxi Xanh Vĩnh Phúc - Phú Thọ chuyên nghiệp, sao chép cấu trúc và trải nghiệm người dùng từ website mẫu **[https://s8taxi.com/](https://s8taxi.com/)**, tối ưu hóa cho tỷ lệ chuyển đổi cuộc gọi và đặt xe trên điện thoại di động.
 
 ---
 
 ## 1. 🎨 Nhận Diện & Thiết Kế
-* **Tên thương hiệu:** Taxi Xanh Vĩnh Phúc (hoặc Tổng Đài Taxi Vĩnh Phúc)
+* **Tên thương hiệu:** Taxi Xanh Vĩnh Phúc - Phú Thọ (hoặc Tổng Đài Taxi Vĩnh Phúc)
 * **Hotline tư vấn 24/7:** `0961 299 934` (Bấm là gọi: `tel:0961299934`)
 * **Zalo đặt xe:** `0961 299 934` (Link chat: `https://zalo.me/0961299934`)
 * **Màu sắc chủ đạo:** 
@@ -40,7 +40,7 @@
 ## 3. 🧩 Các Thành Phần (Components) Bắt Buộc
 
 ### 3.1. Header & Navigation
-* **Logo:** Text/SVG "Taxi Xanh Vĩnh Phúc" kèm icon xe ô tô hiện đại.
+* **Logo:** Text/SVG "Taxi Xanh Vĩnh Phúc - Phú Thọ" kèm icon xe ô tô hiện đại.
 * **Menu:** Trang chủ | Bảng giá | Dịch vụ | Tuyến đường | Tin tức | Liên hệ.
 * **Nút Hotline trên Header:** Nút màu nổi bật với icon điện thoại nhấp nháy, hiển thị rõ số `0961 299 934`.
 * **Mobile Menu:** Drawer hoặc Hamburger mượt mà.

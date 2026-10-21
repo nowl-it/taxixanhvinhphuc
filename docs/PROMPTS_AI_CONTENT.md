@@ -1,6 +1,6 @@
 # 🤖 BỘ PROMPTS DÀNH CHO AI (ẢNH & BÀI VIẾT BLOG SEO)
 
-> Tài liệu này cung cấp sẵn các prompt chuẩn để bất kỳ AI nào (Midjourney, DALL-E, Flux, ChatGPT, Claude...) có thể tự động tạo ra hình ảnh và bài viết cho website Taxi Xanh Vĩnh Phúc.
+> Tài liệu này cung cấp sẵn các prompt chuẩn để bất kỳ AI nào (Midjourney, DALL-E, Flux, ChatGPT, Claude...) có thể tự động tạo ra hình ảnh và bài viết cho website Taxi Xanh Vĩnh Phúc - Phú Thọ.
 
 ---
 

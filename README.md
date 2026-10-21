@@ -1,6 +1,6 @@
-# Taxi Xanh Vĩnh Phúc (taxixanhvinhphuc.com)
+# Taxi Xanh Vĩnh Phúc - Phú Thọ (taxixanhvinhphuc.com)
 
-Hệ thống website giới thiệu dịch vụ, báo giá và đặt xe trực tuyến cho **Tổng đài Taxi Xanh Vĩnh Phúc (0961 299 934)**.
+Hệ thống website giới thiệu dịch vụ, báo giá và đặt xe trực tuyến cho **Tổng đài Taxi Xanh Vĩnh Phúc - Phú Thọ (0961 299 934)**.
 
 ---
 
@@ -45,7 +45,7 @@ pnpm run start
    ```bash
    git init
    git add .
-   git commit -m "feat: initial commit for Taxi Xanh Vinh Phuc"
+   git commit -m "feat: initial commit for Taxi Xanh Vinh Phuc - Phu Tho"
    git branch -M main
    git remote add origin <url-repo-github>
    git push -u origin main

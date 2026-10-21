@@ -49,7 +49,7 @@ export default function Testimonials() {
             Khách Hàng Nói Gì Về Chúng Tôi?
           </h2>
           <p className="text-slate-600 text-xs sm:text-base">
-            Sự hài lòng và an toàn của khách hàng chính là thước đo giá trị lớn nhất của Taxi Xanh Vĩnh Phúc.
+            Sự hài lòng và an toàn của khách hàng chính là thước đo giá trị lớn nhất của Taxi Xanh Vĩnh Phúc - Phú Thọ.
           </p>
         </div>
 

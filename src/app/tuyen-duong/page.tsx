@@ -140,7 +140,7 @@ export default function TuyenDuongPage() {
               Bạn Cần Đón Tuyến Khác Không Có Trong Danh Sách?
             </h2>
             <p className="text-xs sm:text-sm text-emerald-100 max-w-xl">
-              Taxi Xanh Vĩnh Phúc nhận đưa đón theo yêu cầu tới bất kỳ tỉnh thành nào trên toàn quốc. Đơn giá chỉ từ 9.000đ/km, giảm tới 70% cước chiều về.
+              Taxi Xanh Vĩnh Phúc - Phú Thọ nhận đưa đón theo yêu cầu tới bất kỳ tỉnh thành nào trên toàn quốc. Đơn giá chỉ từ 9.000đ/km, giảm tới 70% cước chiều về.
             </p>
           </div>
 

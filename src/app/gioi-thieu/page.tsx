@@ -4,14 +4,14 @@ import { siteConfig } from "@/data/config";
 import { ShieldCheck, Award, Car, Phone, CheckCircle2, Clock, MapPin, HeartHandshake } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Giới Thiệu Taxi Xanh Vĩnh Phúc - Đội Xe Đời Mới, Uy Tín Hàng Đầu",
+  title: "Giới Thiệu Taxi Xanh Vĩnh Phúc - Phú Thọ - Đội Xe Đời Mới, Uy Tín Hàng Đầu",
   description:
-    "Tìm hiểu về Taxi Xanh Vĩnh Phúc: Đội ngũ hơn 200 xe gia đình đời mới 2022-2025, tài xế bản địa thông thạo đường xá, cam kết giá trọn gói không phụ phí, phục vụ 24/7.",
+    "Tìm hiểu về Taxi Xanh Vĩnh Phúc - Phú Thọ: Đội ngũ hơn 200 xe gia đình đời mới 2022-2025, tài xế bản địa thông thạo đường xá, cam kết giá trọn gói không phụ phí, phục vụ 24/7.",
   alternates: {
     canonical: `${siteConfig.domain}/gioi-thieu`,
   },
   openGraph: {
-    title: "Về Chúng Tôi - Taxi Xanh Vĩnh Phúc 24/7",
+    title: "Về Chúng Tôi - Taxi Xanh Vĩnh Phúc - Phú Thọ 24/7",
     description: "Liên minh hơn 200 xe gia đình đời mới tại Vĩnh Phúc cam kết dịch vụ vàng đúng giờ, tận tâm.",
     url: `${siteConfig.domain}/gioi-thieu`,
     images: ["/images/hero-banner.jpg"],
@@ -75,7 +75,7 @@ export default function GioiThieuPage() {
             <span>VỀ CHÚNG TÔI</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
-            Taxi Xanh Vĩnh Phúc - Bạn Đồng Hành Tin Cậy
+            Taxi Xanh Vĩnh Phúc - Phú Thọ - Bạn Đồng Hành Tin Cậy
           </h1>
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
             Hệ thống liên minh taxi gia đình và xe tiện chuyến chất lượng cao số 1 tại tỉnh Vĩnh Phúc.
@@ -89,7 +89,7 @@ export default function GioiThieuPage() {
               Sứ Mệnh Phục Vụ Cộng Đồng Vĩnh Phúc
             </h2>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-              Được thành lập với mục tiêu mang đến cho người dân và doanh nghiệp trên địa bàn tỉnh Vĩnh Phúc một dịch vụ vận tải hành khách văn minh, hiện đại, an toàn và tiết kiệm, <strong>Taxi Xanh Vĩnh Phúc</strong> đã không ngừng mở rộng mạng lưới xe và nâng cao chất lượng dịch vụ.
+              Được thành lập với mục tiêu mang đến cho người dân và doanh nghiệp trên địa bàn tỉnh Vĩnh Phúc một dịch vụ vận tải hành khách văn minh, hiện đại, an toàn và tiết kiệm, <strong>Taxi Xanh Vĩnh Phúc - Phú Thọ</strong> đã không ngừng mở rộng mạng lưới xe và nâng cao chất lượng dịch vụ.
             </p>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
               Khác với các hãng taxi truyền thống tính cước theo đồng hồ thường gây bất an cho khách hàng, chúng tôi áp dụng mô hình <strong>giá cước trọn gói cố định</strong> cho từng tuyến đường. Quý khách biết trước chính xác số tiền cần trả trước khi lên xe, giúp an tâm tuyệt đối trên suốt hành trình.
