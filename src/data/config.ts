@@ -1,7 +1,7 @@
 import { SiteConfig } from "@/types";
 
 export const siteConfig: SiteConfig = {
-  brandName: "Taxi Xanh Vĩnh Phúc - Phú Thọ",
+  brandName: "Taxi Điện Vĩnh Phúc - Phú Thọ",
   shortName: "Taxi Vĩnh Phúc 24/7",
   slogan: "Dịch Vụ Taxi & Xe Tiện Chuyến Trọn Gói Giá Rẻ - Đón Đúng Giờ, Phục Vụ Tận Tâm",
   hotline: "0961 299 934",
@@ -9,7 +9,7 @@ export const siteConfig: SiteConfig = {
   zalo: "https://zalo.me/0961299934",
   email: "manhrem.hn13@gmail.com",
   workingHours: "Phục vụ 24/7 (Cả ngày lễ & Tết)",
-  domain: "https://taxixanhvinhphuc.com",
+  domain: "https://taxidienvinhphuc.com",
   operatingAreas: [
     "TP. Vĩnh Yên",
     "TP. Phúc Yên",

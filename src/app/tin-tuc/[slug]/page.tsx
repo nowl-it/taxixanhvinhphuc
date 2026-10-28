@@ -24,11 +24,11 @@ export async function generateMetadata({
 
   if (!post) {
     return {
-      title: "Bài Viết Không Tồn Tại",
+      title: "Taxi Điện Vĩnh Phúc - Bài Viết Không Tồn Tại",
     };
   }
 
-  const seoTitle = post.title; // số điện thoại đã nằm sẵn trong title (posts.ts)
+  const seoTitle = `Taxi Điện Vĩnh Phúc - ${post.title}`; // số điện thoại đã nằm sẵn trong title (posts.ts)
 
   return {
     title: {
@@ -338,7 +338,7 @@ export default async function BlogPostPage({
             </div>
 
             <h3 className="text-xl sm:text-2xl font-black">
-              Tổng Đài Đặt Xe Taxi Xanh Vĩnh Phúc - Phú Thọ 24/7
+              Tổng Đài Đặt Xe Taxi Điện Vĩnh Phúc - Phú Thọ 24/7
             </h3>
 
             <p className="text-xs sm:text-sm text-emerald-100 leading-relaxed">

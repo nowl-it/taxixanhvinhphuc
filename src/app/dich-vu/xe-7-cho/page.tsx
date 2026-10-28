@@ -9,7 +9,7 @@ import { Users, Briefcase, CheckCircle2, Phone, ShieldCheck, Tag } from "lucide-
 
 export const metadata: Metadata = {
   title: {
-    absolute: `Dịch Vụ Thuê Xe Taxi 7 Chỗ Vĩnh Phúc [${siteConfig.hotline}]`,
+    absolute: `Taxi Điện Vĩnh Phúc - Dịch Vụ Thuê Xe Taxi 7 Chỗ Vĩnh Phúc [${siteConfig.hotline}]`,
   },
   description:
     "Thuê xe 7 chỗ MPV/SUV rộng rãi tại Vĩnh Phúc: Mitsubishi Xpander, Toyota Fortuner, Innova Cross. Phù hợp gia đình, du lịch Tam Đảo, cốp rộng chứa 4-6 vali lớn.",
@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     canonical: `${siteConfig.domain}/dich-vu/xe-7-cho`,
   },
   openGraph: {
-    title: `Dịch Vụ Thuê Xe Taxi 7 Chỗ Vĩnh Phúc [${siteConfig.hotline}]`,
+    title: `Taxi Điện Vĩnh Phúc - Dịch Vụ Thuê Xe Taxi 7 Chỗ Vĩnh Phúc [${siteConfig.hotline}]`,
     description: "Xe 7 chỗ Xpander, Fortuner, Innova đón tận nhà, giá trọn gói cạnh tranh nhất.",
     url: `${siteConfig.domain}/dich-vu/xe-7-cho`,
-    images: ["/images/hero-banner.jpg"],
+    images: ["/images/xe-7-cho.jpg"],
   },
 };
 
@@ -140,7 +140,7 @@ export default function Xe7ChoPage() {
           <div className="lg:col-span-5 relative h-80 sm:h-96 rounded-3xl overflow-hidden shadow-xl border border-slate-200 bg-slate-900">
             <Image
               src={car.image}
-              alt="Xe 7 chỗ Taxi Xanh Vĩnh Phúc - Phú Thọ"
+              alt="Xe 7 chỗ Taxi Điện Vĩnh Phúc - Phú Thọ"
               fill
               priority
               sizes="(max-width: 1024px) 100vw, 40vw"

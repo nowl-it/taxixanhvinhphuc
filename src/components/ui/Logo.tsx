@@ -22,7 +22,7 @@ export default function Logo({ className = "", isCompact = false }: LogoProps) {
         <div className="flex flex-col min-w-0">
           <div className="flex items-center gap-1 sm:gap-1.5 leading-none">
             <span className="text-base sm:text-2xl font-black tracking-tight text-slate-900 whitespace-nowrap">
-              TAXI XANH
+              TAXI ĐIỆN
             </span>
             <span className="text-base sm:text-2xl font-black tracking-tight text-emerald-600 whitespace-nowrap">
               VĨNH PHÚC - PHÚ THỌ

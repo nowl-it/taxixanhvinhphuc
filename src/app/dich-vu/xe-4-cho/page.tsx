@@ -9,7 +9,7 @@ import { Users, Briefcase, CheckCircle2, Phone, ShieldCheck, Tag } from "lucide-
 
 export const metadata: Metadata = {
   title: {
-    absolute: `Dịch Vụ Thuê Xe Taxi 4 Chỗ Vĩnh Phúc [${siteConfig.hotline}]`,
+    absolute: `Taxi Điện Vĩnh Phúc - Dịch Vụ Thuê Xe Taxi 4 Chỗ Vĩnh Phúc [${siteConfig.hotline}]`,
   },
   description:
     "Dịch vụ thuê xe 4 chỗ sedan đời mới tại Vĩnh Phúc: Toyota Vios, Hyundai Accent, Honda City 2023-2025. Đưa đón sân bay Nội Bài chỉ từ 180K, khám bệnh Hà Nội, giá trọn gói siêu rẻ.",
@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     canonical: `${siteConfig.domain}/dich-vu/xe-4-cho`,
   },
   openGraph: {
-    title: `Dịch Vụ Thuê Xe Taxi 4 Chỗ Vĩnh Phúc [${siteConfig.hotline}]`,
+    title: `Taxi Điện Vĩnh Phúc - Dịch Vụ Thuê Xe Taxi 4 Chỗ Vĩnh Phúc [${siteConfig.hotline}]`,
     description: "Xe đời mới 2023-2025, sạch sẽ không mùi, đón tận nhà sau 10 phút.",
     url: `${siteConfig.domain}/dich-vu/xe-4-cho`,
-    images: ["/images/hero-banner.jpg"],
+    images: ["/images/xe-4-cho.jpg"],
   },
 };
 
@@ -140,7 +140,7 @@ export default function Xe4ChoPage() {
           <div className="lg:col-span-5 relative h-80 sm:h-96 rounded-3xl overflow-hidden shadow-xl border border-slate-200 bg-slate-900">
             <Image
               src={car.image}
-              alt="Xe 4 chỗ Taxi Xanh Vĩnh Phúc - Phú Thọ"
+              alt="Xe 4 chỗ Taxi Điện Vĩnh Phúc - Phú Thọ"
               fill
               priority
               sizes="(max-width: 1024px) 100vw, 40vw"

@@ -9,7 +9,7 @@ import { Users, Briefcase, CheckCircle2, Phone, ShieldCheck, Tag } from "lucide-
 
 export const metadata: Metadata = {
   title: {
-    absolute: `Dịch Vụ Thuê Xe 16 Chỗ Vĩnh Phúc [${siteConfig.hotline}]`,
+    absolute: `Taxi Điện Vĩnh Phúc - Dịch Vụ Thuê Xe 16 Chỗ Vĩnh Phúc [${siteConfig.hotline}]`,
   },
   description:
     "Thuê xe 16 chỗ tại Vĩnh Phúc: Ford Transit, Hyundai Solati đời mới. Phục vụ đoàn du lịch Tam Đảo, Tây Thiên, đám cưới hỏi, hợp đồng đưa đón KCN giá rẻ. Hotline 0961 299 934.",
@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     canonical: `${siteConfig.domain}/dich-vu/xe-16-cho`,
   },
   openGraph: {
-    title: `Dịch Vụ Thuê Xe 16 Chỗ Vĩnh Phúc [${siteConfig.hotline}]`,
+    title: `Taxi Điện Vĩnh Phúc - Dịch Vụ Thuê Xe 16 Chỗ Vĩnh Phúc [${siteConfig.hotline}]`,
     description: "Xe 16 chỗ Ford Transit, Solati đón tận nhà, tài xế bản địa tận tâm.",
     url: `${siteConfig.domain}/dich-vu/xe-16-cho`,
-    images: ["/images/hero-banner.jpg"],
+    images: ["/images/xe-16-cho.jpg"],
   },
 };
 

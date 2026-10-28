@@ -19,7 +19,7 @@ export default function Footer() {
               </div>
               <div>
                 <span className="text-xl font-black text-white tracking-tight">
-                  TAXI XANH <span className="text-emerald-400">VĨNH PHÚC - PHÚ THỌ</span>
+                  TAXI ĐIỆN <span className="text-emerald-400">VĨNH PHÚC - PHÚ THỌ</span>
                 </span>
                 <p className="text-xs text-slate-400">Tổng đài taxi &amp; xe tiện chuyến 24/7</p>
               </div>
@@ -228,7 +228,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="pt-4 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-400 gap-3 sm:gap-4 text-center sm:text-left">
-          <p>© 2026 {siteConfig.brandName}. Bản quyền thuộc về Taxi Xanh Vĩnh Phúc - Phú Thọ. Đơn vị cung cấp dịch vụ vận tải taxi &amp; xe tiện chuyến hàng đầu Vĩnh Phúc.</p>
+          <p>© 2026 {siteConfig.brandName}. Bản quyền thuộc về Taxi Điện Vĩnh Phúc - Phú Thọ. Đơn vị cung cấp dịch vụ vận tải taxi &amp; xe tiện chuyến hàng đầu Vĩnh Phúc.</p>
           <p className="text-slate-400 shrink-0">
             Hotline điều hành: <strong className="text-amber-400">{siteConfig.hotline}</strong> | Zalo: <strong className="text-blue-400">0961 299 934</strong>
           </p>

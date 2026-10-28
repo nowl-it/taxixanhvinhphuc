@@ -25,7 +25,7 @@ export const carFleet: CarFleetItem[] = [
       "Cá nhân hoặc gia đình nhỏ đi về quê, thăm thân",
     ],
     basePricePerKm: "Từ 9.000đ / km (Đường dài)",
-    image: "/images/hero-banner.jpg",
+    image: "/images/xe-4-cho.jpg",
     pricingTable: [
       { distance: "Dưới 30km (Nội tỉnh)", price: "12.000đ / km", roundTripDiscount: "Giảm 60% chiều về" },
       { distance: "Từ 31km – 100km", price: "10.500đ / km", roundTripDiscount: "Giảm 60% - 70% chiều về" },
@@ -56,7 +56,7 @@ export const carFleet: CarFleetItem[] = [
       "Về quê ăn Tết, đám cưới, lễ hội đầu năm",
     ],
     basePricePerKm: "Từ 11.000đ / km (Đường dài)",
-    image: "/images/hero-banner.jpg",
+    image: "/images/xe-7-cho.jpg",
     pricingTable: [
       { distance: "Dưới 30km (Nội tỉnh)", price: "14.000đ / km", roundTripDiscount: "Giảm 60% chiều về" },
       { distance: "Từ 31km – 100km", price: "12.500đ / km", roundTripDiscount: "Giảm 60% - 70% chiều về" },
@@ -87,7 +87,7 @@ export const carFleet: CarFleetItem[] = [
       "Đưa đón đại biểu, đối tác dự hội nghị, hội thảo",
     ],
     basePricePerKm: "Từ 14.000đ / km (Đường dài)",
-    image: "/images/hero-banner.jpg",
+    image: "/images/xe-16-cho.jpg",
     pricingTable: [
       { distance: "Dưới 30km (Nội tỉnh)", price: "18.000đ / km", roundTripDiscount: "Giảm 50% chiều về" },
       { distance: "Từ 31km – 100km", price: "16.000đ / km", roundTripDiscount: "Giảm 50% chiều về" },

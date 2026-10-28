@@ -17,7 +17,7 @@ export default function HeroBanner() {
       <div className="absolute inset-0 opacity-20 pointer-events-none">
         <Image
           src="/images/hero-banner.jpg"
-          alt="Dịch vụ Taxi Xanh Vĩnh Phúc - Phú Thọ đời mới"
+          alt="Dịch vụ Taxi Điện Vĩnh Phúc - Phú Thọ đời mới"
           fill
           priority
           loading="eager"
@@ -38,7 +38,7 @@ export default function HeroBanner() {
 
             {/* Main Headline */}
             <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-black tracking-tight leading-tight">
-              Taxi Xanh Vĩnh Phúc - Phú Thọ <br />
+              Taxi Điện Vĩnh Phúc - Phú Thọ <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-amber-300">
                 Đúng Giờ • Trọn Gói • Siêu Rẻ
               </span>
