@@ -47,7 +47,7 @@ export default function TermsOfServicePage() {
               Website <strong>{siteConfig.domain}</strong> là kênh giới thiệu và tiếp nhận thông tin đặt xe của <strong>{siteConfig.brandName}</strong> – Đội ngũ cung cấp dịch vụ vận tải hành khách, taxi gia đình, xe tiện chuyến và xe hợp đồng độc lập tại tỉnh Vĩnh Phúc.
             </p>
             <p className="text-xs sm:text-sm leading-relaxed font-semibold">
-              Chúng tôi là đơn vị vận tải tư nhân hoạt động độc lập, KHÔNG trực thuộc, KHÔNG đại diện, và KHÔNG có mối quan hệ ủy quyền hay liên kết thương hiệu với Công ty Cổ phần Di chuyển Xanh và Thông minh (GSM), VinFast hay bất kỳ tổ chức/tập đoàn nào khác.
+              Chúng tôi là đơn vị vận tải tư nhân hoạt động độc lập, KHÔNG trực thuộc, KHÔNG đại diện, và KHÔNG có mối quan hệ ủy quyền hay liên kết thương hiệu với bất kỳ hãng taxi, doanh nghiệp vận tải hay tập đoàn nào khác.
             </p>
           </div>
 

@@ -1,11 +1,11 @@
 # 🧭 HƯỚNG DẪN TRIỂN KHAI DÀNH CHO AI (MASTER PROMPT ROADMAP)
 
-> **Dành cho Agent AI / Developer:** Đọc kỹ tài liệu này trước khi bắt đầu code. Tài liệu hướng dẫn bạn triển khai dự án website Taxi Xanh Vĩnh Phúc - Phú Thọ hoàn chỉnh theo mô hình Next.js App Router, lấy cảm hứng thiết kế từ **https://s8taxi.com/**.
+> **Dành cho Agent AI / Developer:** Đọc kỹ tài liệu này trước khi bắt đầu code. Tài liệu hướng dẫn bạn triển khai dự án website Taxi Điện Vĩnh Phúc - Phú Thọ hoàn chỉnh theo mô hình Next.js App Router, lấy cảm hứng thiết kế từ **https://s8taxi.com/**.
 
 ---
 
 ## 🎯 1. Mục Tiêu Dự Án
-Tạo một website Next.js chuẩn SEO, siêu nhanh, tối ưu chuyển đổi di động cho dịch vụ Taxi Xanh Vĩnh Phúc - Phú Thọ.  
+Tạo một website Next.js chuẩn SEO, siêu nhanh, tối ưu chuyển đổi di động cho dịch vụ Taxi Điện Vĩnh Phúc - Phú Thọ.  
 **Hotline & Zalo:** `0961 299 934`  
 Tham khảo toàn bộ dữ liệu giá và tuyến đường tại file [**`DANH_SACH_TUYEN_VA_GIA.md`**](./DANH_SACH_TUYEN_VA_GIA.md).
 
@@ -14,7 +14,7 @@ Tham khảo toàn bộ dữ liệu giá và tuyến đường tại file [**`DAN
 ## 🏗️ 2. Cấu Trúc Thư Mục Source Code Khuyên Dùng
 
 ```
-taxi-xanh-vinh-phuc/
+taxi-dien-vinh-phuc/
 ├── src/
 │   ├── app/
 │   │   ├── layout.tsx            # Global Layout chứa Navbar, Footer, FloatingCTA
@@ -61,7 +61,7 @@ taxi-xanh-vinh-phuc/
 
 ### Bước 1: Khởi tạo Data Models (`src/data/`)
 1. Tạo `src/data/config.ts`:
-   * `brandName`: "Taxi Xanh Vĩnh Phúc - Phú Thọ"
+   * `brandName`: "Taxi Điện Vĩnh Phúc - Phú Thọ"
    * `hotline`: "0961 299 934"
    * `hotlineRaw`: "0961299934"
    * `zalo`: "https://zalo.me/0961299934"
@@ -111,7 +111,7 @@ Lắp ráp các section theo thứ tự s8taxi.com:
 * `/lien-he`: Bản đồ Google Maps nhúng hoặc bản đồ Vĩnh Phúc, thông tin liên hệ.
 
 ### Bước 6: Tối ưu SEO & Build Kiểm Tra
-* Thiết lập Metadata tiêu đề: *"Taxi Xanh Vĩnh Phúc - Phú Thọ - Dịch Vụ Taxi, Xe Tiện Chuyến Trọn Gói Giá Rẻ 24/7"*.
+* Thiết lập Metadata tiêu đề: *"Taxi Điện Vĩnh Phúc - Phú Thọ - Dịch Vụ Taxi, Xe Tiện Chuyến Trọn Gói Giá Rẻ 24/7"*.
 * Thêm Schema `LocalBusiness` và `TaxiService` dạng JSON-LD vào `layout.tsx`.
 * Chạy `npm run build` để đảm bảo không có bất kỳ lỗi cú pháp hoặc TypeScript nào.
 

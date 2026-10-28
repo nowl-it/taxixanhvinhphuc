@@ -1,5 +1,5 @@
 # HƯỚNG DẪN CHỐNG CLICK TẶC & CHẶN IP PHÁ HOẠI CHO GOOGLE ADS
-### Website: Taxi Xanh Vĩnh Phúc - Phú Thọ (taxixanhvinhphuc.com)
+### Website: Taxi Điện Vĩnh Phúc - Phú Thọ (taxidienvinhphuc.com)
 
 > **Lưu ý sống còn:** Khi chạy Google Ads ngành Taxi, tiền quảng cáo bị trừ **ngay tại trang tìm kiếm Google** khi người dùng click vào quảng cáo. Vì vậy, để bảo vệ 100% ngân sách không bị đối thủ đốt tiền, bạn cần áp dụng **Bộ giải pháp 3 lớp** dưới đây.
 
@@ -64,6 +64,6 @@ Khi tạo chiến dịch quảng cáo Google Ads cho taxi Vĩnh Phúc, hãy luô
 ## LỚP 4: Bật Cloudflare Chống Bot Tự Động (Miễn Phí)
 
 Nếu bạn cấu hình tên miền qua Cloudflare:
-1. Vào Cloudflare $\rightarrow$ Chọn tên miền `taxixanhvinhphuc.com`.
+1. Vào Cloudflare $\rightarrow$ Chọn tên miền `taxidienvinhphuc.com`.
 2. Vào mục **Security** $\rightarrow$ **Bots**.
 3. Bật tính năng **Bot Fight Mode** $\rightarrow$ Hệ thống sẽ tự động quét và chặn đứng các phần mềm giả lập, tool auto-click của đối thủ trước khi chúng kịp chạm tới web.

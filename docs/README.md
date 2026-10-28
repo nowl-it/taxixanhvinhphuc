@@ -1,11 +1,11 @@
-# 🚖 TAXI XANH VĨNH PHÚC - PHÚ THỌ - WEBSITE DỊCH VỤ ĐẶT XE CHUYÊN NGHIỆP
+# 🚖 TAXI ĐIỆN VĨNH PHÚC - PHÚ THỌ - WEBSITE DỊCH VỤ ĐẶT XE CHUYÊN NGHIỆP
 
 > **Dự án:** Website giới thiệu dịch vụ taxi, xe tiện chuyến, xe ghép, xe gia đình tỉnh Vĩnh Phúc.  
 > **Mẫu tham khảo:** [https://s8taxi.com/](https://s8taxi.com/)  
-> **Khách hàng:** Taxi Xanh Vĩnh Phúc - Phú Thọ / Taxi Vĩnh Phúc - Phú Thọ  
+> **Khách hàng:** Taxi Điện Vĩnh Phúc - Phú Thọ / Taxi Vĩnh Phúc - Phú Thọ  
 > **Hotline / Zalo:** `0961 299 934`  
 > **Ngân sách:** 6.000.000 VNĐ (Trọn gói)  
-> **Môi trường Deploy:** Vercel (Free tier 0đ/tháng) + Tên miền mua ngoài (VD: `taxixanhvinhphuc.com`)  
+> **Môi trường Deploy:** Vercel (Free tier 0đ/tháng) + Tên miền mua ngoài (VD: `taxidienvinhphuc.com`)  
 
 ---
 

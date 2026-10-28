@@ -52,25 +52,25 @@ export default function Navbar() {
             </Link>
 
             {/* Desktop Navigation Links */}
-            <div className="hidden lg:flex items-center gap-1 xl:gap-2">
+            <div className="hidden xl:flex items-center gap-0.5 2xl:gap-2">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="px-3 py-2 text-sm font-semibold text-slate-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-colors"
+                  className="px-2.5 2xl:px-3 py-2 text-sm font-semibold text-slate-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-colors whitespace-nowrap shrink-0"
                 >
                   {link.label}
                 </Link>
               ))}
             </div>
 
-            {/* Desktop Call Action Buttons (Only lg and up) */}
-            <div className="hidden lg:flex items-center gap-2 shrink-0">
+            {/* Desktop Call Action Buttons (Only xl and up) */}
+            <div className="hidden xl:flex items-center gap-2 shrink-0">
               <a
                 href={siteConfig.zalo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3.5 py-2.5 rounded-xl border border-blue-200 bg-blue-50 text-blue-700 hover:bg-blue-100 font-semibold text-sm flex items-center gap-1.5 transition shadow-sm"
+                className="hidden 2xl:flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl border border-blue-200 bg-blue-50 text-blue-700 hover:bg-blue-100 font-semibold text-sm transition shadow-sm"
               >
                 <ZaloIcon className="w-4 h-4" />
                 Chat Zalo
@@ -86,8 +86,8 @@ export default function Navbar() {
               </a>
             </div>
 
-            {/* Mobile & Tablet Actions (Below lg) */}
-            <div className="flex lg:hidden items-center gap-1.5 sm:gap-2 shrink-0">
+            {/* Mobile & Tablet Actions (Below xl) */}
+            <div className="flex xl:hidden items-center gap-1.5 sm:gap-2 shrink-0">
               <a
                 href={siteConfig.zalo}
                 target="_blank"
@@ -122,7 +122,7 @@ export default function Navbar() {
 
         {/* Mobile Drawer Menu */}
         {mobileMenuOpen && (
-          <div className="lg:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 shadow-xl animate-in fade-in duration-200">
+          <div className="xl:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 shadow-xl animate-in fade-in duration-200">
             <div className="space-y-1 mb-4">
               {navLinks.map((link) => (
                 <Link

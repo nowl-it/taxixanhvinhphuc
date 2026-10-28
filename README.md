@@ -1,6 +1,6 @@
-# Taxi Xanh Vĩnh Phúc - Phú Thọ (taxixanhvinhphuc.com)
+# Taxi Điện Vĩnh Phúc - Phú Thọ (taxidienvinhphuc.com)
 
-Hệ thống website giới thiệu dịch vụ, báo giá và đặt xe trực tuyến cho **Tổng đài Taxi Xanh Vĩnh Phúc - Phú Thọ (0961 299 934)**.
+Hệ thống website giới thiệu dịch vụ, báo giá và đặt xe trực tuyến cho **Tổng đài Taxi Điện Vĩnh Phúc - Phú Thọ (0961 299 934)**.
 
 ---
 
@@ -45,7 +45,7 @@ pnpm run start
    ```bash
    git init
    git add .
-   git commit -m "feat: initial commit for Taxi Xanh Vinh Phuc - Phu Tho"
+   git commit -m "feat: initial commit for Taxi Điện Vinh Phuc - Phu Tho"
    git branch -M main
    git remote add origin <url-repo-github>
    git push -u origin main
@@ -58,7 +58,7 @@ pnpm run start
 
 3. **Gắn Tên Miền Chính Thức:**
    - Tại trang quản lý dự án trên Vercel: vào **Settings** -> **Domains**.
-   - Thêm tên miền: `taxixanhvinhphuc.com` và `www.taxixanhvinhphuc.com`.
+   - Thêm tên miền: `taxidienvinhphuc.com` và `www.taxidienvinhphuc.com`.
    - Đăng nhập iNET -> **Quản lý DNS**:
      - Thêm bản ghi **A**: Tên `@` $\rightarrow$ Giá trị `76.76.21.21`
      - Thêm bản ghi **CNAME**: Tên `www` $\rightarrow$ Giá trị `cname.vercel-dns.com`

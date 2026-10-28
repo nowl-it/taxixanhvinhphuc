@@ -202,7 +202,7 @@ export default function Footer() {
               Tuyên bố minh bạch &amp; Miễn trừ trách nhiệm (Disclaimer):
             </p>
             <p>
-              Website <strong>{siteConfig.domain}</strong> là cổng thông tin tiếp nhận đặt xe và điều phối của <strong>{siteConfig.brandName}</strong> – Đơn vị cung cấp dịch vụ taxi gia đình, xe tiện chuyến và xe hợp đồng tư nhân độc lập tại tỉnh Vĩnh Phúc và các tuyến liên tỉnh. Chúng tôi hoạt động độc lập, không trực thuộc, không đại diện và không có mối quan hệ ủy quyền hay liên kết thương hiệu với Công ty Cổ phần Di chuyển Xanh và Thông minh (GSM), VinFast hay bất kỳ tổ chức nào khác.
+              Website <strong>{siteConfig.domain}</strong> là cổng thông tin tiếp nhận đặt xe và điều phối của <strong>{siteConfig.brandName}</strong> – Đơn vị cung cấp dịch vụ taxi gia đình, xe tiện chuyến và xe hợp đồng tư nhân độc lập tại tỉnh Vĩnh Phúc và các tuyến liên tỉnh. Chúng tôi hoạt động độc lập, không trực thuộc, không đại diện và không có mối quan hệ ủy quyền hay liên kết thương hiệu với bất kỳ hãng taxi, doanh nghiệp vận tải hay tập đoàn nào khác.
             </p>
           </div>
         </div>
