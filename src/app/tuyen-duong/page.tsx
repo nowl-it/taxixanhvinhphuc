@@ -56,9 +56,7 @@ export default function TuyenDuongPage() {
             <span>MẠNG LƯỚI TUYẾN ĐƯỜNG KẾT NỐI</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
-            {`${siteConfig.brandName} [${siteConfig.hotline}]`}
-            <br />
-            Các Tuyến Xe Trọng Điểm
+            <span className="whitespace-nowrap">{`${siteConfig.brandName} ${siteConfig.hotline}`}</span> - Các Tuyến Xe Trọng Điểm
           </h1>
           <p className="text-slate-600 text-sm sm:text-base">
             Đón trả tận nhà tại TP. Vĩnh Yên, Phúc Yên và các huyện trong tỉnh. Xe riêng trọn gói, đón đúng giờ bay và giờ hẹn khám bệnh.

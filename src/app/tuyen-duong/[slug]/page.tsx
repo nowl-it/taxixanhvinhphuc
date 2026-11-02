@@ -177,9 +177,7 @@ export default async function RouteDetailPage({
           </div>
 
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight leading-tight">
-            {`${siteConfig.brandName} [${siteConfig.hotline}]`}
-            <br />
-            {route.title}
+            <span className="whitespace-nowrap">{`${siteConfig.brandName} ${siteConfig.hotline}`}</span> - {route.title}
           </h1>
 
           <p className="text-slate-200 text-sm sm:text-base max-w-3xl leading-relaxed">

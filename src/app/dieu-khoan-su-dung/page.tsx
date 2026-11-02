@@ -28,9 +28,7 @@ export default function TermsOfServicePage() {
             <span>QUY CHẾ HOẠT ĐỘNG MINH BẠCH</span>
           </div>
           <h1 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-            {`${siteConfig.brandName} [${siteConfig.hotline}]`}
-            <br />
-            Điều Khoản Sử Dụng Dịch Vụ & Tuyên Bố Pháp Lý
+            <span className="whitespace-nowrap">{`${siteConfig.brandName} ${siteConfig.hotline}`}</span> - Điều Khoản Sử Dụng Dịch Vụ & Tuyên Bố Pháp Lý
           </h1>
           <p className="text-xs sm:text-sm text-slate-500 mt-2">
             Có hiệu lực từ ngày 16/10/2026 • Áp dụng cho tất cả hành khách đặt chuyến qua {siteConfig.domain}

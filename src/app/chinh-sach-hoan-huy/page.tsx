@@ -28,9 +28,7 @@ export default function CancellationPolicyPage() {
             <span>MINH BẠCH GIÁ CƯỚC &amp; ĐỔI TRẢ</span>
           </div>
           <h1 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-            {`${siteConfig.brandName} [${siteConfig.hotline}]`}
-            <br />
-            Chính Sách Đặt Xe, Hủy Chuyến & Thanh Toán
+            <span className="whitespace-nowrap">{`${siteConfig.brandName} ${siteConfig.hotline}`}</span> - Chính Sách Đặt Xe, Hủy Chuyến & Thanh Toán
           </h1>
           <p className="text-xs sm:text-sm text-slate-500 mt-2">
             Cam kết quyền lợi tối đa cho khách hàng • Phục vụ 24/7 không phụ phí

@@ -90,9 +90,7 @@ export default function LienHePage() {
             <span>KẾT NỐI 24/7 VỚI CHÚNG TÔI</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
-            {`${siteConfig.brandName} [${siteConfig.hotline}]`}
-            <br />
-            Liên Hệ Tổng Đài
+            <span className="whitespace-nowrap">{`${siteConfig.brandName} ${siteConfig.hotline}`}</span> - Liên Hệ Tổng Đài
           </h1>
           <p className="text-slate-600 text-sm sm:text-base">
             Tổng đài điều hành và đội xe hoạt động liên tục 24/7 kể cả ban đêm, ngày nghỉ lễ và Tết Nguyên Đán.

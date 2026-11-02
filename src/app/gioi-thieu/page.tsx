@@ -75,9 +75,7 @@ export default function GioiThieuPage() {
             <span>VỀ CHÚNG TÔI</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
-            {`${siteConfig.brandName} [${siteConfig.hotline}]`}
-            <br />
-            Bạn Đồng Hành Tin Cậy
+            <span className="whitespace-nowrap">{`${siteConfig.brandName} ${siteConfig.hotline}`}</span> - Bạn Đồng Hành Tin Cậy
           </h1>
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
             Hệ thống liên minh taxi gia đình và xe tiện chuyến chất lượng cao số 1 tại tỉnh Vĩnh Phúc.
