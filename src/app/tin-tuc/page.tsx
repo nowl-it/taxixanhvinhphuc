@@ -59,7 +59,9 @@ export default function TinTucPage() {
             <span>CẨM NANG & KINH NGHIỆM ĐI XE</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
-            {`${siteConfig.brandName} [${siteConfig.hotline}] - Tin Tức & Cẩm Nang Tuyến Đường`}
+            {`${siteConfig.brandName} [${siteConfig.hotline}]`}
+            <br />
+            Tin Tức & Cẩm Nang Tuyến Đường
           </h1>
           <p className="text-slate-600 text-sm sm:text-base">
             Chia sẻ kinh nghiệm di chuyển tiết kiệm, thông tin bảng giá cập nhật và cẩm nang du lịch Vĩnh Phúc.

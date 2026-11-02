@@ -78,7 +78,9 @@ export default function DichVuPage() {
             <span>DỊCH VỤ VẬN TẢI CHUYÊN NGHIỆP</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
-            {`${siteConfig.brandName} [${siteConfig.hotline}] - Các Dịch Vụ Xe Taxi`}
+            {`${siteConfig.brandName} [${siteConfig.hotline}]`}
+            <br />
+            Các Dịch Vụ Xe Taxi
           </h1>
           <p className="text-slate-600 text-sm sm:text-base">
             Đáp ứng toàn diện mọi nhu cầu di chuyển: cá nhân, gia đình, công tác, du lịch và hợp đồng doanh nghiệp với dàn xe đời mới 2022 - 2025.

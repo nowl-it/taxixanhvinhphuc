@@ -293,7 +293,9 @@ export default async function BlogPostPage({
           </div>
 
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-black text-slate-900 leading-tight">
-            {`${siteConfig.brandName} [${siteConfig.hotline}] - ${post.title.replace(/ \[058 815 555\]\s*$/, '')}`}
+            {`${siteConfig.brandName} [${siteConfig.hotline}]`}
+            <br />
+            {post.title.replace(/ \[058 815 555\]\s*$/, '')}
           </h1>
 
           <div className="flex flex-wrap items-center gap-4 text-xs text-slate-500 pb-2 border-b border-slate-200">
