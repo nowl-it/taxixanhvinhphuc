@@ -74,8 +74,11 @@ export default function GioiThieuPage() {
             <Car className="w-3.5 h-3.5 text-slate-600" />
             <span>VỀ CHÚNG TÔI</span>
           </div>
+          <h2 className="text-base sm:text-lg md:text-xl font-bold text-slate-600 tracking-tight">
+            {`${siteConfig.brandName} ${siteConfig.hotline}`}
+          </h2>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
-            <span className="whitespace-nowrap">{`${siteConfig.brandName} ${siteConfig.hotline}`}</span> - Bạn Đồng Hành Tin Cậy
+            Bạn Đồng Hành Tin Cậy
           </h1>
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
             Hệ thống liên minh taxi gia đình và xe tiện chuyến chất lượng cao số 1 tại tỉnh Vĩnh Phúc.

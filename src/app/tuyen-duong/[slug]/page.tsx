@@ -176,8 +176,11 @@ export default async function RouteDetailPage({
             <span>TUYẾN XE TRỌNG ĐIỂM VĨNH PHÚC</span>
           </div>
 
+          <h2 className="text-base sm:text-lg md:text-xl font-bold text-slate-300 tracking-tight">
+            {`${siteConfig.brandName} ${siteConfig.hotline}`}
+          </h2>
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight leading-tight">
-            <span className="whitespace-nowrap">{`${siteConfig.brandName} ${siteConfig.hotline}`}</span> - {route.title}
+            {route.title}
           </h1>
 
           <p className="text-slate-200 text-sm sm:text-base max-w-3xl leading-relaxed">

@@ -37,8 +37,10 @@ export default function HeroBanner() {
             </div>
 
             {/* Main Headline */}
+            <h2 className="text-base sm:text-lg md:text-xl font-bold text-slate-300 tracking-tight">
+              {`${siteConfig.brandName} ${siteConfig.hotline}`}
+            </h2>
             <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-black tracking-tight leading-tight">
-              <span className="whitespace-nowrap">{`${siteConfig.brandName} ${siteConfig.hotline}`}</span> <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-slate-300 to-amber-300">
                 Đúng Giờ • Trọn Gói • Siêu Rẻ
               </span>

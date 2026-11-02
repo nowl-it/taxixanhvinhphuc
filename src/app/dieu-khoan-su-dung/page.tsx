@@ -27,8 +27,11 @@ export default function TermsOfServicePage() {
             <Scale className="w-4 h-4 text-blue-600" />
             <span>QUY CHẾ HOẠT ĐỘNG MINH BẠCH</span>
           </div>
+          <h2 className="text-base sm:text-lg md:text-xl font-bold text-slate-600 tracking-tight">
+            {`${siteConfig.brandName} ${siteConfig.hotline}`}
+          </h2>
           <h1 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-            <span className="whitespace-nowrap">{`${siteConfig.brandName} ${siteConfig.hotline}`}</span> - Điều Khoản Sử Dụng Dịch Vụ & Tuyên Bố Pháp Lý
+            Điều Khoản Sử Dụng Dịch Vụ & Tuyên Bố Pháp Lý
           </h1>
           <p className="text-xs sm:text-sm text-slate-500 mt-2">
             Có hiệu lực từ ngày 16/10/2026 • Áp dụng cho tất cả hành khách đặt chuyến qua {siteConfig.domain}

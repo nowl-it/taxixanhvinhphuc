@@ -97,8 +97,11 @@ export default function BangGiaPage() {
             <Tag className="w-3.5 h-3.5" />
             <span>NIÊM YẾT GIÁ CHÍNH THỨC 2026</span>
           </div>
+          <h2 className="text-base sm:text-lg md:text-xl font-bold text-slate-600 tracking-tight">
+            {`${siteConfig.brandName} ${siteConfig.hotline}`}
+          </h2>
           <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
-            <span className="whitespace-nowrap">{`${siteConfig.brandName} ${siteConfig.hotline}`}</span> - Bảng Giá Cước Taxi & Xe Tiện Chuyến
+            Bảng Giá Cước Taxi & Xe Tiện Chuyến
           </h1>
           <p className="text-slate-600 text-xs sm:text-base">
             Giá cước trọn gói minh bạch, đã bao gồm phí cầu đường cơ bản. Cam kết không phát sinh phụ phí ẩn, đón trả tận nhà 24/7.

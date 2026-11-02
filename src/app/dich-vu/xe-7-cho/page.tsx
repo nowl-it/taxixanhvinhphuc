@@ -94,8 +94,11 @@ export default function Xe7ChoPage() {
               <Tag className="w-3.5 h-3.5 text-slate-600" />
               <span>RỘNG RÃI & ÊM ÁI</span>
             </div>
+            <h2 className="text-base sm:text-lg md:text-xl font-bold text-slate-600 tracking-tight">
+              {`${siteConfig.brandName} ${siteConfig.hotline}`}
+            </h2>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
-              <span className="whitespace-nowrap">{`${siteConfig.brandName} ${siteConfig.hotline}`}</span> - Dịch Vụ Thuê Xe Taxi 7 Chỗ
+              Dịch Vụ Thuê Xe Taxi 7 Chỗ
             </h1>
             <p className="text-slate-700 font-bold text-base sm:text-lg">
               {car.tagline}

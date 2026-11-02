@@ -27,8 +27,11 @@ export default function CancellationPolicyPage() {
             <RotateCcw className="w-4 h-4 text-slate-600" />
             <span>MINH BẠCH GIÁ CƯỚC &amp; ĐỔI TRẢ</span>
           </div>
+          <h2 className="text-base sm:text-lg md:text-xl font-bold text-slate-600 tracking-tight">
+            {`${siteConfig.brandName} ${siteConfig.hotline}`}
+          </h2>
           <h1 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-            <span className="whitespace-nowrap">{`${siteConfig.brandName} ${siteConfig.hotline}`}</span> - Chính Sách Đặt Xe, Hủy Chuyến & Thanh Toán
+            Chính Sách Đặt Xe, Hủy Chuyến & Thanh Toán
           </h1>
           <p className="text-xs sm:text-sm text-slate-500 mt-2">
             Cam kết quyền lợi tối đa cho khách hàng • Phục vụ 24/7 không phụ phí

@@ -27,8 +27,11 @@ export default function PrivacyPolicyPage() {
             <ShieldCheck className="w-4 h-4 text-slate-600" />
             <span>QUYỀN RIÊNG TƯ & AN TOÀN DỮ LIỆU</span>
           </div>
+          <h2 className="text-base sm:text-lg md:text-xl font-bold text-slate-600 tracking-tight">
+            {`${siteConfig.brandName} ${siteConfig.hotline}`}
+          </h2>
           <h1 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
-            <span className="whitespace-nowrap">{`${siteConfig.brandName} ${siteConfig.hotline}`}</span> - Chính Sách Bảo Mật Thông Tin Khách Hàng
+            Chính Sách Bảo Mật Thông Tin Khách Hàng
           </h1>
           <p className="text-xs sm:text-sm text-slate-500 mt-2">
             Cập nhật lần cuối: Ngày 16 tháng 10 năm 2026 • Áp dụng cho website {siteConfig.domain}
