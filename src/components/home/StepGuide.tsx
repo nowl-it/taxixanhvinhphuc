@@ -8,7 +8,7 @@ export default function StepGuide() {
       step: "01",
       icon: MapPin,
       title: "Chọn Lộ Trình & Thời Gian",
-      desc: "Nhập điểm đón, điểm đến và thời gian đi trên website hoặc gọi trực tiếp Hotline 0829 387 338.",
+      desc: "Nhập điểm đón, điểm đến và thời gian đi trên website hoặc gọi trực tiếp Hotline 058 815 555.",
     },
     {
       step: "02",
@@ -31,10 +31,10 @@ export default function StepGuide() {
   ];
 
   return (
-    <section className="py-12 sm:py-20 bg-emerald-50/60 border-b border-emerald-100">
+    <section className="py-12 sm:py-20 bg-slate-50/60 border-b border-slate-100">
       <div className="container mx-auto px-3 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-12 space-y-2.5 sm:space-y-3">
-          <span className="text-[11px] sm:text-xs font-bold text-emerald-800 bg-emerald-200/60 px-3 py-1 rounded-full uppercase tracking-wider">
+          <span className="text-[11px] sm:text-xs font-bold text-slate-800 bg-slate-200/60 px-3 py-1 rounded-full uppercase tracking-wider">
             QUY TRÌNH ĐƠN GIẢN
           </span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-slate-900 tracking-tight">
@@ -51,13 +51,13 @@ export default function StepGuide() {
             return (
               <div
                 key={idx}
-                className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-6 border border-emerald-100 shadow-sm relative group hover:shadow-lg transition-all duration-300"
+                className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-6 border border-slate-100 shadow-sm relative group hover:shadow-lg transition-all duration-300"
               >
                 <div className="flex items-center justify-between mb-3.5 sm:mb-4">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-emerald-600 text-white flex items-center justify-center shadow-md shadow-emerald-600/30 group-hover:scale-110 transition-transform">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-amber-500 text-slate-950 flex items-center justify-center shadow-md shadow-slate-600/30 group-hover:scale-110 transition-transform">
                     <Icon className="w-5 h-5 sm:w-6 sm:h-6" />
                   </div>
-                  <span className="text-xl sm:text-2xl font-black text-emerald-200/80 group-hover:text-emerald-600 transition-colors">
+                  <span className="text-xl sm:text-2xl font-black text-slate-200/80 group-hover:text-amber-400 transition-colors">
                     {item.step}
                   </span>
                 </div>

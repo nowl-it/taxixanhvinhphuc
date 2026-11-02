@@ -34,7 +34,7 @@ export default function Commitments() {
       <div className="container mx-auto px-3 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14 space-y-2.5 sm:space-y-3">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-[11px] sm:text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-500/20 text-slate-300 border border-slate-500/30 text-[11px] sm:text-xs font-bold uppercase tracking-wider">
             <HeartHandshake className="w-3.5 h-3.5" />
             <span>TẠI SAO HÀNG NGHÌN KHÁCH HÀNG TIN CHỌN?</span>
           </div>
@@ -53,19 +53,19 @@ export default function Commitments() {
             return (
               <div
                 key={index}
-                className="bg-slate-800 border border-slate-700/80 rounded-2xl sm:rounded-3xl p-4 sm:p-6 hover:border-emerald-500/50 transition-colors duration-200 flex flex-col justify-between group"
+                className="bg-slate-800 border border-slate-700/80 rounded-2xl sm:rounded-3xl p-4 sm:p-6 hover:border-slate-500/50 transition-colors duration-200 flex flex-col justify-between group"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4 sm:mb-5">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-slate-500/10 border border-slate-500/30 flex items-center justify-center text-amber-400 group-hover:bg-slate-500 group-hover:text-white transition-colors">
                       <Icon className="w-5 h-5 sm:w-6 sm:h-6" />
                     </div>
-                    <span className="text-[10px] sm:text-[11px] font-bold text-emerald-400 bg-emerald-950 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full border border-emerald-800">
+                    <span className="text-[10px] sm:text-[11px] font-bold text-amber-400 bg-slate-950 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full border border-slate-800">
                       {item.badge}
                     </span>
                   </div>
 
-                  <h3 className="text-base sm:text-lg font-bold text-white mb-1.5 sm:mb-2 group-hover:text-emerald-300 transition-colors">
+                  <h3 className="text-base sm:text-lg font-bold text-white mb-1.5 sm:mb-2 group-hover:text-slate-300 transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
@@ -73,7 +73,7 @@ export default function Commitments() {
                   </p>
                 </div>
 
-                <div className="mt-4 sm:mt-6 pt-3 sm:pt-4 border-t border-slate-700/60 flex items-center gap-1.5 text-xs text-emerald-400 font-semibold">
+                <div className="mt-4 sm:mt-6 pt-3 sm:pt-4 border-t border-slate-700/60 flex items-center gap-1.5 text-xs text-amber-400 font-semibold">
                   <ShieldCheck className="w-4 h-4" />
                   <span>Cam kết chuẩn chất lượng</span>
                 </div>

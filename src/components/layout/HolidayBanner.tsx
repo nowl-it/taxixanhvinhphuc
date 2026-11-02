@@ -41,7 +41,7 @@ export default function HolidayBanner() {
   return (
     <aside
       aria-label="Thông báo ngày lễ"
-      className="relative bg-gradient-to-r from-emerald-950 via-slate-900 to-emerald-950 text-white text-xs py-2 sm:py-2.5 px-3 sm:px-4 shadow-sm border-b border-emerald-800/50 animate-in fade-in duration-300"
+      className="relative bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 text-white text-xs py-2 sm:py-2.5 px-3 sm:px-4 shadow-sm border-b border-slate-800/50 animate-in fade-in duration-300"
     >
       <div className="container mx-auto flex items-center justify-between gap-3">
         <div className="flex items-center gap-2 sm:gap-3 flex-1 flex-wrap sm:flex-nowrap justify-center sm:justify-start">
@@ -59,7 +59,7 @@ export default function HolidayBanner() {
           {notice.linkHref && (
             <Link
               href={notice.linkHref}
-              className="inline-flex items-center gap-1 text-[11px] sm:text-xs font-bold text-emerald-400 hover:text-emerald-300 underline underline-offset-4 shrink-0 transition"
+              className="inline-flex items-center gap-1 text-[11px] sm:text-xs font-bold text-amber-400 hover:text-slate-300 underline underline-offset-4 shrink-0 transition"
             >
               <span>{notice.linkText || "Xem chi tiết"}</span>
               <ArrowRight className="w-3 h-3" />
@@ -70,7 +70,7 @@ export default function HolidayBanner() {
         <div className="flex items-center gap-2 shrink-0">
           <a
             href={`tel:${siteConfig.hotlineRaw}`}
-            className="hidden md:inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-emerald-800/60 hover:bg-emerald-700/80 text-white font-bold text-xs border border-emerald-700/50 transition"
+            className="hidden md:inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-800/60 hover:bg-slate-700/80 text-white font-bold text-xs border border-slate-700/50 transition"
           >
             <Phone className="w-3 h-3 text-amber-300" />
             <span>{siteConfig.hotline}</span>

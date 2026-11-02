@@ -67,7 +67,7 @@ export default function Testimonials() {
                   ))}
                 </div>
 
-                <Quote className="w-8 h-8 text-emerald-200 mb-2 group-hover:text-emerald-400 transition-colors" />
+                <Quote className="w-8 h-8 text-slate-200 mb-2 group-hover:text-amber-400 transition-colors" />
 
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed mb-4">
                   &ldquo;{rev.content}&rdquo;
@@ -77,7 +77,7 @@ export default function Testimonials() {
               <div className="pt-4 border-t border-slate-200/60">
                 <div className="font-bold text-slate-900 text-sm">{rev.name}</div>
                 <div className="text-[11px] text-slate-500">{rev.role}</div>
-                <div className="text-[11px] font-semibold text-emerald-700 flex items-center gap-1 mt-1">
+                <div className="text-[11px] font-semibold text-slate-700 flex items-center gap-1 mt-1">
                   <CheckCircle2 className="w-3 h-3" />
                   <span>{rev.route}</span>
                 </div>

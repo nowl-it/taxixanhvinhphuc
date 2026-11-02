@@ -19,12 +19,12 @@ export default function CancellationPolicyPage() {
         {/* Header Breadcrumb */}
         <div className="mb-6">
           <div className="flex items-center gap-2 text-xs text-slate-500 mb-2">
-            <Link href="/" className="hover:text-emerald-600 transition">Trang chủ</Link>
+            <Link href="/" className="hover:text-amber-700 transition">Trang chủ</Link>
             <span>/</span>
             <span className="text-slate-800 font-semibold">Chính sách đặt &amp; hủy chuyến</span>
           </div>
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold mb-3">
-            <RotateCcw className="w-4 h-4 text-emerald-600" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-bold mb-3">
+            <RotateCcw className="w-4 h-4 text-slate-600" />
             <span>MINH BẠCH GIÁ CƯỚC &amp; ĐỔI TRẢ</span>
           </div>
           <h1 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
@@ -40,7 +40,7 @@ export default function CancellationPolicyPage() {
           {/* Section 1 */}
           <section className="space-y-3">
             <h2 className="text-lg sm:text-xl font-black text-slate-900 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-emerald-600"></span>
+              <span className="w-2 h-2 rounded-full bg-slate-600"></span>
               1. Quy trình đặt xe &amp; Xác nhận hành trình
             </h2>
             <p>
@@ -65,18 +65,18 @@ export default function CancellationPolicyPage() {
           {/* Section 2: Cancellation Policy */}
           <section className="space-y-3">
             <h2 className="text-lg sm:text-xl font-black text-slate-900 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-emerald-600"></span>
+              <span className="w-2 h-2 rounded-full bg-slate-600"></span>
               2. Chính sách hủy chuyến – Miễn phí 100%
             </h2>
-            <div className="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-950 space-y-2">
-              <div className="flex items-center gap-2 font-bold text-emerald-900 text-sm sm:text-base">
-                <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
+            <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-slate-950 space-y-2">
+              <div className="flex items-center gap-2 font-bold text-slate-900 text-sm sm:text-base">
+                <CheckCircle2 className="w-5 h-5 text-slate-600 shrink-0" />
                 <span>MIỄN PHÍ HỦY CHUYẾN 100% TRONG MỌI TRƯỜNG HỢP</span>
               </div>
               <p className="text-xs sm:text-sm leading-relaxed">
                 Chúng tôi thấu hiểu kế hoạch của quý khách có thể thay đổi do chuyến bay trễ giờ, hoãn lịch họp hoặc thay đổi việc gia đình.
               </p>
-              <ul className="list-disc pl-5 space-y-1 text-xs sm:text-sm text-emerald-900">
+              <ul className="list-disc pl-5 space-y-1 text-xs sm:text-sm text-slate-900">
                 <li>Quý khách được <strong>hủy chuyến hoàn toàn miễn phí</strong> bằng cách gọi điện hoặc nhắn tin cho tổng đài trước giờ xe khởi hành.</li>
                 <li>Không phát sinh phí phạt, không giữ tiền cọc của khách hàng.</li>
                 <li>Nếu cần dời giờ đón, chúng tôi sẽ hỗ trợ đổi lịch sang khung giờ mới mà không tăng giá cước.</li>
@@ -87,7 +87,7 @@ export default function CancellationPolicyPage() {
           {/* Section 3: Payment Policy */}
           <section className="space-y-3">
             <h2 className="text-lg sm:text-xl font-black text-slate-900 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-emerald-600"></span>
+              <span className="w-2 h-2 rounded-full bg-slate-600"></span>
               3. Phương thức thanh toán linh hoạt
             </h2>
             <p>
@@ -112,7 +112,7 @@ export default function CancellationPolicyPage() {
           {/* Section 4: Refund Policy */}
           <section className="space-y-3">
             <h2 className="text-lg sm:text-xl font-black text-slate-900 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-emerald-600"></span>
+              <span className="w-2 h-2 rounded-full bg-slate-600"></span>
               4. Chính sách hoàn tiền &amp; Đền bù
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -125,15 +125,15 @@ export default function CancellationPolicyPage() {
             <h3 className="font-black text-slate-900 text-base mb-3">Tổng Đài Hỗ Trợ Đặt Xe &amp; Hủy Chuyến:</h3>
             <div className="space-y-2 text-xs sm:text-sm text-slate-600">
               <p className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-emerald-600 shrink-0" />
+                <MapPin className="w-4 h-4 text-slate-600 shrink-0" />
                 <span><strong>Khu vực hoạt động:</strong> Tỉnh Vĩnh Phúc (TP. Vĩnh Yên, TP. Phúc Yên và các huyện)</span>
               </p>
               <p className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-emerald-600 shrink-0" />
+                <Phone className="w-4 h-4 text-slate-600 shrink-0" />
                 <span><strong>Hotline 24/7:</strong> {siteConfig.hotline}</span>
               </p>
               <p className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-emerald-600 shrink-0" />
+                <Mail className="w-4 h-4 text-slate-600 shrink-0" />
                 <span><strong>Email:</strong> {siteConfig.email}</span>
               </p>
             </div>

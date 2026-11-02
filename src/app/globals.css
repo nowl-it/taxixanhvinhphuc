@@ -2,9 +2,9 @@
 
 @layer base {
   :root {
-    --primary: #059669;
-    --primary-hover: #047857;
-    --primary-light: #ecfdf5;
+    --primary: #d97706;
+    --primary-hover: #b45309;
+    --primary-light: #fffbeb;
     --accent: #f59e0b;
     --accent-hover: #d97706;
     --dark: #0f172a;

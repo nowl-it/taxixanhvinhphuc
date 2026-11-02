@@ -7,15 +7,15 @@ import ContactForm from "@/components/contact/ContactForm";
 import { MapPin, Phone, Mail, Clock, Car } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Taxi Vĩnh Phúc - Liên Hệ Tổng Đài Đặt Xe 24/7 - 0829 387 338",
+  title: "Taxi Vĩnh Phúc - Liên Hệ Tổng Đài Đặt Xe 24/7 - 058 815 555",
   description:
-    "Tổng đài hỗ trợ và điều phối xe taxi Vĩnh Phúc 24/7: Hotline 0829 387 338, Zalo 0829 387 338. Đón tận nhà tại tất cả các huyện, thành phố tỉnh Vĩnh Phúc. Đặt xe nhanh sau 2 phút.",
+    "Tổng đài hỗ trợ và điều phối xe taxi Vĩnh Phúc 24/7: Hotline 058 815 555, Zalo 058 815 555. Đón tận nhà tại tất cả các huyện, thành phố tỉnh Vĩnh Phúc. Đặt xe nhanh sau 2 phút.",
   alternates: {
     canonical: `${siteConfig.domain}/lien-he`,
   },
   openGraph: {
     title: "Taxi Vĩnh Phúc - Liên Hệ Tổng Đài Đặt Xe 24/7",
-    description: "Hotline 0829 387 338 - Zalo 0829 387 338. Xe đón tận nơi các huyện thành phố Vĩnh Phúc.",
+    description: "Hotline 058 815 555 - Zalo 058 815 555. Xe đón tận nơi các huyện thành phố Vĩnh Phúc.",
     url: `${siteConfig.domain}/lien-he`,
     images: ["/images/hero-banner.jpg"],
   },
@@ -78,15 +78,15 @@ export default function LienHePage() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-xs text-slate-500">
-          <Link href="/" className="hover:text-emerald-600">Trang chủ</Link>
+          <Link href="/" className="hover:text-amber-700">Trang chủ</Link>
           <span>/</span>
           <span className="text-slate-800 font-semibold">Liên hệ</span>
         </nav>
 
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider">
-            <Phone className="w-3.5 h-3.5 text-emerald-600" />
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-bold uppercase tracking-wider">
+            <Phone className="w-3.5 h-3.5 text-slate-600" />
             <span>KẾT NỐI 24/7 VỚI CHÚNG TÔI</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
@@ -108,7 +108,7 @@ export default function LienHePage() {
 
               <div className="space-y-4 text-sm">
                 <div className="flex items-start gap-3.5">
-                  <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-slate-50 text-slate-600 flex items-center justify-center shrink-0">
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
@@ -145,7 +145,7 @@ export default function LienHePage() {
                       rel="noopener noreferrer"
                       className="text-sm font-bold text-blue-600 hover:underline block"
                     >
-                      0829 387 338 (Chat Zalo)
+                      058 815 555 (Chat Zalo)
                     </a>
                   </div>
                 </div>
@@ -161,7 +161,7 @@ export default function LienHePage() {
                 </div>
 
                 <div className="flex items-start gap-3.5">
-                  <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-slate-50 text-slate-600 flex items-center justify-center shrink-0">
                     <Clock className="w-5 h-5" />
                   </div>
                   <div>
@@ -184,17 +184,17 @@ export default function LienHePage() {
             </div>
 
             {/* Operating Areas Box */}
-            <div className="bg-emerald-900 text-white rounded-3xl p-6 space-y-3 shadow-lg">
+            <div className="bg-slate-900 text-white rounded-3xl p-6 space-y-3 shadow-lg">
               <h3 className="font-bold text-base flex items-center gap-2">
-                <Car className="w-5 h-5 text-emerald-400" />
+                <Car className="w-5 h-5 text-amber-400" />
                 Đội Xe Thường Trực Tại Các Huyện:
               </h3>
-              <p className="text-xs text-emerald-200">
+              <p className="text-xs text-slate-200">
                 Chỉ cần bạn ở bất kỳ khu vực nào sau đây, xe sẽ tới đón sau 10 - 15 phút:
               </p>
               <div className="flex flex-wrap gap-2 pt-1 text-xs">
                 {siteConfig.operatingAreas.map((area, i) => (
-                  <span key={i} className="bg-emerald-800/80 px-2.5 py-1 rounded-lg border border-emerald-700/50">
+                  <span key={i} className="bg-slate-800/80 px-2.5 py-1 rounded-lg border border-slate-700/50">
                     {area}
                   </span>
                 ))}
@@ -209,7 +209,7 @@ export default function LienHePage() {
             {/* Embedded Map Representation */}
             <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm space-y-3">
               <h3 className="font-bold text-slate-900 text-sm flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-emerald-600" />
+                <MapPin className="w-4 h-4 text-slate-600" />
                 Bản Đồ Khu Vực Vĩnh Phúc & Trục Kết Nối
               </h3>
               <div className="relative h-64 w-full rounded-2xl overflow-hidden bg-slate-100 border border-slate-200">

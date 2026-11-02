@@ -19,12 +19,12 @@ export default function PrivacyPolicyPage() {
         {/* Header Breadcrumb */}
         <div className="mb-6">
           <div className="flex items-center gap-2 text-xs text-slate-500 mb-2">
-            <Link href="/" className="hover:text-emerald-600 transition">Trang chủ</Link>
+            <Link href="/" className="hover:text-amber-700 transition">Trang chủ</Link>
             <span>/</span>
             <span className="text-slate-800 font-semibold">Chính sách bảo mật</span>
           </div>
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold mb-3">
-            <ShieldCheck className="w-4 h-4 text-emerald-600" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-bold mb-3">
+            <ShieldCheck className="w-4 h-4 text-slate-600" />
             <span>QUYỀN RIÊNG TƯ & AN TOÀN DỮ LIỆU</span>
           </div>
           <h1 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
@@ -40,7 +40,7 @@ export default function PrivacyPolicyPage() {
           {/* Section 1 */}
           <section className="space-y-3">
             <h2 className="text-lg sm:text-xl font-black text-slate-900 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-emerald-600"></span>
+              <span className="w-2 h-2 rounded-full bg-slate-600"></span>
               1. Mục đích thu thập thông tin cá nhân
             </h2>
             <p>
@@ -56,7 +56,7 @@ export default function PrivacyPolicyPage() {
           {/* Section 2 */}
           <section className="space-y-3">
             <h2 className="text-lg sm:text-xl font-black text-slate-900 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-emerald-600"></span>
+              <span className="w-2 h-2 rounded-full bg-slate-600"></span>
               2. Phạm vi sử dụng thông tin
             </h2>
             <p>
@@ -64,19 +64,19 @@ export default function PrivacyPolicyPage() {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
               <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-2.5">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-4 h-4 text-slate-600 shrink-0 mt-0.5" />
                 <span className="text-xs sm:text-sm">Điều phối xe đón đúng giờ, đúng địa điểm đã hẹn.</span>
               </div>
               <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-2.5">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-4 h-4 text-slate-600 shrink-0 mt-0.5" />
                 <span className="text-xs sm:text-sm">Thông báo lộ trình, giá cước trọn gói và thông tin tài xế.</span>
               </div>
               <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-2.5">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-4 h-4 text-slate-600 shrink-0 mt-0.5" />
                 <span className="text-xs sm:text-sm">Hỗ trợ tìm kiếm hành lý thất lạc trên xe (nếu có).</span>
               </div>
               <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-2.5">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-4 h-4 text-slate-600 shrink-0 mt-0.5" />
                 <span className="text-xs sm:text-sm">Giải quyết khiếu nại và nâng cao chất lượng phục vụ.</span>
               </div>
             </div>
@@ -85,11 +85,11 @@ export default function PrivacyPolicyPage() {
           {/* Section 3 */}
           <section className="space-y-3">
             <h2 className="text-lg sm:text-xl font-black text-slate-900 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-emerald-600"></span>
+              <span className="w-2 h-2 rounded-full bg-slate-600"></span>
               3. Cam kết không chia sẻ thông tin cho bên thứ ba
             </h2>
-            <div className="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-950 font-medium text-xs sm:text-sm flex items-start gap-3">
-              <Lock className="w-5 h-5 text-emerald-700 shrink-0 mt-0.5" />
+            <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-slate-950 font-medium text-xs sm:text-sm flex items-start gap-3">
+              <Lock className="w-5 h-5 text-slate-700 shrink-0 mt-0.5" />
               <span>
                 <strong>Cam kết tuyệt đối:</strong> Chúng tôi KHÔNG BÁN, KHÔNG CHIA SẺ, KHÔNG TRAO ĐỔI thông tin cá nhân hay số điện thoại của hành khách cho bất kỳ đơn vị quảng cáo, tiếp thị, hay bên thứ ba nào vì mục đích thương mại.
               </span>
@@ -99,7 +99,7 @@ export default function PrivacyPolicyPage() {
           {/* Section 4 */}
           <section className="space-y-3">
             <h2 className="text-lg sm:text-xl font-black text-slate-900 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-emerald-600"></span>
+              <span className="w-2 h-2 rounded-full bg-slate-600"></span>
               4. Bảo mật dữ liệu & Thời gian lưu trữ
             </h2>
             <p>
@@ -110,7 +110,7 @@ export default function PrivacyPolicyPage() {
           {/* Section 5 */}
           <section className="space-y-3">
             <h2 className="text-lg sm:text-xl font-black text-slate-900 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-emerald-600"></span>
+              <span className="w-2 h-2 rounded-full bg-slate-600"></span>
               5. Quyền của khách hàng đối với thông tin cá nhân
             </h2>
             <p>
@@ -123,15 +123,15 @@ export default function PrivacyPolicyPage() {
             <h3 className="font-black text-slate-900 text-base mb-3">Đơn Vị Quản Lý & Chịu Trách Nhiệm Dữ Liệu:</h3>
             <div className="space-y-2 text-xs sm:text-sm text-slate-600">
               <p className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-emerald-600 shrink-0" />
+                <MapPin className="w-4 h-4 text-slate-600 shrink-0" />
                 <span><strong>Khu vực điều hành:</strong> Tỉnh Vĩnh Phúc (TP. Vĩnh Yên, TP. Phúc Yên và các huyện)</span>
               </p>
               <p className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-emerald-600 shrink-0" />
+                <Phone className="w-4 h-4 text-slate-600 shrink-0" />
                 <span><strong>Hotline 24/7:</strong> {siteConfig.hotline}</span>
               </p>
               <p className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-emerald-600 shrink-0" />
+                <Mail className="w-4 h-4 text-slate-600 shrink-0" />
                 <span><strong>Email:</strong> {siteConfig.email}</span>
               </p>
             </div>

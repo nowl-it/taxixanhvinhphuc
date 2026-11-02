@@ -9,7 +9,7 @@ import { Car, Briefcase, CheckCircle2, Phone, ArrowRight, ShieldCheck, Sparkles,
 export const metadata: Metadata = {
   title: "Taxi Vĩnh Phúc - Dịch Vụ Xe 4 Chỗ, 7 Chỗ, 16 Chỗ & Xe Tiện Chuyến",
   description:
-    "Cung cấp đa dạng dịch vụ taxi Vĩnh Phúc: Thuê xe 4 chỗ, 7 chỗ, 16 chỗ đời mới 2022-2025. Xe tiện chuyến Hà Nội, đưa đón sân bay Nội Bài, xe hợp đồng KCN trọn gói giá rẻ. Hotline 0829 387 338.",
+    "Cung cấp đa dạng dịch vụ taxi Vĩnh Phúc: Thuê xe 4 chỗ, 7 chỗ, 16 chỗ đời mới 2022-2025. Xe tiện chuyến Hà Nội, đưa đón sân bay Nội Bài, xe hợp đồng KCN trọn gói giá rẻ. Hotline 058 815 555.",
   alternates: {
     canonical: `${siteConfig.domain}/dich-vu`,
   },
@@ -73,8 +73,8 @@ export default function DichVuPage() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         {/* Page Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider">
-            <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-bold uppercase tracking-wider">
+            <Sparkles className="w-3.5 h-3.5 text-slate-600" />
             <span>DỊCH VỤ VẬN TẢI CHUYÊN NGHIỆP</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
@@ -111,7 +111,7 @@ export default function DichVuPage() {
                       sizes="(max-width: 1024px) 100vw, 33vw"
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute top-4 left-4 bg-emerald-600 text-white font-bold text-xs px-3 py-1 rounded-full shadow-md">
+                    <div className="absolute top-4 left-4 bg-amber-500 text-slate-950 font-bold text-xs px-3 py-1 rounded-full shadow-md">
                       {car.seats} Chỗ Ngồi
                     </div>
                     <div className="absolute bottom-4 right-4 bg-white/95 backdrop-blur-md text-red-600 font-black text-xs px-3 py-1 rounded-xl shadow-md">
@@ -122,17 +122,17 @@ export default function DichVuPage() {
                   <div className="p-6 space-y-4">
                     <div>
                       <h3 className="text-xl font-black text-slate-900">{car.name}</h3>
-                      <p className="text-xs font-bold text-emerald-700 mt-0.5">{car.tagline}</p>
+                      <p className="text-xs font-bold text-slate-700 mt-0.5">{car.tagline}</p>
                       <p className="text-xs text-slate-600 mt-2 leading-relaxed">{car.description}</p>
                     </div>
 
                     <div className="bg-slate-50 rounded-2xl p-3.5 border border-slate-100 space-y-2 text-xs">
                       <div className="flex items-center gap-2 text-slate-700">
-                        <Car className="w-4 h-4 text-emerald-600 shrink-0" />
+                        <Car className="w-4 h-4 text-slate-600 shrink-0" />
                         <span><strong>Dòng xe:</strong> {car.models.join(", ")}</span>
                       </div>
                       <div className="flex items-center gap-2 text-slate-700">
-                        <Briefcase className="w-4 h-4 text-emerald-600 shrink-0" />
+                        <Briefcase className="w-4 h-4 text-slate-600 shrink-0" />
                         <span><strong>Khoang hành lý:</strong> {car.luggage}</span>
                       </div>
                     </div>
@@ -141,7 +141,7 @@ export default function DichVuPage() {
                       <span className="font-bold text-slate-800 block">Ưu điểm nổi bật:</span>
                       {car.features.map((feat, fIdx) => (
                         <div key={fIdx} className="flex items-start gap-1.5">
-                          <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
+                          <CheckCircle2 className="w-3.5 h-3.5 text-slate-600 shrink-0 mt-0.5" />
                           <span>{feat}</span>
                         </div>
                       ))}
@@ -152,7 +152,7 @@ export default function DichVuPage() {
                 <div className="p-6 pt-0 flex items-center gap-2">
                   <a
                     href={`tel:${siteConfig.hotlineRaw}`}
-                    className="flex-1 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs text-center flex items-center justify-center gap-1.5 shadow-md shadow-emerald-600/20 transition"
+                    className="flex-1 py-3 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-xs text-center flex items-center justify-center gap-1.5 shadow-md shadow-slate-600/20 transition"
                   >
                     <Phone className="w-3.5 h-3.5" />
                     <span>Đặt Xe Nhanh</span>
@@ -187,22 +187,22 @@ export default function DichVuPage() {
               return (
                 <div
                   key={idx}
-                  className="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between space-y-4 hover:border-emerald-500/50 transition"
+                  className="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between space-y-4 hover:border-slate-500/50 transition"
                 >
                   <div className="space-y-3">
-                    <div className="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-2xl bg-slate-100 text-slate-700 flex items-center justify-center">
                       <Icon className="w-6 h-6" />
                     </div>
                     <h3 className="text-lg font-bold text-slate-900">{srv.title}</h3>
                     <p className="text-xs text-slate-600 leading-relaxed">{srv.desc}</p>
-                    <div className="inline-block bg-emerald-50 text-emerald-800 font-bold text-xs px-3 py-1 rounded-full border border-emerald-200">
+                    <div className="inline-block bg-slate-50 text-slate-800 font-bold text-xs px-3 py-1 rounded-full border border-slate-200">
                       {srv.price}
                     </div>
                   </div>
 
                   <Link
                     href={srv.link}
-                    className="text-xs font-bold text-emerald-700 hover:underline flex items-center gap-1 pt-2"
+                    className="text-xs font-bold text-slate-700 hover:underline flex items-center gap-1 pt-2"
                   >
                     <span>Khám phá tuyến này</span>
                     <ArrowRight className="w-3.5 h-3.5" />
@@ -216,7 +216,7 @@ export default function DichVuPage() {
         {/* Commitment Banner */}
         <div className="bg-slate-900 text-white rounded-3xl p-8 sm:p-10 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
           <div className="space-y-2 text-center md:text-left">
-            <div className="flex items-center justify-center md:justify-start gap-2 text-emerald-400 text-xs font-bold uppercase tracking-wider">
+            <div className="flex items-center justify-center md:justify-start gap-2 text-amber-400 text-xs font-bold uppercase tracking-wider">
               <ShieldCheck className="w-4 h-4" />
               <span>Tiêu Chuẩn Phục Vụ 5 Sao</span>
             </div>

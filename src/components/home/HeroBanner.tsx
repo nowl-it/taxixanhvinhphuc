@@ -11,7 +11,7 @@ export default function HeroBanner() {
   return (
     <section className="relative overflow-hidden bg-slate-950 text-white pt-8 pb-16 lg:py-16">
       {/* Lightweight background gradient without blur filters */}
-      <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-900 to-emerald-950 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 pointer-events-none"></div>
 
       {/* Hero background image optimized with subtle opacity without expensive mix-blend mode */}
       <div className="absolute inset-0 opacity-20 pointer-events-none">
@@ -31,7 +31,7 @@ export default function HeroBanner() {
           {/* Left Column: Slogan & Value Proposition */}
           <div className="lg:col-span-7 space-y-5 sm:space-y-6 text-center lg:text-left">
             {/* Top Tag */}
-            <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1.5 rounded-full bg-emerald-900/80 border border-emerald-500/40 text-emerald-300 text-[11px] sm:text-sm font-semibold leading-tight max-w-full">
+            <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1.5 rounded-full bg-slate-900/80 border border-slate-500/40 text-slate-300 text-[11px] sm:text-sm font-semibold leading-tight max-w-full">
               <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-400 shrink-0" />
               <span>Dịch Vụ Taxi & Xe Tiện Chuyến Hàng Đầu Vĩnh Phúc</span>
             </div>
@@ -39,7 +39,7 @@ export default function HeroBanner() {
             {/* Main Headline */}
             <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-black tracking-tight leading-tight">
               Taxi Vĩnh Phúc - Phú Thọ <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-amber-300">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-slate-300 to-amber-300">
                 Đúng Giờ • Trọn Gói • Siêu Rẻ
               </span>
             </h1>
@@ -52,7 +52,7 @@ export default function HeroBanner() {
             {/* Highlights Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3 pt-1 sm:pt-2 text-left">
               <div className="bg-slate-900/90 border border-slate-800 rounded-xl sm:rounded-2xl p-2.5 sm:p-3 flex items-start gap-2 sm:gap-2.5">
-                <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-emerald-400 shrink-0 mt-0.5" />
+                <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400 shrink-0 mt-0.5" />
                 <div>
                   <h3 className="font-bold text-[11px] sm:text-xs text-white">Có Mặt Sau 10P</h3>
                   <p className="text-[10px] sm:text-[11px] text-slate-400">Tài xế túc trực mọi nơi</p>
@@ -60,7 +60,7 @@ export default function HeroBanner() {
               </div>
 
               <div className="bg-slate-900/90 border border-slate-800 rounded-xl sm:rounded-2xl p-2.5 sm:p-3 flex items-start gap-2 sm:gap-2.5">
-                <ShieldCheck className="w-4 h-4 sm:w-5 sm:h-5 text-emerald-400 shrink-0 mt-0.5" />
+                <ShieldCheck className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400 shrink-0 mt-0.5" />
                 <div>
                   <h3 className="font-bold text-[11px] sm:text-xs text-white">Giá Trọn Gói 100%</h3>
                   <p className="text-[10px] sm:text-[11px] text-slate-400">Không phụ phí hay phí ẩn</p>
@@ -68,7 +68,7 @@ export default function HeroBanner() {
               </div>
 
               <div className="bg-slate-900/90 border border-slate-800 rounded-xl sm:rounded-2xl p-2.5 sm:p-3 flex items-start gap-2 sm:gap-2.5 col-span-2 sm:col-span-1">
-                <Award className="w-4 h-4 sm:w-5 sm:h-5 text-emerald-400 shrink-0 mt-0.5" />
+                <Award className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400 shrink-0 mt-0.5" />
                 <div>
                   <h3 className="font-bold text-[11px] sm:text-xs text-white">Xe Mới 2022-2025</h3>
                   <p className="text-[10px] sm:text-[11px] text-slate-400">Sạch sẽ, không mùi, êm ái</p>
@@ -100,7 +100,7 @@ export default function HeroBanner() {
 
             {/* Trust Proof */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 sm:gap-4 pt-2 text-xs text-slate-300">
-              <span className="flex items-center gap-1 text-emerald-400 font-semibold text-[11px] sm:text-xs">
+              <span className="flex items-center gap-1 text-amber-400 font-semibold text-[11px] sm:text-xs">
                 <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
                 Hơn 15.000+ chuyến đi an toàn/tháng
               </span>

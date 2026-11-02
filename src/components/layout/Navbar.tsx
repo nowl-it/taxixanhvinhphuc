@@ -17,15 +17,15 @@ export default function Navbar() {
       <HolidayBanner />
 
       {/* Top Bar */}
-      <div className="bg-emerald-900 text-emerald-100 text-xs py-1.5 sm:py-2 border-b border-emerald-800">
+      <div className="bg-slate-900 text-slate-100 text-xs py-1.5 sm:py-2 border-b border-slate-800">
         <div className="container mx-auto px-3 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-1.5 sm:gap-2">
           <div className="flex items-center gap-2.5 sm:gap-4 flex-wrap justify-center sm:justify-start">
             <span className="flex items-center gap-1 shrink-0 whitespace-nowrap text-[11px] sm:text-xs">
               <Clock className="w-3.5 h-3.5 text-amber-400 shrink-0" />
               <span>{siteConfig.workingHours}</span>
             </span>
-            <span className="hidden sm:flex items-center gap-1 text-emerald-300 shrink-0">
-              <ShieldCheck className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+            <span className="hidden sm:flex items-center gap-1 text-slate-300 shrink-0">
+              <ShieldCheck className="w-3.5 h-3.5 text-amber-400 shrink-0" />
               <span>Xe mới 100% • Đón trả tận nơi • Không phụ phí</span>
             </span>
           </div>
@@ -57,7 +57,7 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="px-2.5 2xl:px-3 py-2 text-sm font-semibold text-slate-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-colors whitespace-nowrap shrink-0"
+                  className="px-2.5 2xl:px-3 py-2 text-sm font-semibold text-slate-700 hover:text-amber-700 hover:bg-slate-50 rounded-lg transition-colors whitespace-nowrap shrink-0"
                 >
                   {link.label}
                 </Link>
@@ -129,7 +129,7 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="block px-4 py-2.5 text-base font-semibold text-slate-800 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition"
+                  className="block px-4 py-2.5 text-base font-semibold text-slate-800 hover:text-amber-700 hover:bg-slate-50 rounded-lg transition"
                 >
                   {link.label}
                 </Link>
@@ -151,7 +151,7 @@ export default function Navbar() {
                 className="w-full py-3 px-4 rounded-xl bg-blue-50 text-blue-700 border border-blue-200 font-bold text-center flex items-center justify-center gap-2 shadow-sm"
               >
                 <ZaloIcon className="w-5 h-5" />
-                <span>CHAT ZALO ĐẶT XE (0829 387 338)</span>
+                <span>CHAT ZALO ĐẶT XE (058 815 555)</span>
               </a>
             </div>
           </div>

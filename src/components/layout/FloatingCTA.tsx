@@ -13,14 +13,14 @@ export default function FloatingCTA() {
           target="_blank"
           rel="noopener noreferrer"
           className="relative flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-white hover:bg-slate-50 shadow-xl shadow-blue-600/25 border border-blue-100 transition-transform transform hover:scale-105 active:scale-95 pulse-ring-blue"
-          aria-label="Chat Zalo Đặt Xe 0829 387 338"
+          aria-label="Chat Zalo Đặt Xe 058 815 555"
         >
-          <span className="absolute -top-0.5 -right-0.5 sm:-top-1 sm:-right-1 w-3.5 h-3.5 sm:w-4 sm:h-4 bg-emerald-500 border-2 border-white rounded-full z-10"></span>
+          <span className="absolute -top-0.5 -right-0.5 sm:-top-1 sm:-right-1 w-3.5 h-3.5 sm:w-4 sm:h-4 bg-slate-500 border-2 border-white rounded-full z-10"></span>
           <ZaloIcon className="w-7 h-7 sm:w-10 sm:h-10" />
         </a>
         <div className="hidden md:flex flex-col bg-white px-3 py-1.5 rounded-xl shadow-lg border border-blue-100 text-left">
           <span className="text-[11px] font-bold text-blue-700 uppercase tracking-wider">Chat Zalo</span>
-          <span className="text-xs font-extrabold text-slate-800">0829 387 338</span>
+          <span className="text-xs font-extrabold text-slate-800">058 815 555</span>
         </div>
       </div>
 
@@ -37,7 +37,7 @@ export default function FloatingCTA() {
         <a
           href={`tel:${siteConfig.hotlineRaw}`}
           className="relative flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-red-600 hover:bg-red-700 text-white shadow-xl shadow-red-600/30 transition-transform transform hover:scale-105 active:scale-95 pulse-ring-red"
-          aria-label="Gọi xe ngay 0829 387 338"
+          aria-label="Gọi xe ngay 058 815 555"
         >
           <Phone className="w-6 h-6 sm:w-8 sm:h-8 animate-phone-ring" />
         </a>

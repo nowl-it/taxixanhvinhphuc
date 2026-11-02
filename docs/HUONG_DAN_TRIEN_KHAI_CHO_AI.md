@@ -6,7 +6,7 @@
 
 ## 🎯 1. Mục Tiêu Dự Án
 Tạo một website Next.js chuẩn SEO, siêu nhanh, tối ưu chuyển đổi di động cho dịch vụ Taxi Vĩnh Phúc - Phú Thọ.  
-**Hotline & Zalo:** `0829 387 338`  
+**Hotline & Zalo:** `058 815 555`  
 Tham khảo toàn bộ dữ liệu giá và tuyến đường tại file [**`DANH_SACH_TUYEN_VA_GIA.md`**](./DANH_SACH_TUYEN_VA_GIA.md).
 
 ---
@@ -33,7 +33,7 @@ taxi-vinh-phuc/
 │   │   └── globals.css           # Cấu hình Tailwind và hiệu ứng animation
 │   ├── components/
 │   │   ├── layout/
-│   │   │   ├── Navbar.tsx        # Header menu + hotline 0829 387 338
+│   │   │   ├── Navbar.tsx        # Header menu + hotline 058 815 555
 │   │   │   ├── Footer.tsx        # Footer thông tin chi tiết
 │   │   │   └── FloatingCTA.tsx   # Nút Gọi & Zalo rung lắc cố định (Mobile)
 │   │   ├── home/
@@ -62,9 +62,9 @@ taxi-vinh-phuc/
 ### Bước 1: Khởi tạo Data Models (`src/data/`)
 1. Tạo `src/data/config.ts`:
    * `brandName`: "Taxi Vĩnh Phúc - Phú Thọ"
-   * `hotline`: "0829 387 338"
-   * `hotlineRaw`: "0829387338"
-   * `zalo`: "https://zalo.me/0829387338"
+   * `hotline`: "058 815 555"
+   * `hotlineRaw`: "058815555"
+   * `zalo`: "https://zalo.me/058815555"
    * `address`: "TP. Vĩnh Yên, Tỉnh Vĩnh Phúc"
 2. Tạo `src/data/routes.ts`: Lưu trữ tất cả tuyến xe trong file `DANH_SACH_TUYEN_VA_GIA.md`.
 3. Tạo `src/data/cars.ts`: Thông tin xe 4 chỗ, 7 chỗ, 16 chỗ.
@@ -74,11 +74,11 @@ taxi-vinh-phuc/
 1. **`FloatingCTA.tsx`**:
    * Ghim đáy màn hình (`fixed bottom-4 z-50`).
    * Bên trái: Nút Zalo tròn màu xanh biển (`bg-blue-600`), icon chat.
-   * Bên phải: Nút Gọi Hotline màu đỏ (`bg-red-600`) có hiệu ứng sóng lan tỏa (`animate-ping`) và rung lắc (`animate-bounce`), bấm là gọi `tel:0829387338`.
+   * Bên phải: Nút Gọi Hotline màu đỏ (`bg-red-600`) có hiệu ứng sóng lan tỏa (`animate-ping`) và rung lắc (`animate-bounce`), bấm là gọi `tel:058815555`.
 2. **`Navbar.tsx`**:
    * Logo thương hiệu có icon xe hơi.
    * Danh sách links: Trang chủ, Bảng giá, Tuyến đường, Dịch vụ, Tin tức, Liên hệ.
-   * Nút bấm góc phải: *"Hotline: 0829 387 338"*.
+   * Nút bấm góc phải: *"Hotline: 058 815 555"*.
    * Menu Mobile dạng Drawer thu gọn.
 3. **`Footer.tsx`**:
    * Đầy đủ thông tin pháp lý, các tuyến xe chính, liên kết Zalo/Hotline.
@@ -117,4 +117,4 @@ Lắp ráp các section theo thứ tự s8taxi.com:
 
 ---
 
-> 💡 **Lưu ý quan trọng cho AI:** Mọi số điện thoại và đường dẫn liên hệ trên website đều phải trỏ chính xác về số Hotline **`0829 387 338`** và Zalo **`https://zalo.me/0829387338`**.
+> 💡 **Lưu ý quan trọng cho AI:** Mọi số điện thoại và đường dẫn liên hệ trên website đều phải trỏ chính xác về số Hotline **`058 815 555`** và Zalo **`https://zalo.me/058815555`**.

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: `%s`,
   },
   description:
-    "Tổng đài Taxi Vĩnh Phúc - Phú Thọ 0829 387 338 - Dịch vụ taxi đưa đón sân bay Nội Bài chỉ từ 180K, xe tiện chuyến Vĩnh Phúc Hà Nội, Tam Đảo, Tây Thiên, xe hợp đồng KCN. Xe đời mới 2022-2025, đúng giờ, giá trọn gói không phụ phí.",
+    "Tổng đài Taxi Vĩnh Phúc - Phú Thọ 058 815 555 - Dịch vụ taxi đưa đón sân bay Nội Bài chỉ từ 180K, xe tiện chuyến Vĩnh Phúc Hà Nội, Tam Đảo, Tây Thiên, xe hợp đồng KCN. Xe đời mới 2022-2025, đúng giờ, giá trọn gói không phụ phí.",
   keywords: [
     "taxi vĩnh phúc",
     "taxi vĩnh yên",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.brandName,
     title: `${siteConfig.brandName} - Xe Tiện Chuyến & Sân Bay Trọn Gói Giá Rẻ 24/7`,
     description:
-      "Tổng đài gọi xe Taxi Vĩnh Phúc 24/7: 0829 387 338. Đón tận nơi các huyện Vĩnh Yên, Phúc Yên, Bình Xuyên, Yên Lạc, Vĩnh Tường. Giá trọn gói siêu rẻ, xe mới 100%.",
+      "Tổng đài gọi xe Taxi Vĩnh Phúc 24/7: 058 815 555. Đón tận nơi các huyện Vĩnh Yên, Phúc Yên, Bình Xuyên, Yên Lạc, Vĩnh Tường. Giá trọn gói siêu rẻ, xe mới 100%.",
     images: [
       {
         url: "/images/hero-banner.jpg",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: `${siteConfig.brandName} - Dịch Vụ Taxi & Xe Tiện Chuyến Vĩnh Phúc`,
-    description: "Tổng đài đặt xe taxi Vĩnh Phúc 24/7 Hotline: 0829 387 338. Cam kết đúng giờ, giá trọn gói.",
+    description: "Tổng đài đặt xe taxi Vĩnh Phúc 24/7 Hotline: 058 815 555. Cam kết đúng giờ, giá trọn gói.",
     images: ["/images/hero-banner.jpg"],
   },
   alternates: {
@@ -228,7 +228,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-screen flex flex-col bg-white text-slate-900 antialiased selection:bg-emerald-500 selection:text-white">
+      <body className="min-h-screen flex flex-col bg-white text-slate-900 antialiased selection:bg-slate-500 selection:text-white">
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

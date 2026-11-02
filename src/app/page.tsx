@@ -50,7 +50,7 @@ export default function HomePage() {
         name: "Đặt xe Taxi Vĩnh Phúc - Phú Thọ như thế nào?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Quý khách có thể gọi trực tiếp Hotline 24/7: 0829 387 338, nhắn tin Zalo số 0829 387 338 hoặc điền form đặt xe trên website taxivinhphuc.com. Tổng đài sẽ điều phối xe có mặt sau 10 - 15 phút.",
+          text: "Quý khách có thể gọi trực tiếp Hotline 24/7: 058 815 555, nhắn tin Zalo số 058 815 555 hoặc điền form đặt xe trên website taxivinhphuc.com. Tổng đài sẽ điều phối xe có mặt sau 10 - 15 phút.",
         },
       },
       {

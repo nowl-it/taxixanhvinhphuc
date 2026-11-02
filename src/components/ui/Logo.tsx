@@ -10,11 +10,11 @@ export default function Logo({ className = "", isCompact = false }: LogoProps) {
   return (
     <div className={`flex items-center gap-2 sm:gap-3 select-none min-w-0 ${className}`}>
       {/* Modern Brand Emblem converted from vector image */}
-      <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-md shadow-emerald-700/20 shrink-0 p-1">
+      <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center shadow-md shadow-amber-600/20 shrink-0 p-1">
         <TaxiCarIcon
           className="w-full h-auto drop-shadow-sm"
           primaryColor="#FFFFFF"
-          secondaryColor="#022c22"
+          secondaryColor="#1e293b"
         />
       </div>
 
@@ -24,7 +24,7 @@ export default function Logo({ className = "", isCompact = false }: LogoProps) {
             <span className="text-base sm:text-xl md:text-2xl xl:text-xl 2xl:text-2xl font-black tracking-tight text-slate-900 whitespace-nowrap">
               TAXI
             </span>
-            <span className="text-base sm:text-xl md:text-2xl xl:text-xl 2xl:text-2xl font-black tracking-tight text-emerald-600 whitespace-nowrap">
+            <span className="text-base sm:text-xl md:text-2xl xl:text-xl 2xl:text-2xl font-black tracking-tight text-amber-600 whitespace-nowrap">
               VĨNH PHÚC<span className="hidden md:inline"> - PHÚ THỌ</span>
             </span>
           </div>

@@ -54,7 +54,7 @@ Khi sắp đến các dịp nghỉ lễ (Tết Nguyên Đán, 30/4, 2/9...), b�
 ```typescript
   {
     slug: "thong-bao-lich-xe-le-30-4-1-5", // Đường dẫn link (viết thường, không dấu, nối bằng gạch ngang)
-    title: "Thông Báo Lịch Xe & Khuyến Mãi Dịp Nghỉ Lễ 30/4 - 1/5 [0829 387 338]", // Tiêu đề bài (luôn thêm số điện thoại vào cuối)
+    title: "Thông Báo Lịch Xe & Khuyến Mãi Dịp Nghỉ Lễ 30/4 - 1/5 [058 815 555]", // Tiêu đề bài (luôn thêm số điện thoại vào cuối)
     excerpt: "Taxi Vĩnh Phúc - Phú Thọ phục vụ xuyên suốt kỳ nghỉ lễ 30/4 - 1/5 với hơn 200 xe đời mới, đưa đón du lịch Tam Đảo, Tây Thiên, sân bay Nội Bài giá rẻ không phụ phí.",
     category: "Thông Báo & Lễ Tết",
     author: "Tổng Đài Taxi Vĩnh Phúc - Phú Thọ",
@@ -85,7 +85,7 @@ Chào đón kỳ nghỉ lễ kéo dài, Taxi Vĩnh Phúc - Phú Thọ sẵn sàn
 
 ## 3. Liên Hệ Đặt Xe
 
-Gọi ngay Hotline 24/7: **0829 387 338** (Hoặc kết bạn Zalo **0829 387 338**).
+Gọi ngay Hotline 24/7: **058 815 555** (Hoặc kết bạn Zalo **058 815 555**).
 `,
   },
 ```

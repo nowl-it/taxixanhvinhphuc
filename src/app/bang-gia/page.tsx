@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     absolute: `Taxi Vĩnh Phúc - Bảng Giá Cước Taxi Trọn Gói [${siteConfig.hotline}]`,
   },
   description:
-    "Cập nhật bảng giá taxi Vĩnh Phúc trọn gói 2026: Tuyến Sân Bay Nội Bài từ 180K, Hà Nội đi ghép 150K, Việt Trì 200K, Tam Đảo 350K. Giảm 40% - 70% cước chiều về. Hotline 0829 387 338.",
+    "Cập nhật bảng giá taxi Vĩnh Phúc trọn gói 2026: Tuyến Sân Bay Nội Bài từ 180K, Hà Nội đi ghép 150K, Việt Trì 200K, Tam Đảo 350K. Giảm 40% - 70% cước chiều về. Hotline 058 815 555.",
   alternates: {
     canonical: `${siteConfig.domain}/bang-gia`,
   },
@@ -86,14 +86,14 @@ export default function BangGiaPage() {
       <div className="container mx-auto px-3 sm:px-6 lg:px-8 space-y-8 sm:space-y-12">
         {/* Breadcrumb Navigation */}
         <nav className="flex items-center gap-2 text-xs text-slate-500 mb-2">
-          <Link href="/" className="hover:text-emerald-600">Trang chủ</Link>
+          <Link href="/" className="hover:text-amber-700">Trang chủ</Link>
           <span>/</span>
           <span className="text-slate-800 font-semibold">Bảng giá cước</span>
         </nav>
 
         {/* Page Header */}
         <div className="text-center max-w-3xl mx-auto space-y-2.5 sm:space-y-3">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-[11px] sm:text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-[11px] sm:text-xs font-bold uppercase tracking-wider">
             <Tag className="w-3.5 h-3.5" />
             <span>NIÊM YẾT GIÁ CHÍNH THỨC 2026</span>
           </div>
@@ -106,7 +106,7 @@ export default function BangGiaPage() {
         </div>
 
         {/* Highlight Banner */}
-        <div className="bg-gradient-to-r from-emerald-700 to-teal-800 rounded-2xl sm:rounded-3xl p-5 sm:p-8 text-white flex flex-col xl:flex-row items-start xl:items-center justify-between gap-5 sm:gap-6 shadow-xl">
+        <div className="bg-gradient-to-r from-slate-700 to-slate-800 rounded-2xl sm:rounded-3xl p-5 sm:p-8 text-white flex flex-col xl:flex-row items-start xl:items-center justify-between gap-5 sm:gap-6 shadow-xl">
           <div className="space-y-2 text-left max-w-2xl">
             <span className="inline-block bg-amber-400 text-slate-950 text-xs font-black px-2.5 py-1 rounded-full uppercase tracking-wider">
               Chính Sách Khứ Hồi Ưu Đãi
@@ -115,7 +115,7 @@ export default function BangGiaPage() {
               Giảm Từ 40% Đến 70% <br className="hidden sm:inline" />
               Cước Chiều Về Trong Ngày!
             </h2>
-            <p className="text-xs sm:text-sm text-emerald-100 text-pretty leading-relaxed">
+            <p className="text-xs sm:text-sm text-slate-100 text-pretty leading-relaxed">
               Miễn phí 60 phút chờ đầu tiên khi đón sân bay Nội Bài. Hủy xe không mất phí cọc.
             </p>
           </div>
@@ -144,7 +144,7 @@ export default function BangGiaPage() {
         <section className="bg-white rounded-2xl sm:rounded-3xl border border-slate-200 overflow-hidden shadow-sm p-4 sm:p-6 lg:p-8 space-y-4 sm:space-y-5">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-100 pb-4">
             <div className="flex items-start sm:items-center gap-2.5 sm:gap-3">
-              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-emerald-50 border border-emerald-200/80 flex items-center justify-center text-emerald-700 shrink-0 mt-0.5 sm:mt-0">
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-slate-50 border border-slate-200/80 flex items-center justify-center text-slate-700 shrink-0 mt-0.5 sm:mt-0">
                 <Plane className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
               <div>
@@ -158,7 +158,7 @@ export default function BangGiaPage() {
             </div>
             <Link
               href="/tuyen-duong/vinh-phuc-noi-bai"
-              className="whitespace-nowrap shrink-0 text-xs font-bold text-emerald-700 hover:text-emerald-800 bg-emerald-50 hover:bg-emerald-100/80 border border-emerald-200 px-3 py-1.5 rounded-xl flex items-center gap-1.5 transition self-start sm:self-center"
+              className="whitespace-nowrap shrink-0 text-xs font-bold text-slate-700 hover:text-slate-800 bg-slate-50 hover:bg-slate-100/80 border border-slate-200 px-3 py-1.5 rounded-xl flex items-center gap-1.5 transition self-start sm:self-center"
             >
               <span>Xem chi tiết tuyến</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -167,7 +167,7 @@ export default function BangGiaPage() {
 
           <div className="lg:hidden px-4 py-2 bg-slate-50 border-b border-slate-200 text-xs text-slate-500 font-medium flex items-center justify-between">
             <span className="flex items-center gap-1.5">
-              <MoveHorizontal className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+              <MoveHorizontal className="w-3.5 h-3.5 text-slate-600 shrink-0" />
               <span>Vuốt ngang để xem đủ giá các loại xe</span>
             </span>
           </div>
@@ -177,9 +177,9 @@ export default function BangGiaPage() {
                 <tr className="bg-slate-100 text-slate-700 text-xs uppercase tracking-wider">
                   <th className="py-3.5 px-4 font-bold min-w-[240px] sm:min-w-[260px]">Điểm Đón / Trả</th>
                   <th className="py-3.5 px-4 font-bold whitespace-nowrap">Cự Ly</th>
-                  <th className="py-3.5 px-4 font-bold text-emerald-800 whitespace-nowrap">
+                  <th className="py-3.5 px-4 font-bold text-slate-800 whitespace-nowrap">
                     <span>Xe 4 Chỗ</span>
-                    <span className="block text-[11px] font-normal normal-case text-emerald-700/80">Vios / Accent</span>
+                    <span className="block text-[11px] font-normal normal-case text-slate-700/80">Vios / Accent</span>
                   </th>
                   <th className="py-3.5 px-4 font-bold text-blue-800 whitespace-nowrap">
                     <span>Xe 7 Chỗ</span>
@@ -197,13 +197,13 @@ export default function BangGiaPage() {
                     <td className="py-3.5 px-4 min-w-[240px] sm:min-w-[260px]">
                       <div className="font-bold text-slate-900 leading-snug break-words">
                         <span>{r.from}</span>
-                        <span className="inline-block mx-1.5 text-emerald-600 font-bold">⇄</span>
+                        <span className="inline-block mx-1.5 text-slate-600 font-bold">⇄</span>
                         <span>{r.to}</span>
                       </div>
                       {r.note && <div className="text-xs text-slate-500 mt-1 leading-relaxed">{r.note}</div>}
                     </td>
                     <td className="py-3.5 px-4 text-slate-600 font-semibold whitespace-nowrap">{r.distance}</td>
-                    <td className="py-3.5 px-4 font-black text-emerald-700 whitespace-nowrap">{r.price4Seats}</td>
+                    <td className="py-3.5 px-4 font-black text-slate-700 whitespace-nowrap">{r.price4Seats}</td>
                     <td className="py-3.5 px-4 font-black text-blue-700 whitespace-nowrap">{r.price7Seats}</td>
                     <td className="py-3.5 px-4 font-bold text-slate-700 whitespace-nowrap">{r.price16Seats}</td>
                   </tr>
@@ -217,7 +217,7 @@ export default function BangGiaPage() {
         <section className="bg-white rounded-2xl sm:rounded-3xl border border-slate-200 overflow-hidden shadow-sm p-4 sm:p-6 lg:p-8 space-y-4 sm:space-y-5">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-100 pb-4">
             <div className="flex items-start sm:items-center gap-2.5 sm:gap-3">
-              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-emerald-50 border border-emerald-200/80 flex items-center justify-center text-emerald-700 shrink-0 mt-0.5 sm:mt-0">
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-slate-50 border border-slate-200/80 flex items-center justify-center text-slate-700 shrink-0 mt-0.5 sm:mt-0">
                 <Building2 className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
               <div>
@@ -231,7 +231,7 @@ export default function BangGiaPage() {
             </div>
             <Link
               href="/tuyen-duong/vinh-phuc-ha-noi"
-              className="whitespace-nowrap shrink-0 text-xs font-bold text-emerald-700 hover:text-emerald-800 bg-emerald-50 hover:bg-emerald-100/80 border border-emerald-200 px-3 py-1.5 rounded-xl flex items-center gap-1.5 transition self-start sm:self-center"
+              className="whitespace-nowrap shrink-0 text-xs font-bold text-slate-700 hover:text-slate-800 bg-slate-50 hover:bg-slate-100/80 border border-slate-200 px-3 py-1.5 rounded-xl flex items-center gap-1.5 transition self-start sm:self-center"
             >
               <span>Xem chi tiết tuyến</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -240,7 +240,7 @@ export default function BangGiaPage() {
 
           <div className="lg:hidden px-4 py-2 bg-slate-50 border-b border-slate-200 text-xs text-slate-500 font-medium flex items-center justify-between">
             <span className="flex items-center gap-1.5">
-              <MoveHorizontal className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+              <MoveHorizontal className="w-3.5 h-3.5 text-slate-600 shrink-0" />
               <span>Vuốt ngang để xem đủ giá xe 4 &amp; 7 chỗ</span>
             </span>
           </div>
@@ -250,9 +250,9 @@ export default function BangGiaPage() {
                 <tr className="bg-slate-100 text-slate-700 text-xs uppercase tracking-wider">
                   <th className="py-3.5 px-4 font-bold min-w-[240px] sm:min-w-[260px]">Lộ Trình Tuyến</th>
                   <th className="py-3.5 px-4 font-bold whitespace-nowrap">Cự Ly</th>
-                  <th className="py-3.5 px-4 font-bold text-emerald-800 whitespace-nowrap">
+                  <th className="py-3.5 px-4 font-bold text-slate-800 whitespace-nowrap">
                     <span>Xe 4 Chỗ</span>
-                    <span className="block text-[11px] font-normal normal-case text-emerald-700/80">Sedan</span>
+                    <span className="block text-[11px] font-normal normal-case text-slate-700/80">Sedan</span>
                   </th>
                   <th className="py-3.5 px-4 font-bold text-blue-800 whitespace-nowrap">
                     <span>Xe 7 Chỗ</span>
@@ -266,13 +266,13 @@ export default function BangGiaPage() {
                     <td className="py-3.5 px-4 min-w-[240px] sm:min-w-[260px]">
                       <div className="font-bold text-slate-900 leading-snug break-words">
                         <span>{r.from}</span>
-                        <span className="inline-block mx-1.5 text-emerald-600 font-bold">⇄</span>
+                        <span className="inline-block mx-1.5 text-slate-600 font-bold">⇄</span>
                         <span>{r.to}</span>
                       </div>
                       {r.note && <div className="text-xs text-slate-500 mt-1 leading-relaxed">{r.note}</div>}
                     </td>
                     <td className="py-3.5 px-4 text-slate-600 font-semibold whitespace-nowrap">{r.distance}</td>
-                    <td className="py-3.5 px-4 font-black text-emerald-700 whitespace-nowrap">{r.price4Seats}</td>
+                    <td className="py-3.5 px-4 font-black text-slate-700 whitespace-nowrap">{r.price4Seats}</td>
                     <td className="py-3.5 px-4 font-black text-blue-700 whitespace-nowrap">{r.price7Seats}</td>
                   </tr>
                 ))}
@@ -285,7 +285,7 @@ export default function BangGiaPage() {
         <section className="bg-white rounded-2xl sm:rounded-3xl border border-slate-200 overflow-hidden shadow-sm p-4 sm:p-6 lg:p-8 space-y-4 sm:space-y-5">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-100 pb-4">
             <div className="flex items-start sm:items-center gap-2.5 sm:gap-3">
-              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-emerald-50 border border-emerald-200/80 flex items-center justify-center text-emerald-700 shrink-0 mt-0.5 sm:mt-0">
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-slate-50 border border-slate-200/80 flex items-center justify-center text-slate-700 shrink-0 mt-0.5 sm:mt-0">
                 <MapPin className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
               <div>
@@ -299,7 +299,7 @@ export default function BangGiaPage() {
             </div>
             <Link
               href="/tuyen-duong/vinh-phuc-phu-tho"
-              className="whitespace-nowrap shrink-0 text-xs font-bold text-emerald-700 hover:text-emerald-800 bg-emerald-50 hover:bg-emerald-100/80 border border-emerald-200 px-3 py-1.5 rounded-xl flex items-center gap-1.5 transition self-start sm:self-center"
+              className="whitespace-nowrap shrink-0 text-xs font-bold text-slate-700 hover:text-slate-800 bg-slate-50 hover:bg-slate-100/80 border border-slate-200 px-3 py-1.5 rounded-xl flex items-center gap-1.5 transition self-start sm:self-center"
             >
               <span>Xem chi tiết tuyến</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -308,7 +308,7 @@ export default function BangGiaPage() {
 
           <div className="lg:hidden px-4 py-2 bg-slate-50 border-b border-slate-200 text-xs text-slate-500 font-medium flex items-center justify-between">
             <span className="flex items-center gap-1.5">
-              <MoveHorizontal className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+              <MoveHorizontal className="w-3.5 h-3.5 text-slate-600 shrink-0" />
               <span>Vuốt ngang để xem đủ giá xe 4 &amp; 7 chỗ</span>
             </span>
           </div>
@@ -318,9 +318,9 @@ export default function BangGiaPage() {
                 <tr className="bg-slate-100 text-slate-700 text-xs uppercase tracking-wider">
                   <th className="py-3.5 px-4 font-bold min-w-[240px] sm:min-w-[260px]">Lộ Trình Phổ Biến</th>
                   <th className="py-3.5 px-4 font-bold whitespace-nowrap">Khoảng Cách</th>
-                  <th className="py-3.5 px-4 font-bold text-emerald-800 whitespace-nowrap">
+                  <th className="py-3.5 px-4 font-bold text-slate-800 whitespace-nowrap">
                     <span>Xe 4 Chỗ</span>
-                    <span className="block text-[11px] font-normal normal-case text-emerald-700/80">Sedan</span>
+                    <span className="block text-[11px] font-normal normal-case text-slate-700/80">Sedan</span>
                   </th>
                   <th className="py-3.5 px-4 font-bold text-blue-800 whitespace-nowrap">
                     <span>Xe 7 Chỗ</span>
@@ -334,13 +334,13 @@ export default function BangGiaPage() {
                     <td className="py-3.5 px-4 min-w-[240px] sm:min-w-[260px]">
                       <div className="font-bold text-slate-900 leading-snug break-words">
                         <span>{r.from}</span>
-                        <span className="inline-block mx-1.5 text-emerald-600 font-bold">⇄</span>
+                        <span className="inline-block mx-1.5 text-slate-600 font-bold">⇄</span>
                         <span>{r.to}</span>
                       </div>
                       {r.note && <div className="text-xs text-slate-500 mt-1 leading-relaxed">{r.note}</div>}
                     </td>
                     <td className="py-3.5 px-4 text-slate-600 font-medium whitespace-nowrap">{r.distance}</td>
-                    <td className="py-3.5 px-4 font-black text-emerald-700 whitespace-nowrap">{r.price4Seats}</td>
+                    <td className="py-3.5 px-4 font-black text-slate-700 whitespace-nowrap">{r.price4Seats}</td>
                     <td className="py-3.5 px-4 font-black text-blue-700 whitespace-nowrap">{r.price7Seats}</td>
                   </tr>
                 ))}
@@ -353,7 +353,7 @@ export default function BangGiaPage() {
         <section className="bg-white rounded-2xl sm:rounded-3xl border border-slate-200 overflow-hidden shadow-sm p-4 sm:p-6 lg:p-8 space-y-4 sm:space-y-5">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-100 pb-4">
             <div className="flex items-start sm:items-center gap-2.5 sm:gap-3">
-              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-emerald-50 border border-emerald-200/80 flex items-center justify-center text-emerald-700 shrink-0 mt-0.5 sm:mt-0">
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-slate-50 border border-slate-200/80 flex items-center justify-center text-slate-700 shrink-0 mt-0.5 sm:mt-0">
                 <Mountain className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
               <div>
@@ -367,7 +367,7 @@ export default function BangGiaPage() {
             </div>
             <Link
               href="/tuyen-duong/vinh-phuc-tam-dao"
-              className="whitespace-nowrap shrink-0 text-xs font-bold text-emerald-700 hover:text-emerald-800 bg-emerald-50 hover:bg-emerald-100/80 border border-emerald-200 px-3 py-1.5 rounded-xl flex items-center gap-1.5 transition self-start sm:self-center"
+              className="whitespace-nowrap shrink-0 text-xs font-bold text-slate-700 hover:text-slate-800 bg-slate-50 hover:bg-slate-100/80 border border-slate-200 px-3 py-1.5 rounded-xl flex items-center gap-1.5 transition self-start sm:self-center"
             >
               <span>Xem chi tiết tuyến</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -376,7 +376,7 @@ export default function BangGiaPage() {
 
           <div className="lg:hidden px-4 py-2 bg-slate-50 border-b border-slate-200 text-xs text-slate-500 font-medium flex items-center justify-between">
             <span className="flex items-center gap-1.5">
-              <MoveHorizontal className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+              <MoveHorizontal className="w-3.5 h-3.5 text-slate-600 shrink-0" />
               <span>Vuốt ngang để xem đủ giá xe 4 &amp; 7 chỗ</span>
             </span>
           </div>
@@ -386,9 +386,9 @@ export default function BangGiaPage() {
                 <tr className="bg-slate-100 text-slate-700 text-xs uppercase tracking-wider">
                   <th className="py-3.5 px-4 font-bold min-w-[240px] sm:min-w-[260px]">Lộ Trình Du Lịch</th>
                   <th className="py-3.5 px-4 font-bold whitespace-nowrap">Đặc Điểm Tuyến</th>
-                  <th className="py-3.5 px-4 font-bold text-emerald-800 whitespace-nowrap">
+                  <th className="py-3.5 px-4 font-bold text-slate-800 whitespace-nowrap">
                     <span>Xe 4 Chỗ</span>
-                    <span className="block text-[11px] font-normal normal-case text-emerald-700/80">Sedan</span>
+                    <span className="block text-[11px] font-normal normal-case text-slate-700/80">Sedan</span>
                   </th>
                   <th className="py-3.5 px-4 font-bold text-blue-800 whitespace-nowrap">
                     <span>Xe 7 Chỗ</span>
@@ -402,13 +402,13 @@ export default function BangGiaPage() {
                     <td className="py-3.5 px-4 min-w-[240px] sm:min-w-[260px]">
                       <div className="font-bold text-slate-900 leading-snug break-words">
                         <span>{r.from}</span>
-                        <span className="inline-block mx-1.5 text-emerald-600 font-bold">⇄</span>
+                        <span className="inline-block mx-1.5 text-slate-600 font-bold">⇄</span>
                         <span>{r.to}</span>
                       </div>
                       {r.note && <div className="text-xs text-slate-500 mt-1 leading-relaxed">{r.note}</div>}
                     </td>
                     <td className="py-3.5 px-4 text-slate-600 font-medium whitespace-nowrap">{r.distance}</td>
-                    <td className="py-3.5 px-4 font-black text-emerald-700 whitespace-nowrap">{r.price4Seats}</td>
+                    <td className="py-3.5 px-4 font-black text-slate-700 whitespace-nowrap">{r.price4Seats}</td>
                     <td className="py-3.5 px-4 font-black text-blue-700 whitespace-nowrap">{r.price7Seats}</td>
                   </tr>
                 ))}
@@ -421,7 +421,7 @@ export default function BangGiaPage() {
         <section className="bg-white rounded-2xl sm:rounded-3xl border border-slate-200 overflow-hidden shadow-sm p-4 sm:p-6 lg:p-8 space-y-4 sm:space-y-5">
           <div className="border-b border-slate-100 pb-4">
             <div className="flex items-start sm:items-center gap-2.5 sm:gap-3">
-              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-emerald-50 border border-emerald-200/80 flex items-center justify-center text-emerald-700 shrink-0 mt-0.5 sm:mt-0">
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-slate-50 border border-slate-200/80 flex items-center justify-center text-slate-700 shrink-0 mt-0.5 sm:mt-0">
                 <Gauge className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
               <div>
@@ -437,7 +437,7 @@ export default function BangGiaPage() {
 
           <div className="lg:hidden px-4 py-2 bg-slate-50 border-b border-slate-200 text-xs text-slate-500 font-medium flex items-center justify-between">
             <span className="flex items-center gap-1.5">
-              <MoveHorizontal className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+              <MoveHorizontal className="w-3.5 h-3.5 text-slate-600 shrink-0" />
               <span>Vuốt ngang để xem cự ly và ưu đãi khứ hồi</span>
             </span>
           </div>
@@ -448,7 +448,7 @@ export default function BangGiaPage() {
                   <th className="py-3.5 px-4 font-bold min-w-[200px]">Loại Xe</th>
                   <th className="py-3.5 px-4 font-bold whitespace-nowrap">Dưới 30km</th>
                   <th className="py-3.5 px-4 font-bold whitespace-nowrap">Từ 31km – 100km</th>
-                  <th className="py-3.5 px-4 font-bold text-emerald-800 whitespace-nowrap">Trên 100km (Đường dài)</th>
+                  <th className="py-3.5 px-4 font-bold text-slate-800 whitespace-nowrap">Trên 100km (Đường dài)</th>
                   <th className="py-3.5 px-4 font-bold text-amber-700 whitespace-nowrap">Khứ Hồi (Chiều về)</th>
                 </tr>
               </thead>
@@ -465,7 +465,7 @@ export default function BangGiaPage() {
                     </td>
                     <td className="py-3.5 px-4 text-slate-700 font-semibold whitespace-nowrap">{r.under30km}</td>
                     <td className="py-3.5 px-4 text-slate-700 font-semibold whitespace-nowrap">{r.from31to100km}</td>
-                    <td className="py-3.5 px-4 font-black text-emerald-700 whitespace-nowrap">{r.over100km}</td>
+                    <td className="py-3.5 px-4 font-black text-slate-700 whitespace-nowrap">{r.over100km}</td>
                     <td className="py-3.5 px-4 font-bold text-amber-700 bg-amber-50/50 whitespace-nowrap">{r.roundTripDiscount}</td>
                   </tr>
                 ))}
@@ -478,7 +478,7 @@ export default function BangGiaPage() {
         <section className="bg-white rounded-2xl sm:rounded-3xl border border-slate-200 overflow-hidden shadow-sm p-4 sm:p-6 lg:p-8 space-y-4 sm:space-y-5">
           <div className="border-b border-slate-100 pb-4">
             <div className="flex items-start sm:items-center gap-2.5 sm:gap-3">
-              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-emerald-50 border border-emerald-200/80 flex items-center justify-center text-emerald-700 shrink-0 mt-0.5 sm:mt-0">
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-slate-50 border border-slate-200/80 flex items-center justify-center text-slate-700 shrink-0 mt-0.5 sm:mt-0">
                 <Briefcase className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
               <div>
@@ -497,7 +497,7 @@ export default function BangGiaPage() {
               <div key={i} className="p-4 sm:p-5 rounded-xl sm:rounded-2xl bg-slate-50 border border-slate-200/90 flex flex-col justify-between space-y-3">
                 <div>
                   <h3 className="font-bold text-slate-900 text-sm sm:text-base mb-1">{contract.name}</h3>
-                  <div className="text-base sm:text-lg font-black text-emerald-700 mb-2">{contract.price}</div>
+                  <div className="text-base sm:text-lg font-black text-slate-700 mb-2">{contract.price}</div>
                   <p className="text-xs text-slate-600 leading-relaxed mb-3">{contract.desc}</p>
                 </div>
                 <div className="text-xs text-slate-500 border-t border-slate-200 pt-3 flex flex-wrap items-center justify-between gap-2">
@@ -525,7 +525,7 @@ export default function BangGiaPage() {
             </a>
             <Link
               href="/"
-              className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl sm:rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm sm:text-base shadow-lg shadow-emerald-600/30 transition flex items-center justify-center whitespace-nowrap"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl sm:rounded-2xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-sm sm:text-base shadow-lg shadow-slate-600/30 transition flex items-center justify-center whitespace-nowrap"
             >
               Đặt Xe Trực Tuyến
             </Link>

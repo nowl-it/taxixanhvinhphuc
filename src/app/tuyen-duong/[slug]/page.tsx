@@ -162,16 +162,16 @@ export default async function RouteDetailPage({
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-xs text-slate-500">
-          <Link href="/" className="hover:text-emerald-600">Trang chủ</Link>
+          <Link href="/" className="hover:text-amber-700">Trang chủ</Link>
           <span>/</span>
-          <Link href="/tuyen-duong" className="hover:text-emerald-600">Tuyến đường</Link>
+          <Link href="/tuyen-duong" className="hover:text-amber-700">Tuyến đường</Link>
           <span>/</span>
           <span className="text-slate-800 font-semibold">{route.title}</span>
         </nav>
 
         {/* Header Hero */}
-        <div className="bg-gradient-to-r from-emerald-900 via-teal-900 to-slate-950 text-white rounded-3xl p-6 sm:p-10 shadow-xl space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 text-xs font-bold uppercase tracking-wider">
+        <div className="bg-gradient-to-r from-slate-900 via-slate-900 to-slate-950 text-white rounded-3xl p-6 sm:p-10 shadow-xl space-y-4">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-500/20 text-slate-300 border border-amber-400/30 text-xs font-bold uppercase tracking-wider">
             <Sparkles className="w-3.5 h-3.5" />
             <span>TUYẾN XE TRỌNG ĐIỂM VĨNH PHÚC</span>
           </div>
@@ -180,21 +180,21 @@ export default async function RouteDetailPage({
             {route.title}
           </h1>
 
-          <p className="text-emerald-200 text-sm sm:text-base max-w-3xl leading-relaxed">
+          <p className="text-slate-200 text-sm sm:text-base max-w-3xl leading-relaxed">
             {route.subtitle}
           </p>
 
           <div className="flex flex-wrap items-center gap-4 pt-2 text-xs sm:text-sm text-slate-300">
             <div className="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-xl backdrop-blur-md">
-              <Navigation className="w-4 h-4 text-emerald-400" />
+              <Navigation className="w-4 h-4 text-amber-400" />
               <span>Cự ly: <strong>{route.distance}</strong></span>
             </div>
             <div className="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-xl backdrop-blur-md">
-              <Clock className="w-4 h-4 text-emerald-400" />
+              <Clock className="w-4 h-4 text-amber-400" />
               <span>Thời gian đi: <strong>{route.duration}</strong></span>
             </div>
             <div className="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-xl backdrop-blur-md">
-              <ShieldCheck className="w-4 h-4 text-emerald-400" />
+              <ShieldCheck className="w-4 h-4 text-amber-400" />
               <span>Giá trọn gói 100%</span>
             </div>
           </div>
@@ -207,7 +207,7 @@ export default async function RouteDetailPage({
             {/* Overview */}
             <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-3">
               <h2 className="text-xl sm:text-2xl font-black text-slate-900 flex items-center gap-2">
-                <span className="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+                <span className="w-2.5 h-2.5 rounded-full bg-slate-600"></span>
                 Giới Thiệu Tuyến Xe
               </h2>
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
@@ -218,7 +218,7 @@ export default async function RouteDetailPage({
             {/* Pricing Breakdown Table */}
             <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-4">
               <h2 className="text-xl sm:text-2xl font-black text-slate-900 flex items-center gap-2">
-                <span className="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+                <span className="w-2.5 h-2.5 rounded-full bg-slate-600"></span>
                 Bảng Giá Tuyến {route.title}
               </h2>
               <div className="overflow-x-auto">
@@ -226,7 +226,7 @@ export default async function RouteDetailPage({
                   <thead>
                     <tr className="bg-slate-100 text-slate-700 text-xs uppercase tracking-wider">
                       <th className="py-3 px-4 font-bold">Loại Xe</th>
-                      <th className="py-3 px-4 font-bold text-emerald-800">Một Chiều</th>
+                      <th className="py-3 px-4 font-bold text-slate-800">Một Chiều</th>
                       <th className="py-3 px-4 font-bold text-amber-700">Khứ Hồi (2 Chiều)</th>
                       <th className="py-3 px-4 font-bold hidden sm:table-cell">Ghi Chú</th>
                     </tr>
@@ -235,7 +235,7 @@ export default async function RouteDetailPage({
                     {route.prices.map((p, idx) => (
                       <tr key={idx} className="hover:bg-slate-50 transition">
                         <td className="py-3.5 px-4 font-bold text-slate-900">{p.carType}</td>
-                        <td className="py-3.5 px-4 font-black text-emerald-700">{p.oneWay}</td>
+                        <td className="py-3.5 px-4 font-black text-slate-700">{p.oneWay}</td>
                         <td className="py-3.5 px-4 font-black text-amber-700">{p.roundTrip}</td>
                         <td className="py-3.5 px-4 text-xs text-slate-500 hidden sm:table-cell">{p.notes}</td>
                       </tr>
@@ -252,13 +252,13 @@ export default async function RouteDetailPage({
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm space-y-3">
                 <h3 className="font-bold text-slate-900 text-base flex items-center gap-2">
-                  <MapPin className="w-4 h-4 text-emerald-600" />
+                  <MapPin className="w-4 h-4 text-slate-600" />
                   Điểm Đón Tại Vĩnh Phúc
                 </h3>
                 <ul className="space-y-2 text-xs sm:text-sm text-slate-600">
                   {route.pickupPoints.map((pt, i) => (
                     <li key={i} className="flex items-start gap-1.5">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-3.5 h-3.5 text-slate-600 shrink-0 mt-0.5" />
                       <span>{pt}</span>
                     </li>
                   ))}
@@ -282,15 +282,15 @@ export default async function RouteDetailPage({
             </div>
 
             {/* Highlights */}
-            <div className="bg-emerald-50 rounded-3xl p-6 sm:p-8 border border-emerald-100 space-y-3">
-              <h3 className="font-black text-emerald-950 text-lg flex items-center gap-2">
-                <ShieldCheck className="w-5 h-5 text-emerald-600" />
+            <div className="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-100 space-y-3">
+              <h3 className="font-black text-slate-950 text-lg flex items-center gap-2">
+                <ShieldCheck className="w-5 h-5 text-slate-600" />
                 Đặc Quyền Dành Cho Khách Hàng Tuyến Này
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                 {route.highlights.map((h, i) => (
-                  <div key={i} className="bg-white p-3.5 rounded-2xl border border-emerald-100 flex items-start gap-2 text-xs sm:text-sm text-slate-800">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                  <div key={i} className="bg-white p-3.5 rounded-2xl border border-slate-100 flex items-start gap-2 text-xs sm:text-sm text-slate-800">
+                    <CheckCircle2 className="w-4 h-4 text-slate-600 shrink-0 mt-0.5" />
                     <span>{h}</span>
                   </div>
                 ))}
@@ -301,7 +301,7 @@ export default async function RouteDetailPage({
             {route.faqs.length > 0 && (
               <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-4">
                 <h2 className="text-xl sm:text-2xl font-black text-slate-900 flex items-center gap-2">
-                  <HelpCircle className="w-5 h-5 text-emerald-600" />
+                  <HelpCircle className="w-5 h-5 text-slate-600" />
                   Câu Hỏi Thường Gặp
                 </h2>
                 <div className="space-y-3 divide-y divide-slate-100">

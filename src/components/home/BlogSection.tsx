@@ -12,7 +12,7 @@ export default function BlogSection() {
       <div className="container mx-auto px-3 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-12 gap-3 sm:gap-4">
           <div className="space-y-2">
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-[11px] sm:text-xs font-bold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-[11px] sm:text-xs font-bold uppercase tracking-wider">
               <BookOpen className="w-3.5 h-3.5" />
               <span>CẨM NANG & KINH NGHIỆM ĐI XE</span>
             </div>
@@ -26,7 +26,7 @@ export default function BlogSection() {
 
           <Link
             href="/tin-tuc"
-            className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-emerald-700 hover:text-emerald-800 hover:underline shrink-0"
+            className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-slate-700 hover:text-slate-800 hover:underline shrink-0"
           >
             <span>Xem tất cả bài viết</span>
             <ArrowRight className="w-4 h-4" />
@@ -48,7 +48,7 @@ export default function BlogSection() {
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute top-3 left-3 flex items-center gap-1.5">
-                  <span className={`text-[11px] font-bold px-2.5 py-1 rounded-lg shadow-md ${post.isHoliday ? 'bg-gradient-to-r from-red-600 to-amber-600 text-white' : 'bg-emerald-600 text-white'}`}>
+                  <span className={`text-[11px] font-bold px-2.5 py-1 rounded-lg shadow-md ${post.isHoliday ? 'bg-gradient-to-r from-red-600 to-amber-600 text-white' : 'bg-amber-500 text-slate-950'}`}>
                     {post.badgeText || post.category}
                   </span>
                   {post.isPinned && (
@@ -74,7 +74,7 @@ export default function BlogSection() {
                   </div>
 
                   <Link href={`/tin-tuc/${post.slug}`}>
-                    <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-emerald-600 transition-colors line-clamp-2 mb-2 leading-snug">
+                    <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-amber-700 transition-colors line-clamp-2 mb-2 leading-snug">
                       {post.title}
                     </h3>
                   </Link>
@@ -87,7 +87,7 @@ export default function BlogSection() {
                 <div className="pt-3 border-t border-slate-100">
                   <Link
                     href={`/tin-tuc/${post.slug}`}
-                    className="text-xs font-bold text-emerald-700 group-hover:text-emerald-800 flex items-center gap-1 transition"
+                    className="text-xs font-bold text-slate-700 group-hover:text-slate-800 flex items-center gap-1 transition"
                   >
                     <span>Đọc tiếp bài viết</span>
                     <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />

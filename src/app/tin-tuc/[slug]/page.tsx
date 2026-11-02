@@ -142,7 +142,7 @@ export default async function BlogPostPage({
         elements.push(
           <h2
             key={index}
-            className="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4 border-l-4 border-emerald-600 pl-3 leading-snug"
+            className="text-xl sm:text-2xl font-black text-slate-900 mt-8 mb-4 border-l-4 border-amber-500 pl-3 leading-snug"
           >
             {trimmed.replace("## ", "")}
           </h2>
@@ -278,16 +278,16 @@ export default async function BlogPostPage({
       <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-xs text-slate-500">
-          <Link href="/" className="hover:text-emerald-600">Trang chủ</Link>
+          <Link href="/" className="hover:text-amber-700">Trang chủ</Link>
           <span>/</span>
-          <Link href="/tin-tuc" className="hover:text-emerald-600">Cẩm nang & Tin tức</Link>
+          <Link href="/tin-tuc" className="hover:text-amber-700">Cẩm nang & Tin tức</Link>
           <span>/</span>
           <span className="text-slate-800 font-semibold truncate">{post.title}</span>
         </nav>
 
         {/* Article Header */}
         <header className="space-y-4">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-bold uppercase tracking-wider">
             <Tag className="w-3.5 h-3.5" />
             <span>{post.category}</span>
           </div>
@@ -331,7 +331,7 @@ export default async function BlogPostPage({
           {renderContent(post.content)}
 
           {/* In-Article Call to Action Box */}
-          <div className="mt-10 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-emerald-800 to-teal-900 text-white space-y-4 shadow-xl">
+          <div className="mt-10 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-slate-800 to-slate-900 text-white space-y-4 shadow-xl">
             <div className="flex items-center gap-2 text-amber-300 text-xs font-bold uppercase tracking-wider">
               <ShieldCheck className="w-4 h-4" />
               <span>ĐẶT XE NGAY HÔM NAY - GIẢM 40% CHIỀU VỀ</span>
@@ -341,7 +341,7 @@ export default async function BlogPostPage({
               Tổng Đài Đặt Xe Taxi Vĩnh Phúc - Phú Thọ 24/7
             </h3>
 
-            <p className="text-xs sm:text-sm text-emerald-100 leading-relaxed">
+            <p className="text-xs sm:text-sm text-slate-100 leading-relaxed">
               Tài xế bản địa lịch sự, xe mới 100%, đón đúng giờ hẹn. Đón trả tận nhà tại TP. Vĩnh Yên, Phúc Yên và toàn bộ các huyện tỉnh Vĩnh Phúc.
             </p>
 
@@ -370,7 +370,7 @@ export default async function BlogPostPage({
         {/* Related Posts */}
         {relatedPosts.length > 0 && (
           <section className="space-y-6 pt-6">
-            <h3 className="text-xl font-black text-slate-900 border-l-4 border-emerald-600 pl-3">
+            <h3 className="text-xl font-black text-slate-900 border-l-4 border-amber-500 pl-3">
               Bài Viết Cùng Chủ Đề
             </h3>
 
@@ -381,18 +381,18 @@ export default async function BlogPostPage({
                   className="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between group"
                 >
                   <div className="space-y-2">
-                    <span className="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-md">
+                    <span className="text-[10px] font-bold text-slate-700 bg-slate-50 px-2 py-0.5 rounded-md">
                       {rel.category}
                     </span>
                     <Link href={`/tin-tuc/${rel.slug}`}>
-                      <h4 className="font-bold text-slate-900 group-hover:text-emerald-600 transition text-sm line-clamp-2">
+                      <h4 className="font-bold text-slate-900 group-hover:text-amber-700 transition text-sm line-clamp-2">
                         {rel.title}
                       </h4>
                     </Link>
                   </div>
                   <Link
                     href={`/tin-tuc/${rel.slug}`}
-                    className="text-xs font-bold text-emerald-700 hover:underline flex items-center gap-1 pt-3"
+                    className="text-xs font-bold text-slate-700 hover:underline flex items-center gap-1 pt-3"
                   >
                     <span>Xem tiếp</span>
                     <ArrowRight className="w-3 h-3" />

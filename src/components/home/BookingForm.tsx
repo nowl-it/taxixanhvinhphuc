@@ -143,7 +143,7 @@ export default function BookingForm({
         {/* Header indicator */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 sm:pb-5 border-b border-slate-100 gap-2">
           <div>
-            <div className="flex items-center gap-1.5 sm:gap-2 text-emerald-600 font-extrabold text-[10px] sm:text-xs uppercase tracking-wider mb-1">
+            <div className="flex items-center gap-1.5 sm:gap-2 text-slate-600 font-extrabold text-[10px] sm:text-xs uppercase tracking-wider mb-1">
               <Sparkles className="w-3.5 h-3.5 text-amber-500 shrink-0" />
               <span>ĐẶT XE SIÊU TỐC - CÓ MẶT SAU 10 PHÚT</span>
             </div>
@@ -158,7 +158,7 @@ export default function BookingForm({
               type="button"
               onClick={() => setIsRoundTrip(false)}
               className={`px-3 py-1.5 rounded-lg transition ${
-                !isRoundTrip ? "bg-white text-emerald-700 shadow-sm font-bold" : "text-slate-600 hover:text-slate-900"
+                !isRoundTrip ? "bg-white text-slate-700 shadow-sm font-bold" : "text-slate-600 hover:text-slate-900"
               }`}
             >
               Một chiều
@@ -167,7 +167,7 @@ export default function BookingForm({
               type="button"
               onClick={() => setIsRoundTrip(true)}
               className={`px-3 py-1.5 rounded-lg transition flex items-center gap-1 ${
-                isRoundTrip ? "bg-emerald-600 text-white shadow-sm font-bold" : "text-slate-600 hover:text-slate-900"
+                isRoundTrip ? "bg-amber-500 text-slate-950 shadow-sm font-bold" : "text-slate-600 hover:text-slate-900"
               }`}
             >
               <span>Khứ hồi</span>
@@ -187,11 +187,11 @@ export default function BookingForm({
               onClick={() => setCarType("4")}
               className={`p-2 sm:p-3 rounded-xl sm:rounded-2xl border text-center transition flex flex-col items-center justify-center gap-1 min-w-0 ${
                 carType === "4"
-                  ? "border-emerald-600 bg-emerald-50 text-emerald-900 shadow-sm ring-2 ring-emerald-500/20"
+                  ? "border-amber-500 bg-amber-50/50 text-slate-900 shadow-sm ring-2 ring-amber-400/20"
                   : "border-slate-200 hover:border-slate-300 text-slate-700"
               }`}
             >
-              <Car className={`w-4 h-4 sm:w-5 sm:h-5 shrink-0 ${carType === "4" ? "text-emerald-600" : "text-slate-500"}`} />
+              <Car className={`w-4 h-4 sm:w-5 sm:h-5 shrink-0 ${carType === "4" ? "text-slate-600" : "text-slate-500"}`} />
               <span className="font-black text-xs sm:text-sm whitespace-nowrap">Xe 4 Chỗ</span>
               <span className="text-[10px] text-slate-500 hidden sm:inline">Vios, Accent</span>
             </button>
@@ -201,11 +201,11 @@ export default function BookingForm({
               onClick={() => setCarType("7")}
               className={`p-2 sm:p-3 rounded-xl sm:rounded-2xl border text-center transition flex flex-col items-center justify-center gap-1 min-w-0 ${
                 carType === "7"
-                  ? "border-emerald-600 bg-emerald-50 text-emerald-900 shadow-sm ring-2 ring-emerald-500/20"
+                  ? "border-amber-500 bg-amber-50/50 text-slate-900 shadow-sm ring-2 ring-amber-400/20"
                   : "border-slate-200 hover:border-slate-300 text-slate-700"
               }`}
             >
-              <Car className={`w-4 h-4 sm:w-5 sm:h-5 shrink-0 ${carType === "7" ? "text-emerald-600" : "text-slate-500"}`} />
+              <Car className={`w-4 h-4 sm:w-5 sm:h-5 shrink-0 ${carType === "7" ? "text-slate-600" : "text-slate-500"}`} />
               <span className="font-black text-xs sm:text-sm whitespace-nowrap">Xe 7 Chỗ</span>
               <span className="text-[10px] text-slate-500 hidden sm:inline">Xpander, Fortuner</span>
             </button>
@@ -215,11 +215,11 @@ export default function BookingForm({
               onClick={() => setCarType("16")}
               className={`p-2 sm:p-3 rounded-xl sm:rounded-2xl border text-center transition flex flex-col items-center justify-center gap-1 min-w-0 ${
                 carType === "16"
-                  ? "border-emerald-600 bg-emerald-50 text-emerald-900 shadow-sm ring-2 ring-emerald-500/20"
+                  ? "border-amber-500 bg-amber-50/50 text-slate-900 shadow-sm ring-2 ring-amber-400/20"
                   : "border-slate-200 hover:border-slate-300 text-slate-700"
               }`}
             >
-              <Car className={`w-4 h-4 sm:w-5 sm:h-5 shrink-0 ${carType === "16" ? "text-emerald-600" : "text-slate-500"}`} />
+              <Car className={`w-4 h-4 sm:w-5 sm:h-5 shrink-0 ${carType === "16" ? "text-slate-600" : "text-slate-500"}`} />
               <span className="font-black text-xs sm:text-sm whitespace-nowrap">Xe 16 Chỗ</span>
               <span className="text-[10px] text-slate-500 hidden sm:inline">Ford Transit</span>
             </button>
@@ -231,7 +231,7 @@ export default function BookingForm({
           {/* Pickup location */}
           <div>
             <label htmlFor={pickupId} className="block text-xs font-bold text-slate-700 mb-1 flex items-center gap-1">
-              <MapPin className="w-3.5 h-3.5 text-emerald-600" />
+              <MapPin className="w-3.5 h-3.5 text-slate-600" />
               Điểm đón (Nơi bạn muốn đón):
             </label>
             <div className="relative">
@@ -241,7 +241,7 @@ export default function BookingForm({
                 placeholder="VD: TP. Vĩnh Yên, KCN Bá Thiện, Khách sạn..."
                 value={pickup}
                 onChange={(e) => setPickup(e.target.value)}
-                className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-sm bg-white text-slate-900 placeholder:text-slate-400 font-medium"
+                className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent text-sm bg-white text-slate-900 placeholder:text-slate-400 font-medium"
                 required
               />
             </div>
@@ -252,7 +252,7 @@ export default function BookingForm({
                   type="button"
                   key={idx}
                   onClick={() => setPickup(item)}
-                  className="text-[11px] px-2 py-0.5 rounded-md bg-slate-100 hover:bg-emerald-100 hover:text-emerald-800 text-slate-600 transition"
+                  className="text-[11px] px-2 py-0.5 rounded-md bg-slate-100 hover:bg-slate-100 hover:text-slate-800 text-slate-600 transition"
                 >
                   {item}
                 </button>
@@ -273,7 +273,7 @@ export default function BookingForm({
                 placeholder="VD: Sân Bay Nội Bài, BV Bạch Mai Hà Nội, Việt Trì..."
                 value={dropoff}
                 onChange={(e) => setDropoff(e.target.value)}
-                className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent text-sm bg-white text-slate-900 placeholder:text-slate-400 font-medium"
+                className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent text-sm bg-white text-slate-900 placeholder:text-slate-400 font-medium"
                 required
               />
             </div>
@@ -284,7 +284,7 @@ export default function BookingForm({
                   type="button"
                   key={idx}
                   onClick={() => setDropoff(item)}
-                  className="text-[11px] px-2 py-0.5 rounded-md bg-slate-100 hover:bg-emerald-100 hover:text-emerald-800 text-slate-600 transition"
+                  className="text-[11px] px-2 py-0.5 rounded-md bg-slate-100 hover:bg-slate-100 hover:text-slate-800 text-slate-600 transition"
                 >
                   {item}
                 </button>
@@ -304,7 +304,7 @@ export default function BookingForm({
                 type="date"
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
-                className="w-full min-w-0 max-w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm bg-white text-slate-900 font-medium box-border"
+                className="w-full min-w-0 max-w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-400 text-sm bg-white text-slate-900 font-medium box-border"
                 required
               />
             </div>
@@ -318,7 +318,7 @@ export default function BookingForm({
                 type="time"
                 value={time}
                 onChange={(e) => setTime(e.target.value)}
-                className="w-full min-w-0 max-w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm bg-white text-slate-900 font-medium box-border"
+                className="w-full min-w-0 max-w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-400 text-sm bg-white text-slate-900 font-medium box-border"
                 required
               />
             </div>
@@ -327,7 +327,7 @@ export default function BookingForm({
           {/* Customer Phone (Mandatory) */}
           <div>
             <label htmlFor={phoneId} className="block text-xs font-bold text-slate-700 mb-1 flex items-center gap-1">
-              <Phone className="w-3.5 h-3.5 text-emerald-600" />
+              <Phone className="w-3.5 h-3.5 text-slate-600" />
               Số điện thoại của bạn <span className="text-red-500">*</span>:
             </label>
             <input
@@ -336,7 +336,7 @@ export default function BookingForm({
               placeholder="VD: 0912 345 678 (Tài xế sẽ gọi lại)"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              className="w-full px-4 py-3 rounded-xl border border-emerald-400 ring-1 ring-emerald-500/20 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-sm bg-white text-slate-900 placeholder:text-slate-400 font-bold"
+              className="w-full px-4 py-3 rounded-xl border border-amber-400 ring-1 ring-slate-500/20 focus:outline-none focus:ring-2 focus:ring-amber-400 text-sm bg-white text-slate-900 placeholder:text-slate-400 font-bold"
               required
             />
           </div>
@@ -352,18 +352,18 @@ export default function BookingForm({
               placeholder="VD: Có 2 vali lớn, đón sảnh T1 Nội Bài..."
               value={note}
               onChange={(e) => setNote(e.target.value)}
-              className="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-xs bg-white text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-emerald-500 font-medium"
+              className="w-full px-3.5 py-2 rounded-xl border border-slate-300 text-xs bg-white text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-amber-400 font-medium"
             />
           </div>
 
           {/* Estimated price callout if calculated */}
           {estimatedPrice && (
-            <div className="p-3 sm:p-3.5 rounded-xl sm:rounded-2xl bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 animate-in fade-in">
+            <div className="p-3 sm:p-3.5 rounded-xl sm:rounded-2xl bg-gradient-to-r from-slate-50 to-slate-50 border border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 animate-in fade-in">
               <div>
                 <span className="text-[11px] sm:text-xs text-slate-600 block">Cước phí ước tính ({carType} chỗ):</span>
                 <span className="text-base sm:text-lg font-black text-red-600">{estimatedPrice}</span>
               </div>
-              <span className="text-[10px] sm:text-[11px] font-bold text-emerald-800 bg-white px-2.5 py-1 rounded-full shadow-sm border border-emerald-100 shrink-0 self-start sm:self-auto">
+              <span className="text-[10px] sm:text-[11px] font-bold text-slate-800 bg-white px-2.5 py-1 rounded-full shadow-sm border border-slate-100 shrink-0 self-start sm:self-auto">
                 Trọn gói bao gồm vé
               </span>
             </div>
@@ -372,14 +372,14 @@ export default function BookingForm({
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full py-3.5 sm:py-4 px-4 sm:px-6 rounded-xl sm:rounded-2xl bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-black text-sm sm:text-base shadow-xl shadow-emerald-600/30 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2"
+            className="w-full py-3.5 sm:py-4 px-4 sm:px-6 rounded-xl sm:rounded-2xl bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-600 hover:to-amber-600 text-white font-black text-sm sm:text-base shadow-xl shadow-slate-600/30 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2"
           >
             <span>GỬI YÊU CẦU ĐẶT XE NGAY</span>
             <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
           </button>
 
           <p className="text-center text-[10px] sm:text-[11px] text-slate-500 flex items-center justify-center gap-1.5 pt-0.5 sm:pt-1">
-            <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+            <ShieldCheck className="w-3.5 h-3.5 text-slate-600 shrink-0" />
             <span>Tài xế bản địa sẽ liên hệ lại sau 2 phút - Miễn phí hủy chuyến</span>
           </p>
         </form>

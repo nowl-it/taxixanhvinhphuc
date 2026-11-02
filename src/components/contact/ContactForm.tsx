@@ -52,13 +52,13 @@ export default function ContactForm() {
       </div>
 
       {submitted ? (
-        <div className="p-6 rounded-2xl bg-emerald-50 border border-emerald-200 text-center space-y-4 animate-in zoom-in-95">
-          <div className="w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center mx-auto">
+        <div className="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-center space-y-4 animate-in zoom-in-95">
+          <div className="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center mx-auto">
             <CheckCircle2 className="w-7 h-7" />
           </div>
           <div>
-            <h3 className="text-lg font-black text-emerald-950">ĐÃ GHI NHẬN THÔNG TIN!</h3>
-            <p className="text-xs sm:text-sm text-emerald-800 max-w-md mx-auto mt-1">
+            <h3 className="text-lg font-black text-slate-950">ĐÃ GHI NHẬN THÔNG TIN!</h3>
+            <p className="text-xs sm:text-sm text-slate-800 max-w-md mx-auto mt-1">
               Tổng đài viên đã nhận số điện thoại <strong>{phone}</strong>. Bạn hãy bấm gửi qua Zalo để nhân viên gửi ảnh xe và báo giá ngay nhé!
             </p>
           </div>
@@ -126,7 +126,7 @@ export default function ContactForm() {
               placeholder="VD: Anh Nam, Chị Trang..."
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white text-slate-900 placeholder:text-slate-400 font-medium"
+              className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-slate-500 bg-white text-slate-900 placeholder:text-slate-400 font-medium"
             />
           </div>
 
@@ -139,7 +139,7 @@ export default function ContactForm() {
               placeholder="VD: 0912 345 678 (Bắt buộc)"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              className="w-full px-4 py-3 rounded-xl border border-emerald-400 ring-1 ring-emerald-500/20 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white text-slate-900 placeholder:text-slate-400 font-bold"
+              className="w-full px-4 py-3 rounded-xl border border-amber-400 ring-1 ring-slate-500/20 text-sm focus:outline-none focus:ring-2 focus:ring-slate-500 bg-white text-slate-900 placeholder:text-slate-400 font-bold"
               required
             />
           </div>
@@ -153,20 +153,20 @@ export default function ContactForm() {
               placeholder="VD: Cần thuê xe 7 chỗ đón từ Vĩnh Yên đi Sân bay Nội Bài lúc 5h sáng ngày mai..."
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white text-slate-900 placeholder:text-slate-400 font-medium"
+              className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-slate-500 bg-white text-slate-900 placeholder:text-slate-400 font-medium"
             ></textarea>
           </div>
 
           <button
             type="submit"
-            className="w-full py-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-black text-sm sm:text-base flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/30 transition transform hover:-translate-y-0.5 cursor-pointer"
+            className="w-full py-4 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 font-black text-sm sm:text-base flex items-center justify-center gap-2 shadow-lg shadow-slate-600/30 transition transform hover:-translate-y-0.5 cursor-pointer"
           >
             <Send className="w-4 h-4" />
             <span>GỬI YÊU CẦU GỌI LẠI (2 PHÚT)</span>
           </button>
 
           <p className="text-center text-[11px] text-slate-400 flex items-center justify-center gap-1">
-            <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
+            <ShieldCheck className="w-3.5 h-3.5 text-slate-600" />
             <span>Thông tin của bạn được bảo mật tuyệt đối</span>
           </p>
         </form>

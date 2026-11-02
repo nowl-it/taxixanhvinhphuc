@@ -19,7 +19,7 @@ export default function TermsOfServicePage() {
         {/* Header Breadcrumb */}
         <div className="mb-6">
           <div className="flex items-center gap-2 text-xs text-slate-500 mb-2">
-            <Link href="/" className="hover:text-emerald-600 transition">Trang chủ</Link>
+            <Link href="/" className="hover:text-amber-700 transition">Trang chủ</Link>
             <span>/</span>
             <span className="text-slate-800 font-semibold">Điều khoản dịch vụ</span>
           </div>
@@ -54,7 +54,7 @@ export default function TermsOfServicePage() {
           {/* Section 1 */}
           <section className="space-y-3">
             <h2 className="text-lg sm:text-xl font-black text-slate-900 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-emerald-600"></span>
+              <span className="w-2 h-2 rounded-full bg-slate-600"></span>
               1. Phạm vi cung cấp dịch vụ
             </h2>
             <p>
@@ -71,7 +71,7 @@ export default function TermsOfServicePage() {
           {/* Section 2 */}
           <section className="space-y-3">
             <h2 className="text-lg sm:text-xl font-black text-slate-900 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-emerald-600"></span>
+              <span className="w-2 h-2 rounded-full bg-slate-600"></span>
               2. Quyền và nghĩa vụ của hành khách
             </h2>
             <div className="space-y-2 text-xs sm:text-sm text-slate-600">
@@ -84,7 +84,7 @@ export default function TermsOfServicePage() {
           {/* Section 3 */}
           <section className="space-y-3">
             <h2 className="text-lg sm:text-xl font-black text-slate-900 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-emerald-600"></span>
+              <span className="w-2 h-2 rounded-full bg-slate-600"></span>
               3. Cam kết của chúng tôi đối với hành khách
             </h2>
             <div className="space-y-2 text-xs sm:text-sm text-slate-600">
@@ -97,7 +97,7 @@ export default function TermsOfServicePage() {
           {/* Section 4 */}
           <section className="space-y-3">
             <h2 className="text-lg sm:text-xl font-black text-slate-900 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-emerald-600"></span>
+              <span className="w-2 h-2 rounded-full bg-slate-600"></span>
               4. Xử lý khiếu nại và Tranh chấp
             </h2>
             <p>
@@ -110,15 +110,15 @@ export default function TermsOfServicePage() {
             <h3 className="font-black text-slate-900 text-base mb-3">Thông Tin Liên Hệ &amp; Tiếp Nhận Phản Hồi:</h3>
             <div className="space-y-2 text-xs sm:text-sm text-slate-600">
               <p className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-emerald-600 shrink-0" />
+                <MapPin className="w-4 h-4 text-slate-600 shrink-0" />
                 <span><strong>Khu vực đón trả:</strong> Tỉnh Vĩnh Phúc (TP. Vĩnh Yên, TP. Phúc Yên và các huyện)</span>
               </p>
               <p className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-emerald-600 shrink-0" />
+                <Phone className="w-4 h-4 text-slate-600 shrink-0" />
                 <span><strong>Hotline 24/7:</strong> {siteConfig.hotline}</span>
               </p>
               <p className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-emerald-600 shrink-0" />
+                <Mail className="w-4 h-4 text-slate-600 shrink-0" />
                 <span><strong>Email:</strong> {siteConfig.email}</span>
               </p>
             </div>
