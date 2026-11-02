@@ -21,7 +21,6 @@ export interface SiteConfig {
   hotlineRaw: string;
   zalo: string;
   address?: string;
-  email: string;
   workingHours: string;
   domain: string;
   operatingAreas: string[];

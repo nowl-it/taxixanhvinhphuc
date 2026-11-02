@@ -7,7 +7,6 @@ export const siteConfig: SiteConfig = {
   hotline: "058 815 5551",
   hotlineRaw: "0588155551",
   zalo: "https://zalo.me/0588155551",
-  email: "manhrem.hn13@gmail.com",
   workingHours: "Phục vụ 24/7 (Cả ngày lễ & Tết)",
   domain: "https://taxivinhphuc.com",
   operatingAreas: [

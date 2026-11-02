@@ -2,7 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/data/config";
-import { AlertTriangle, Scale, Phone, Mail, MapPin } from "lucide-react";
+import { AlertTriangle, Scale, Phone, MapPin } from "lucide-react";
 
 export const metadata: Metadata = {
   title: `${siteConfig.brandName} [${siteConfig.hotline}] - Điều Khoản Sử Dụng Dịch Vụ & Miễn Trừ Trách Nhiệm`,
@@ -119,10 +119,6 @@ export default function TermsOfServicePage() {
               <p className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-slate-600 shrink-0" />
                 <span><strong>Hotline 24/7:</strong> {siteConfig.hotline}</span>
-              </p>
-              <p className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-slate-600 shrink-0" />
-                <span><strong>Email:</strong> {siteConfig.email}</span>
               </p>
             </div>
           </div>

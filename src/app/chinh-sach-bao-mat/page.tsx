@@ -2,7 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/data/config";
-import { ShieldCheck, Lock, Phone, Mail, MapPin, CheckCircle2 } from "lucide-react";
+import { ShieldCheck, Lock, Phone, MapPin, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: `${siteConfig.brandName} [${siteConfig.hotline}] - Chính Sách Bảo Mật Thông Tin`,
@@ -117,7 +117,7 @@ export default function PrivacyPolicyPage() {
               5. Quyền của khách hàng đối với thông tin cá nhân
             </h2>
             <p>
-              Quý khách có toàn quyền yêu cầu chúng tôi kiểm tra, cập nhật hoặc xóa vĩnh viễn thông tin liên hệ của mình bất kỳ lúc nào bằng cách gọi trực tiếp đến tổng đài <strong>{siteConfig.hotline}</strong> hoặc gửi thư đến email <strong>{siteConfig.email}</strong>.
+              Quý khách có toàn quyền yêu cầu chúng tôi kiểm tra, cập nhật hoặc xóa vĩnh viễn thông tin liên hệ của mình bất kỳ lúc nào bằng cách gọi trực tiếp đến tổng đài <strong>{siteConfig.hotline}</strong>.
             </p>
           </section>
 
@@ -132,10 +132,6 @@ export default function PrivacyPolicyPage() {
               <p className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-slate-600 shrink-0" />
                 <span><strong>Hotline 24/7:</strong> {siteConfig.hotline}</span>
-              </p>
-              <p className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-slate-600 shrink-0" />
-                <span><strong>Email:</strong> {siteConfig.email}</span>
               </p>
             </div>
           </div>

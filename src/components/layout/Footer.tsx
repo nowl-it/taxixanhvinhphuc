@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { siteConfig } from "@/data/config";
 import ZaloIcon from "@/components/ui/ZaloIcon";
-import { Phone, Mail, Clock, ShieldCheck, CheckCircle2, MapPin } from "lucide-react";
+import { Phone, Clock, ShieldCheck, CheckCircle2, MapPin } from "lucide-react";
 
 import TaxiCarIcon from "@/components/ui/TaxiCarIcon";
 
@@ -39,10 +39,6 @@ export default function Footer() {
                 <a href={`tel:${siteConfig.hotlineRaw}`} className="text-amber-400 font-bold hover:underline">
                   Hotline 24/7: {siteConfig.hotline}
                 </a>
-              </div>
-              <div className="flex items-center gap-2.5">
-                <Mail className="w-4 h-4 text-amber-400 shrink-0" />
-                <span>{siteConfig.email}</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Clock className="w-4 h-4 text-amber-400 shrink-0" />

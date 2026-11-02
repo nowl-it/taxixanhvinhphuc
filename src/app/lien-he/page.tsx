@@ -4,7 +4,7 @@ import Link from "next/link";
 import { siteConfig } from "@/data/config";
 import ZaloIcon from "@/components/ui/ZaloIcon";
 import ContactForm from "@/components/contact/ContactForm";
-import { MapPin, Phone, Mail, Clock, Car } from "lucide-react";
+import { MapPin, Phone, Clock, Car } from "lucide-react";
 
 export const metadata: Metadata = {
   title: `${siteConfig.brandName} [${siteConfig.hotline}] - Liên Hệ Tổng Đài Đặt Xe 24/7`,
@@ -50,7 +50,6 @@ export default function LienHePage() {
           "@type": "LocalBusiness",
           name: siteConfig.brandName,
           telephone: siteConfig.hotlineRaw,
-          email: siteConfig.email,
           address: {
             "@type": "PostalAddress",
             addressLocality: "TP. Vĩnh Yên, TP. Phúc Yên",
@@ -150,16 +149,6 @@ export default function LienHePage() {
                     >
                       058 815 5551 (Chat Zalo)
                     </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3.5">
-                  <div className="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center shrink-0">
-                    <Mail className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <strong className="block text-slate-900">Email Hợp Đồng & Hóa Đơn:</strong>
-                    <span className="text-xs text-slate-600">{siteConfig.email}</span>
                   </div>
                 </div>
 

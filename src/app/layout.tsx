@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   formatDetection: {
     telephone: true,
     address: false,
-    email: true,
+    email: false,
   },
   icons: {
     icon: "/favicon.svg",

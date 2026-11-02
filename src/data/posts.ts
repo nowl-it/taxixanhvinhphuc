@@ -345,7 +345,7 @@ Một dịch vụ xe hợp đồng chuyên nghiệp không chỉ đảm bảo đ
 3. **Thủ tục pháp lý minh bạch:** Hợp đồng dịch vụ rõ ràng, nghiệm thu chi tiết, xuất hóa đơn VAT điện tử hợp lệ phục vụ quyết toán thuế công ty.
 
 Quý doanh nghiệp có nhu cầu khảo sát và nhận báo giá hợp đồng xe, xin vui lòng liên hệ:  
-**Hotline Doanh Nghiệp 24/7:** **058 815 5551** (Hoặc gửi email đến: manhrem.hn13@gmail.com).
+**Hotline Doanh Nghiệp 24/7:** **058 815 5551**.
 `,
   },
 ];
