@@ -7,14 +7,14 @@ import { carFleet } from "@/data/cars";
 import { Car, Briefcase, CheckCircle2, Phone, ArrowRight, ShieldCheck, Sparkles, Plane, Building2, Calendar } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Taxi Vĩnh Phúc - Dịch Vụ Xe 4 Chỗ, 7 Chỗ, 16 Chỗ & Xe Tiện Chuyến",
+  title: `${siteConfig.brandName} [${siteConfig.hotline}] - Dịch Vụ Xe 4 Chỗ, 7 Chỗ, 16 Chỗ & Xe Tiện Chuyến`,
   description:
     "Cung cấp đa dạng dịch vụ taxi Vĩnh Phúc: Thuê xe 4 chỗ, 7 chỗ, 16 chỗ đời mới 2022-2025. Xe tiện chuyến Hà Nội, đưa đón sân bay Nội Bài, xe hợp đồng KCN trọn gói giá rẻ. Hotline 058 815 555.",
   alternates: {
     canonical: `${siteConfig.domain}/dich-vu`,
   },
   openGraph: {
-    title: "Taxi Vĩnh Phúc - Dịch Vụ Thuê Xe Taxi 4 Chỗ, 7 Chỗ, 16 Chỗ Vĩnh Phúc",
+    title: `${siteConfig.brandName} [${siteConfig.hotline}] - Dịch Vụ Thuê Xe Taxi 4 Chỗ, 7 Chỗ, 16 Chỗ Vĩnh Phúc`,
     description: "Đội xe đời mới 2022 - 2025 phục vụ đưa đón sân bay Nội Bài, đường dài liên tỉnh, hợp đồng du lịch.",
     url: `${siteConfig.domain}/dich-vu`,
     images: ["/images/hero-banner.jpg"],

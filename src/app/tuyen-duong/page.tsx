@@ -7,7 +7,7 @@ import { Navigation, Clock, ArrowRight, Phone, Sparkles } from "lucide-react";
 
 export const metadata: Metadata = {
   title: {
-    absolute: `Taxi Vĩnh Phúc - Danh Sách Tuyến Xe Taxi Vĩnh Phúc Trọn Gói [${siteConfig.hotline}]`,
+    absolute: `${siteConfig.brandName} [${siteConfig.hotline}] - Danh Sách Tuyến Xe Taxi Vĩnh Phúc Trọn Gói`,
   },
   description:
     "Tổng hợp các tuyến taxi xuất phát từ Vĩnh Phúc: Sân Bay Nội Bài, Hà Nội & Bệnh Viện, Việt Trì Phú Thọ, Tam Đảo, Tây Thiên, Xe hợp đồng KCN. Đón trả tận nơi 24/7.",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     canonical: `${siteConfig.domain}/tuyen-duong`,
   },
   openGraph: {
-    title: `Taxi Vĩnh Phúc - Danh Sách Tuyến Xe Taxi Vĩnh Phúc Trọng Điểm [${siteConfig.hotline}]`,
+    title: `${siteConfig.brandName} [${siteConfig.hotline}] - Danh Sách Tuyến Xe Taxi Vĩnh Phúc Trọng Điểm`,
     description: "Đưa đón sân bay Nội Bài chỉ từ 180K, xe tiện chuyến Hà Nội từ 150K, Tam Đảo, Tây Thiên 24/7.",
     url: `${siteConfig.domain}/tuyen-duong`,
     images: ["/images/hero-banner.jpg"],

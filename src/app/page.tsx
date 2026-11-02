@@ -12,7 +12,7 @@ import { siteConfig } from "@/data/config";
 
 export const metadata: Metadata = {
   title: {
-    absolute: `Taxi Vĩnh Phúc - Dịch Vụ Taxi & Xe Tiện Chuyến Trọn Gói Giá Rẻ 24/7 [${siteConfig.hotline}]`,
+    absolute: `${siteConfig.brandName} [${siteConfig.hotline}] - Dịch Vụ Taxi & Xe Tiện Chuyến Trọn Gói Giá Rẻ 24/7`,
   },
 };
 

@@ -5,7 +5,7 @@ import { siteConfig } from "@/data/config";
 import { ShieldCheck, Lock, Phone, Mail, MapPin, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Taxi Vĩnh Phúc - Chính Sách Bảo Mật Thông Tin",
+  title: `${siteConfig.brandName} [${siteConfig.hotline}] - Chính Sách Bảo Mật Thông Tin`,
   description: `Chính sách bảo vệ quyền riêng tư và thông tin cá nhân khách hàng sử dụng dịch vụ của ${siteConfig.brandName}. Cam kết bảo mật 100% theo tiêu chuẩn.`,
   alternates: {
     canonical: `${siteConfig.domain}/chinh-sach-bao-mat`,

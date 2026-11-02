@@ -32,11 +32,11 @@ export async function generateMetadata({
 
   if (!route) {
     return {
-      title: "Taxi Vĩnh Phúc - Tuyến Đường Không Tồn Tại",
+      title: `${siteConfig.brandName} [${siteConfig.hotline}] - Tuyến Đường Không Tồn Tại`,
     };
   }
 
-  const seoTitle = `Taxi Vĩnh Phúc - ${route.title} [${siteConfig.hotline}]`;
+  const seoTitle = `${siteConfig.brandName} [${siteConfig.hotline}] - ${route.title}`;
 
   return {
     title: {

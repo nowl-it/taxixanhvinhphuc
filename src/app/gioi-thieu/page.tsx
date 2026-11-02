@@ -4,14 +4,14 @@ import { siteConfig } from "@/data/config";
 import { ShieldCheck, Award, Car, Phone, CheckCircle2, Clock, MapPin, HeartHandshake } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Taxi Vĩnh Phúc - Giới Thiệu Đội Xe Đời Mới, Uy Tín Hàng Đầu",
+  title: `${siteConfig.brandName} [${siteConfig.hotline}] - Giới Thiệu Đội Xe Đời Mới, Uy Tín Hàng Đầu`,
   description:
     "Tìm hiểu về Taxi Vĩnh Phúc - Phú Thọ: Đội ngũ hơn 200 xe gia đình đời mới 2022-2025, tài xế bản địa thông thạo đường xá, cam kết giá trọn gói không phụ phí, phục vụ 24/7.",
   alternates: {
     canonical: `${siteConfig.domain}/gioi-thieu`,
   },
   openGraph: {
-    title: "Taxi Vĩnh Phúc - Về Chúng Tôi, Phục Vụ 24/7",
+    title: `${siteConfig.brandName} [${siteConfig.hotline}] - Về Chúng Tôi, Phục Vụ 24/7`,
     description: "Liên minh hơn 200 xe gia đình đời mới tại Vĩnh Phúc cam kết dịch vụ vàng đúng giờ, tận tâm.",
     url: `${siteConfig.domain}/gioi-thieu`,
     images: ["/images/hero-banner.jpg"],

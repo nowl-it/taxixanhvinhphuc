@@ -24,11 +24,11 @@ export async function generateMetadata({
 
   if (!post) {
     return {
-      title: "Taxi Vĩnh Phúc - Bài Viết Không Tồn Tại",
+      title: `${siteConfig.brandName} [${siteConfig.hotline}] - Bài Viết Không Tồn Tại`,
     };
   }
 
-  const seoTitle = `Taxi Vĩnh Phúc - ${post.title}`; // số điện thoại đã nằm sẵn trong title (posts.ts)
+  const seoTitle = `${siteConfig.brandName} [${siteConfig.hotline}] - ${post.title.replace(/ \[058 815 555\]\s*$/, '')}`;
 
   return {
     title: {

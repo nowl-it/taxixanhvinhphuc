@@ -9,7 +9,7 @@ import ZaloIcon from "@/components/ui/ZaloIcon";
 
 export const metadata: Metadata = {
   title: {
-    absolute: `Taxi Vĩnh Phúc - Bảng Giá Cước Taxi Trọn Gói [${siteConfig.hotline}]`,
+    absolute: `${siteConfig.brandName} [${siteConfig.hotline}] - Bảng Giá Cước Taxi Trọn Gói`,
   },
   description:
     "Cập nhật bảng giá taxi Vĩnh Phúc trọn gói 2026: Tuyến Sân Bay Nội Bài từ 180K, Hà Nội đi ghép 150K, Việt Trì 200K, Tam Đảo 350K. Giảm 40% - 70% cước chiều về. Hotline 058 815 555.",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     canonical: `${siteConfig.domain}/bang-gia`,
   },
   openGraph: {
-    title: `Taxi Vĩnh Phúc - Bảng Giá Cước Taxi Trọn Gói [${siteConfig.hotline}]`,
+    title: `${siteConfig.brandName} [${siteConfig.hotline}] - Bảng Giá Cước Taxi Trọn Gói`,
     description: "Bảng giá cước taxi đưa đón sân bay Nội Bài, Hà Nội, Tam Đảo, Tây Thiên trọn gói rẻ nhất Vĩnh Phúc.",
     url: `${siteConfig.domain}/bang-gia`,
     images: ["/images/hero-banner.jpg"],

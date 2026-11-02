@@ -14,7 +14,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.domain),
   title: {
-    default: `${siteConfig.brandName} - Dịch Vụ Taxi & Xe Tiện Chuyến Trọn Gói Giá Rẻ 24/7`,
+    default: `${siteConfig.brandName} [${siteConfig.hotline}] - Dịch Vụ Taxi & Xe Tiện Chuyến Trọn Gói Giá Rẻ 24/7`,
     template: `%s`,
   },
   description:
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     locale: "vi_VN",
     url: siteConfig.domain,
     siteName: siteConfig.brandName,
-    title: `${siteConfig.brandName} - Xe Tiện Chuyến & Sân Bay Trọn Gói Giá Rẻ 24/7`,
+    title: `${siteConfig.brandName} [${siteConfig.hotline}] - Xe Tiện Chuyến & Sân Bay Trọn Gói Giá Rẻ 24/7`,
     description:
       "Tổng đài gọi xe Taxi Vĩnh Phúc 24/7: 058 815 555. Đón tận nơi các huyện Vĩnh Yên, Phúc Yên, Bình Xuyên, Yên Lạc, Vĩnh Tường. Giá trọn gói siêu rẻ, xe mới 100%.",
     images: [
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.brandName} - Dịch Vụ Taxi & Xe Tiện Chuyến Vĩnh Phúc`,
+    title: `${siteConfig.brandName} [${siteConfig.hotline}] - Dịch Vụ Taxi & Xe Tiện Chuyến Vĩnh Phúc`,
     description: "Tổng đài đặt xe taxi Vĩnh Phúc 24/7 Hotline: 058 815 555. Cam kết đúng giờ, giá trọn gói.",
     images: ["/images/hero-banner.jpg"],
   },

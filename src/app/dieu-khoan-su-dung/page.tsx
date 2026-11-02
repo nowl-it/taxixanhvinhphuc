@@ -5,7 +5,7 @@ import { siteConfig } from "@/data/config";
 import { AlertTriangle, Scale, Phone, Mail, MapPin } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Taxi Vĩnh Phúc - Điều Khoản Sử Dụng Dịch Vụ & Miễn Trừ Trách Nhiệm",
+  title: `${siteConfig.brandName} [${siteConfig.hotline}] - Điều Khoản Sử Dụng Dịch Vụ & Miễn Trừ Trách Nhiệm`,
   description: `Điều khoản và điều kiện sử dụng dịch vụ đặt xe, đưa đón hành khách của ${siteConfig.brandName}. Cam kết minh bạch, rõ ràng và uy tín.`,
   alternates: {
     canonical: `${siteConfig.domain}/dieu-khoan-su-dung`,
