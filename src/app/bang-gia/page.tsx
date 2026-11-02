@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     absolute: `${siteConfig.brandName} [${siteConfig.hotline}] - Bảng Giá Cước Taxi Trọn Gói`,
   },
   description:
-    "Cập nhật bảng giá taxi Vĩnh Phúc trọn gói 2026: Tuyến Sân Bay Nội Bài từ 180K, Hà Nội đi ghép 150K, Việt Trì 200K, Tam Đảo 350K. Giảm 40% - 70% cước chiều về. Hotline 058 815 555.",
+    "Cập nhật bảng giá taxi Vĩnh Phúc trọn gói 2026: Tuyến Sân Bay Nội Bài từ 180K, Hà Nội đi ghép 150K, Việt Trì 200K, Tam Đảo 350K. Giảm 40% - 70% cước chiều về. Hotline 058 815 5551.",
   alternates: {
     canonical: `${siteConfig.domain}/bang-gia`,
   },

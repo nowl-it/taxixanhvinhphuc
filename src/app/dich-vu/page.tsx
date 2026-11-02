@@ -9,7 +9,7 @@ import { Car, Briefcase, CheckCircle2, Phone, ArrowRight, ShieldCheck, Sparkles,
 export const metadata: Metadata = {
   title: `${siteConfig.brandName} [${siteConfig.hotline}] - Dịch Vụ Xe 4 Chỗ, 7 Chỗ, 16 Chỗ & Xe Tiện Chuyến`,
   description:
-    "Cung cấp đa dạng dịch vụ taxi Vĩnh Phúc: Thuê xe 4 chỗ, 7 chỗ, 16 chỗ đời mới 2022-2025. Xe tiện chuyến Hà Nội, đưa đón sân bay Nội Bài, xe hợp đồng KCN trọn gói giá rẻ. Hotline 058 815 555.",
+    "Cung cấp đa dạng dịch vụ taxi Vĩnh Phúc: Thuê xe 4 chỗ, 7 chỗ, 16 chỗ đời mới 2022-2025. Xe tiện chuyến Hà Nội, đưa đón sân bay Nội Bài, xe hợp đồng KCN trọn gói giá rẻ. Hotline 058 815 5551.",
   alternates: {
     canonical: `${siteConfig.domain}/dich-vu`,
   },

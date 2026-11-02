@@ -3,7 +3,7 @@ import { BlogPost } from "@/types";
 export const blogPosts: BlogPost[] = [
   {
     slug: "thong-bao-phuc-vu-tet-nguyen-dan-2026",
-    title: "Thông Báo Lịch Phục Vụ Xe Taxi & Tiện Chuyến Dịp Lễ Tết 2026 - Cam Kết Không Tăng Giá [058 815 555]",
+    title: "Thông Báo Lịch Phục Vụ Xe Taxi & Tiện Chuyến Dịp Lễ Tết 2026 - Cam Kết Không Tăng Giá [058 815 5551]",
     excerpt:
       "Taxi Vĩnh Phúc - Phú Thọ thông báo lịch phục vụ 24/7 xuyên Tết Nguyên Đán 2026. Đội xe hơn 200 xe đời mới trực chiến cả ngày đêm giao thừa & mùng 1-5 Tết. Cam kết giữ nguyên giá cước niêm yết.",
     category: "Thông Báo & Lễ Tết",
@@ -20,7 +20,7 @@ export const blogPosts: BlogPost[] = [
 
 Kính gửi Quý khách hàng, quý doanh nghiệp và bà con nhân dân tỉnh Vĩnh Phúc!
 
-Nhằm đáp ứng tối đa nhu cầu đi lại, về quê sum họp, thăm hỏi người thân và du xuân đầu năm trong dịp nghỉ lễ Tết, **Tổng Đài Taxi Vĩnh Phúc - Phú Thọ (058 815 555)** xin trân trọng thông báo kế hoạch phục vụ:
+Nhằm đáp ứng tối đa nhu cầu đi lại, về quê sum họp, thăm hỏi người thân và du xuân đầu năm trong dịp nghỉ lễ Tết, **Tổng Đài Taxi Vĩnh Phúc - Phú Thọ (058 815 5551)** xin trân trọng thông báo kế hoạch phục vụ:
 
 * **Thời gian hoạt động:** Phục vụ **liên tục 24/24h**, không nghỉ ca đêm, không nghỉ ngày Tết (kể cả thời khắc Giao thừa và các ngày mùng 1, 2, 3, 4, 5 Tết).
 * **Quy mô lực lượng:** Hơn **200 xe gia đình đời mới 2022 - 2025** (4 chỗ, 7 chỗ, 16 chỗ) túc trực phân bổ đều tại TP. Vĩnh Yên, TP. Phúc Yên, KCN Bình Xuyên, Tam Đảo, Yên Lạc, Vĩnh Tường, Lập Thạch, Sông Lô.
@@ -55,15 +55,15 @@ Vào các ngày cao điểm (27, 28, 29 tháng Chạp và mùng 3, 4, 5 tháng G
 
 * **Đặt lịch trước từ 1 - 3 ngày:** Chỉ cần gọi điện báo ngày giờ, loại xe và điểm đón.
 * **Không bắt buộc cọc với các chuyến nội tỉnh:** Xác nhận lịch là xe có mặt.
-* **Hotline Tổng Đài Ưu Tiên 24/7:** **058 815 555** (Bấm để gọi ngay).
-* **Kết bạn Zalo điều phối:** **058 815 555** (Nhắn tin nhận định vị và ảnh xe trước).
+* **Hotline Tổng Đài Ưu Tiên 24/7:** **058 815 5551** (Bấm để gọi ngay).
+* **Kết bạn Zalo điều phối:** **058 815 5551** (Nhắn tin nhận định vị và ảnh xe trước).
 
 *Taxi Vĩnh Phúc - Phú Thọ kính chúc Quý khách hàng và gia đình một năm mới An Khang Thịnh Vượng - Vạn Sự Như Ý - Vạn Dặm Bình An!*
 `,
   },
   {
     slug: "taxi-vinh-phuc-san-bay-noi-bai-gia-re",
-    title: "Bảng Giá Taxi Vĩnh Phúc Đi Sân Bay Nội Bài Trọn Gói Chỉ Từ 180K (Cập Nhật 2026) [058 815 555]",
+    title: "Bảng Giá Taxi Vĩnh Phúc Đi Sân Bay Nội Bài Trọn Gói Chỉ Từ 180K (Cập Nhật 2026) [058 815 5551]",
     excerpt:
       "Tổng hợp giá taxi từ Phúc Yên, Vĩnh Yên, Bình Xuyên, Yên Lạc, Vĩnh Tường đi Sân Bay Nội Bài trọn gói. Đón đúng giờ, bao vé cầu đường, giảm tới 50% chiều về.",
     category: "Tuyến Sân Bay",
@@ -77,7 +77,7 @@ Vào các ngày cao điểm (27, 28, 29 tháng Chạp và mùng 3, 4, 5 tháng G
 
 Nằm ở vị trí cửa ngõ phía Bắc thủ đô, tỉnh Vĩnh Phúc có lưu lượng hành khách di chuyển đến Sân bay Quốc tế Nội Bài vô cùng lớn mỗi ngày. Dù quý khách bay các chuyến công tác, du lịch hay đưa đón kiều bào, chuyên gia nước ngoài, việc lựa chọn một hãng taxi uy tín, đưa đón tận nơi và cam kết đúng giờ bay là ưu tiên số một.
 
-**Taxi Vĩnh Phúc - Phú Thọ (Hotline: 058 815 555)** tự hào là đối tác quen thuộc của hàng nghìn khách hàng trên khắp địa bàn tỉnh Vĩnh Phúc, cung cấp dịch vụ xe đưa đón sân bay Nội Bài trọn gói với mức giá cực kỳ cạnh tranh, rẻ hơn từ 20% - 30% so với taxi tính cước đồng hồ truyền thống.
+**Taxi Vĩnh Phúc - Phú Thọ (Hotline: 058 815 5551)** tự hào là đối tác quen thuộc của hàng nghìn khách hàng trên khắp địa bàn tỉnh Vĩnh Phúc, cung cấp dịch vụ xe đưa đón sân bay Nội Bài trọn gói với mức giá cực kỳ cạnh tranh, rẻ hơn từ 20% - 30% so với taxi tính cước đồng hồ truyền thống.
 
 ---
 
@@ -109,14 +109,14 @@ Bảng giá dưới đây đã bao gồm chi phí cầu đường cơ bản và 
 
 ## 4. Hướng Dẫn Đặt Xe Nhanh Chóng
 
-* **Cách 1:** Gọi trực tiếp Tổng đài 24/7 qua số **058 815 555** (Bấm để gọi ngay).
-* **Cách 2:** Nhắn tin qua Zalo số **058 815 555** để nhận báo giá chi tiết và gửi định vị vị trí đón.
+* **Cách 1:** Gọi trực tiếp Tổng đài 24/7 qua số **058 815 5551** (Bấm để gọi ngay).
+* **Cách 2:** Nhắn tin qua Zalo số **058 815 5551** để nhận báo giá chi tiết và gửi định vị vị trí đón.
 * **Cách 3:** Điền form đặt xe trực tuyến trên website, điều phối viên sẽ gọi lại xác nhận sau 2 phút.
 `,
   },
   {
     slug: "xe-tien-chuyen-vinh-phuc-ha-noi-benh-vien",
-    title: "Dịch Vụ Xe Tiện Chuyến Vĩnh Phúc - Hà Nội Đón Tận Nơi Các Bệnh Viện Lớn [058 815 555]",
+    title: "Dịch Vụ Xe Tiện Chuyến Vĩnh Phúc - Hà Nội Đón Tận Nơi Các Bệnh Viện Lớn [058 815 5551]",
     excerpt:
       "Dịch vụ xe ghép, xe tiện chuyến giá chỉ từ 150K/người và bao xe trọn gói đi khám bệnh tại BV Bạch Mai, Việt Đức, K Tân Triều, 108. Đón từ 4h sáng tận cửa.",
     category: "Xe Tiện Chuyến",
@@ -165,12 +165,12 @@ Dịch vụ **Xe Tiện Chuyến Vĩnh Phúc - Hà Nội** ra đời như một 
 * Hỗ trợ khiêng vác hành lý và xe lăn (nếu có).
 * Có xe phục vụ chiều về linh hoạt: Khi quý khách khám xong chỉ cần bấm gọi trước 30 phút, tài xế sẽ có mặt ngay cổng viện đón về tận nhà với giá giảm sâu.
 
-**Đặt xe ngay hôm nay:** Gọi **058 815 555** hoặc kết bạn Zalo để đặt chuyến sớm nhất!
+**Đặt xe ngay hôm nay:** Gọi **058 815 5551** hoặc kết bạn Zalo để đặt chuyến sớm nhất!
 `,
   },
   {
     slug: "taxi-vinh-phuc-viet-tri-phu-tho",
-    title: "Taxi Vĩnh Phúc Đi Việt Trì - Phú Thọ: Giá Cước Siêu Rẻ, Có Mặt Sau 10 Phút [058 815 555]",
+    title: "Taxi Vĩnh Phúc Đi Việt Trì - Phú Thọ: Giá Cước Siêu Rẻ, Có Mặt Sau 10 Phút [058 815 5551]",
     excerpt:
       "Tuyến taxi liên tỉnh Vĩnh Phúc - Phú Thọ chỉ 20-30 phút qua cầu Vĩnh Phú & cầu Hạc Trì. Đi TP Việt Trì, Đền Hùng, Lâm Thao trọn gói từ 200K.",
     category: "Tuyến Liên Tỉnh",
@@ -207,12 +207,12 @@ Nhu cầu đi lại giữa hai địa phương rất đa dạng: từ công tác
 * **Giá tính trọn gói minh bạch:** Quý khách không phải lo lắng về việc tài xế chạy vòng vèo hay đồng hồ km nhảy sai lệch.
 * **Phục vụ đi lễ hội Đền Hùng:** Chờ đoàn dâng hương và ăn trưa trọn gói trong ngày với chi phí phụ trội chỉ từ 50k/giờ.
 
-Liên hệ tổng đài đặt xe nhanh 24/7: **058 815 555** (Hỗ trợ Zalo tư vấn lịch trình).
+Liên hệ tổng đài đặt xe nhanh 24/7: **058 815 5551** (Hỗ trợ Zalo tư vấn lịch trình).
 `,
   },
   {
     slug: "kinh-nghiem-thue-xe-tam-dao-tay-thien",
-    title: "Kinh Nghiệm Thuê Xe Taxi Đi Tam Đảo - Tây Thiên Trọn Gói Giá Tiết Kiệm Nhất [058 815 555]",
+    title: "Kinh Nghiệm Thuê Xe Taxi Đi Tam Đảo - Tây Thiên Trọn Gói Giá Tiết Kiệm Nhất [058 815 5551]",
     excerpt:
       "Bí quyết đặt xe đi Tam Đảo và Tây Thiên an toàn vượt đèo sương mù. Bảng giá trọn gói từ Hà Nội và Vĩnh Yên, đưa đón tận các homestay, khách sạn.",
     category: "Du Lịch Vĩnh Phúc",
@@ -253,12 +253,12 @@ Nếu quý khách tự lái xe hoặc thuê tài xế không quen đường đè
 
 1. **Đặt xe 2 chiều:** Đặt khứ hồi cùng 1 xe sẽ tiết kiệm từ 30% - 40% so với việc bắt xe chiều về riêng biệt trên núi.
 2. **Chọn xe 7 chỗ nếu đi nhóm 4-6 người:** Xe MPV như Xpander gầm cao thoáng máy, cốp rộng để thoải mái đồ nướng lẩu BBQ và vali dã ngoại.
-3. **Liên hệ trước:** Vào mùa cao điểm cuối tuần (Thứ 7 & Chủ Nhật), nên gọi trước ít nhất 1-2 ngày qua Hotline **058 815 555** để giữ xe mới đẹp nhất.
+3. **Liên hệ trước:** Vào mùa cao điểm cuối tuần (Thứ 7 & Chủ Nhật), nên gọi trước ít nhất 1-2 ngày qua Hotline **058 815 5551** để giữ xe mới đẹp nhất.
 `,
   },
   {
     slug: "so-sanh-gia-xe-4-cho-va-7-cho",
-    title: "Nên Chọn Xe Taxi 4 Chỗ Hay 7 Chỗ Khi Đi Tỉnh? Bảng So Sánh Chi Tiết [058 815 555]",
+    title: "Nên Chọn Xe Taxi 4 Chỗ Hay 7 Chỗ Khi Đi Tỉnh? Bảng So Sánh Chi Tiết [058 815 5551]",
     excerpt:
       "Tư vấn chi tiết cách lựa chọn giữa xe 4 chỗ và xe 7 chỗ dựa trên số lượng người, thể tích hành lý và cung đường di chuyển để tiết kiệm chi phí tối đa.",
     category: "Kinh Nghiệm Đi Xe",
@@ -302,12 +302,12 @@ Mức chênh lệch giá giữa xe 4 chỗ và 7 chỗ trên cùng tuyến đư�
 * Chuyến đi du lịch Tam Đảo, Tây Thiên hoặc các tỉnh miền núi phía Bắc (Sa Pa, Hà Giang, Tuyên Quang).
 * Đoàn có nhiều vali hành lý, dụng cụ thể thao (bộ gậy golf) hoặc đồ lễ cồng kềnh.
 
-Để nhận tư vấn loại xe phù hợp nhất với hành trình của bạn, hãy gọi ngay **058 815 555**!
+Để nhận tư vấn loại xe phù hợp nhất với hành trình của bạn, hãy gọi ngay **058 815 5551**!
 `,
   },
   {
     slug: "xe-hop-dong-dua-don-chuyen-gia-kcn-vinh-phuc",
-    title: "Dịch Vụ Thuê Xe Hợp Đồng Đưa Đón Chuyên Gia Tại Các KCN Vĩnh Phúc [058 815 555]",
+    title: "Dịch Vụ Thuê Xe Hợp Đồng Đưa Đón Chuyên Gia Tại Các KCN Vĩnh Phúc [058 815 5551]",
     excerpt:
       "Giải pháp thuê xe đưa đón chuyên gia, quản lý và cán bộ theo ngày/tháng tại KCN Khai Quang, Bình Xuyên, Bá Thiện, Thăng Long. Hóa đơn VAT đầy đủ.",
     category: "Hợp Đồng Doanh Nghiệp",
@@ -345,7 +345,7 @@ Một dịch vụ xe hợp đồng chuyên nghiệp không chỉ đảm bảo đ
 3. **Thủ tục pháp lý minh bạch:** Hợp đồng dịch vụ rõ ràng, nghiệm thu chi tiết, xuất hóa đơn VAT điện tử hợp lệ phục vụ quyết toán thuế công ty.
 
 Quý doanh nghiệp có nhu cầu khảo sát và nhận báo giá hợp đồng xe, xin vui lòng liên hệ:  
-**Hotline Doanh Nghiệp 24/7:** **058 815 555** (Hoặc gửi email đến: manhrem.hn13@gmail.com).
+**Hotline Doanh Nghiệp 24/7:** **058 815 5551** (Hoặc gửi email đến: manhrem.hn13@gmail.com).
 `,
   },
 ];

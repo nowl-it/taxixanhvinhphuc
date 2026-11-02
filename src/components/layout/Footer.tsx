@@ -230,7 +230,7 @@ export default function Footer() {
         <div className="pt-4 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-400 gap-3 sm:gap-4 text-center sm:text-left">
           <p>© 2026 {siteConfig.brandName}. Bản quyền thuộc về Taxi Vĩnh Phúc - Phú Thọ. Đơn vị cung cấp dịch vụ vận tải taxi &amp; xe tiện chuyến hàng đầu Vĩnh Phúc.</p>
           <p className="text-slate-400 shrink-0">
-            Hotline điều hành: <strong className="text-amber-400">{siteConfig.hotline}</strong> | Zalo: <strong className="text-blue-400">058 815 555</strong>
+            Hotline điều hành: <strong className="text-amber-400">{siteConfig.hotline}</strong> | Zalo: <strong className="text-blue-400">058 815 5551</strong>
           </p>
         </div>
       </div>

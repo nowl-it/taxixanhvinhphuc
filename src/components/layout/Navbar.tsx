@@ -151,7 +151,7 @@ export default function Navbar() {
                 className="w-full py-3 px-4 rounded-xl bg-blue-50 text-blue-700 border border-blue-200 font-bold text-center flex items-center justify-center gap-2 shadow-sm"
               >
                 <ZaloIcon className="w-5 h-5" />
-                <span>CHAT ZALO ĐẶT XE (058 815 555)</span>
+                <span>CHAT ZALO ĐẶT XE (058 815 5551)</span>
               </a>
             </div>
           </div>

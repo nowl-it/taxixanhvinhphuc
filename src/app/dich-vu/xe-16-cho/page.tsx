@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     absolute: `${siteConfig.brandName} [${siteConfig.hotline}] - Dịch Vụ Thuê Xe 16 Chỗ Vĩnh Phúc`,
   },
   description:
-    "Thuê xe 16 chỗ tại Vĩnh Phúc: Ford Transit, Hyundai Solati đời mới. Phục vụ đoàn du lịch Tam Đảo, Tây Thiên, đám cưới hỏi, hợp đồng đưa đón KCN giá rẻ. Hotline 058 815 555.",
+    "Thuê xe 16 chỗ tại Vĩnh Phúc: Ford Transit, Hyundai Solati đời mới. Phục vụ đoàn du lịch Tam Đảo, Tây Thiên, đám cưới hỏi, hợp đồng đưa đón KCN giá rẻ. Hotline 058 815 5551.",
   alternates: {
     canonical: `${siteConfig.domain}/dich-vu/xe-16-cho`,
   },

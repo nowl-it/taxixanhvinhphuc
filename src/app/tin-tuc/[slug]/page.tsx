@@ -28,7 +28,7 @@ export async function generateMetadata({
     };
   }
 
-  const seoTitle = `${siteConfig.brandName} [${siteConfig.hotline}] - ${post.title.replace(/ \[058 815 555\]\s*$/, '')}`;
+  const seoTitle = `${siteConfig.brandName} [${siteConfig.hotline}] - ${post.title.replace(/ \[058 815 5551\]\s*$/, '')}`;
 
   return {
     title: {
@@ -296,7 +296,7 @@ export default async function BlogPostPage({
             {`${siteConfig.brandName} ${siteConfig.hotline}`}
           </h2>
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-black text-slate-900 leading-tight">
-            {post.title.replace(/ \[058 815 555\]\s*$/, '')}
+            {post.title.replace(/ \[058 815 5551\]\s*$/, '')}
           </h1>
 
           <div className="flex flex-wrap items-center gap-4 text-xs text-slate-500 pb-2 border-b border-slate-200">

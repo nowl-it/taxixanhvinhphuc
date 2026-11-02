@@ -9,13 +9,13 @@ import { MapPin, Phone, Mail, Clock, Car } from "lucide-react";
 export const metadata: Metadata = {
   title: `${siteConfig.brandName} [${siteConfig.hotline}] - Liên Hệ Tổng Đài Đặt Xe 24/7`,
   description:
-    "Tổng đài hỗ trợ và điều phối xe taxi Vĩnh Phúc 24/7: Hotline 058 815 555, Zalo 058 815 555. Đón tận nhà tại tất cả các huyện, thành phố tỉnh Vĩnh Phúc. Đặt xe nhanh sau 2 phút.",
+    "Tổng đài hỗ trợ và điều phối xe taxi Vĩnh Phúc 24/7: Hotline 058 815 5551, Zalo 058 815 5551. Đón tận nhà tại tất cả các huyện, thành phố tỉnh Vĩnh Phúc. Đặt xe nhanh sau 2 phút.",
   alternates: {
     canonical: `${siteConfig.domain}/lien-he`,
   },
   openGraph: {
     title: `${siteConfig.brandName} [${siteConfig.hotline}] - Liên Hệ Tổng Đài Đặt Xe 24/7`,
-    description: "Hotline 058 815 555 - Zalo 058 815 555. Xe đón tận nơi các huyện thành phố Vĩnh Phúc.",
+    description: "Hotline 058 815 5551 - Zalo 058 815 5551. Xe đón tận nơi các huyện thành phố Vĩnh Phúc.",
     url: `${siteConfig.domain}/lien-he`,
     images: ["/images/hero-banner.jpg"],
   },
@@ -148,7 +148,7 @@ export default function LienHePage() {
                       rel="noopener noreferrer"
                       className="text-sm font-bold text-blue-600 hover:underline block"
                     >
-                      058 815 555 (Chat Zalo)
+                      058 815 5551 (Chat Zalo)
                     </a>
                   </div>
                 </div>
