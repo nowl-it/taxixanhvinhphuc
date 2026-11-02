@@ -1,12 +1,15 @@
 import React from "react";
 import type { Metadata } from "next";
 import HeroBanner from "@/components/home/HeroBanner";
+import PromoStrip from "@/components/home/PromoStrip";
 import PriceSection from "@/components/home/PriceSection";
 import CarFleet from "@/components/home/CarFleet";
+import PromoBlock from "@/components/home/PromoBlock";
 import Commitments from "@/components/home/Commitments";
 import StepGuide from "@/components/home/StepGuide";
 import Testimonials from "@/components/home/Testimonials";
 import BlogSection from "@/components/home/BlogSection";
+import ImageAdBanner from "@/components/home/ImageAdBanner";
 import CTASection from "@/components/home/CTASection";
 import { siteConfig } from "@/data/config";
 
@@ -71,12 +74,15 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <HeroBanner />
+      <PromoStrip />
       <PriceSection />
       <CarFleet />
+      <PromoBlock />
       <Commitments />
       <StepGuide />
       <Testimonials />
       <BlogSection />
+      <ImageAdBanner />
       <CTASection />
     </>
   );
