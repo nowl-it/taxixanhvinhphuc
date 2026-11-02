@@ -1,5 +1,5 @@
 # HƯỚNG DẪN QUẢN TRỊ BÀI VIẾT & THÔNG BÁO LỄ TẾT
-### Website: Taxi Điện Vĩnh Phúc - Phú Thọ (taxidienvinhphuc.com)
+### Website: Taxi Vĩnh Phúc - Phú Thọ (taxivinhphuc.com)
 
 > **Dành cho chủ xe & quản trị viên:** Hướng dẫn này giúp bạn tự chỉnh sửa nội dung bài viết, cập nhật giá cước hoặc bật thông báo phục vụ các dịp Lễ Tết (Tết Nguyên Đán, 30/4 - 1/5, 2/9, Giỗ Tổ...) **ngay trên trình duyệt điện thoại hoặc máy tính** mà không cần biết lập trình. Mọi thay đổi sau khi lưu sẽ được hệ thống Vercel tự động cập nhật lên website trong vòng **60 giây**.
 
@@ -54,10 +54,10 @@ Khi sắp đến các dịp nghỉ lễ (Tết Nguyên Đán, 30/4, 2/9...), b�
 ```typescript
   {
     slug: "thong-bao-lich-xe-le-30-4-1-5", // Đường dẫn link (viết thường, không dấu, nối bằng gạch ngang)
-    title: "Thông Báo Lịch Xe & Khuyến Mãi Dịp Nghỉ Lễ 30/4 - 1/5 [0961 299 934]", // Tiêu đề bài (luôn thêm số điện thoại vào cuối)
-    excerpt: "Taxi Điện Vĩnh Phúc - Phú Thọ phục vụ xuyên suốt kỳ nghỉ lễ 30/4 - 1/5 với hơn 200 xe đời mới, đưa đón du lịch Tam Đảo, Tây Thiên, sân bay Nội Bài giá rẻ không phụ phí.",
+    title: "Thông Báo Lịch Xe & Khuyến Mãi Dịp Nghỉ Lễ 30/4 - 1/5 [0829 387 338]", // Tiêu đề bài (luôn thêm số điện thoại vào cuối)
+    excerpt: "Taxi Vĩnh Phúc - Phú Thọ phục vụ xuyên suốt kỳ nghỉ lễ 30/4 - 1/5 với hơn 200 xe đời mới, đưa đón du lịch Tam Đảo, Tây Thiên, sân bay Nội Bài giá rẻ không phụ phí.",
     category: "Thông Báo & Lễ Tết",
-    author: "Tổng Đài Taxi Điện Vĩnh Phúc - Phú Thọ",
+    author: "Tổng Đài Taxi Vĩnh Phúc - Phú Thọ",
     date: "25/04/2026",
     readTime: "4 phút đọc",
     featuredImage: "/images/hero-banner.jpg",
@@ -68,7 +68,7 @@ Khi sắp đến các dịp nghỉ lễ (Tết Nguyên Đán, 30/4, 2/9...), b�
     content: `
 ## 1. Kế Hoạch Phục Vụ Kỳ Nghỉ Lễ 30/4 - 1/5
 
-Chào đón kỳ nghỉ lễ kéo dài, Taxi Điện Vĩnh Phúc - Phú Thọ sẵn sàng phục vụ quý khách:
+Chào đón kỳ nghỉ lễ kéo dài, Taxi Vĩnh Phúc - Phú Thọ sẵn sàng phục vụ quý khách:
 * Phục vụ 24/7 đưa đón sân bay Nội Bài, xe đi du lịch Tam Đảo, Tây Thiên, Đại Lải.
 * Toàn bộ xe 4 chỗ, 7 chỗ, 16 chỗ đời mới 2023 - 2025 điều hòa mát lạnh.
 
@@ -85,7 +85,7 @@ Chào đón kỳ nghỉ lễ kéo dài, Taxi Điện Vĩnh Phúc - Phú Thọ s�
 
 ## 3. Liên Hệ Đặt Xe
 
-Gọi ngay Hotline 24/7: **0961 299 934** (Hoặc kết bạn Zalo **0961 299 934**).
+Gọi ngay Hotline 24/7: **0829 387 338** (Hoặc kết bạn Zalo **0829 387 338**).
 `,
   },
 ```

@@ -8,7 +8,7 @@ export default function StepGuide() {
       step: "01",
       icon: MapPin,
       title: "Chọn Lộ Trình & Thời Gian",
-      desc: "Nhập điểm đón, điểm đến và thời gian đi trên website hoặc gọi trực tiếp Hotline 0961 299 934.",
+      desc: "Nhập điểm đón, điểm đến và thời gian đi trên website hoặc gọi trực tiếp Hotline 0829 387 338.",
     },
     {
       step: "02",

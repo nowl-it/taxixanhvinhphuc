@@ -7,15 +7,15 @@ import ContactForm from "@/components/contact/ContactForm";
 import { MapPin, Phone, Mail, Clock, Car } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Taxi Điện Vĩnh Phúc - Liên Hệ Tổng Đài Đặt Xe 24/7 - 0961 299 934",
+  title: "Taxi Vĩnh Phúc - Liên Hệ Tổng Đài Đặt Xe 24/7 - 0829 387 338",
   description:
-    "Tổng đài hỗ trợ và điều phối xe taxi Vĩnh Phúc 24/7: Hotline 0961 299 934, Zalo 0961 299 934. Đón tận nhà tại tất cả các huyện, thành phố tỉnh Vĩnh Phúc. Đặt xe nhanh sau 2 phút.",
+    "Tổng đài hỗ trợ và điều phối xe taxi Vĩnh Phúc 24/7: Hotline 0829 387 338, Zalo 0829 387 338. Đón tận nhà tại tất cả các huyện, thành phố tỉnh Vĩnh Phúc. Đặt xe nhanh sau 2 phút.",
   alternates: {
     canonical: `${siteConfig.domain}/lien-he`,
   },
   openGraph: {
-    title: "Taxi Điện Vĩnh Phúc - Liên Hệ Tổng Đài Đặt Xe 24/7",
-    description: "Hotline 0961 299 934 - Zalo 0961 299 934. Xe đón tận nơi các huyện thành phố Vĩnh Phúc.",
+    title: "Taxi Vĩnh Phúc - Liên Hệ Tổng Đài Đặt Xe 24/7",
+    description: "Hotline 0829 387 338 - Zalo 0829 387 338. Xe đón tận nơi các huyện thành phố Vĩnh Phúc.",
     url: `${siteConfig.domain}/lien-he`,
     images: ["/images/hero-banner.jpg"],
   },
@@ -44,7 +44,7 @@ export default function LienHePage() {
       },
       {
         "@type": "ContactPage",
-        name: "Liên Hệ Tổng Đài Taxi Điện Vĩnh Phúc - Phú Thọ",
+        name: "Liên Hệ Tổng Đài Taxi Vĩnh Phúc - Phú Thọ",
         url: `${siteConfig.domain}/lien-he`,
         mainEntity: {
           "@type": "LocalBusiness",
@@ -90,7 +90,7 @@ export default function LienHePage() {
             <span>KẾT NỐI 24/7 VỚI CHÚNG TÔI</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
-            Liên Hệ Tổng Đài Taxi Điện Vĩnh Phúc - Phú Thọ
+            Liên Hệ Tổng Đài Taxi Vĩnh Phúc - Phú Thọ
           </h1>
           <p className="text-slate-600 text-sm sm:text-base">
             Tổng đài điều hành và đội xe hoạt động liên tục 24/7 kể cả ban đêm, ngày nghỉ lễ và Tết Nguyên Đán.
@@ -145,7 +145,7 @@ export default function LienHePage() {
                       rel="noopener noreferrer"
                       className="text-sm font-bold text-blue-600 hover:underline block"
                     >
-                      0961 299 934 (Chat Zalo)
+                      0829 387 338 (Chat Zalo)
                     </a>
                   </div>
                 </div>

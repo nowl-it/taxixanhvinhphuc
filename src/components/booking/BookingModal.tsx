@@ -27,7 +27,7 @@ export default function BookingModal({
   // Format booking information into a clean message for Zalo
   const formatZaloMessage = () => {
     return [
-      `🚖 YÊU CẦU ĐẶT XE - TAXI ĐIỆN VĨNH PHÚC - PHÚ THỌ`,
+      `🚖 YÊU CẦU ĐẶT XE - TAXI VĨNH PHÚC - PHÚ THỌ`,
       `• Khách hàng (SĐT): ${bookingData.phone}`,
       `• Điểm đón: ${bookingData.pickup}`,
       `• Điểm đến: ${bookingData.dropoff}`,

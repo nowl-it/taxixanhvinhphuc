@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: `%s`,
   },
   description:
-    "Tổng đài Taxi Điện Vĩnh Phúc - Phú Thọ 0961 299 934 - Dịch vụ taxi đưa đón sân bay Nội Bài chỉ từ 180K, xe tiện chuyến Vĩnh Phúc Hà Nội, Tam Đảo, Tây Thiên, xe hợp đồng KCN. Xe đời mới 2022-2025, đúng giờ, giá trọn gói không phụ phí.",
+    "Tổng đài Taxi Vĩnh Phúc - Phú Thọ 0829 387 338 - Dịch vụ taxi đưa đón sân bay Nội Bài chỉ từ 180K, xe tiện chuyến Vĩnh Phúc Hà Nội, Tam Đảo, Tây Thiên, xe hợp đồng KCN. Xe đời mới 2022-2025, đúng giờ, giá trọn gói không phụ phí.",
   keywords: [
     "taxi vĩnh phúc",
     "taxi vĩnh yên",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "taxi kcn bình xuyên",
     "thuê xe 4 chỗ vĩnh phúc",
     "thuê xe 7 chỗ vĩnh phúc",
-    "taxi điện vĩnh phúc - phú thọ",
+    "taxi vĩnh phúc - phú thọ",
   ],
   authors: [{ name: siteConfig.brandName }],
   creator: siteConfig.brandName,
@@ -55,20 +55,20 @@ export const metadata: Metadata = {
     siteName: siteConfig.brandName,
     title: `${siteConfig.brandName} - Xe Tiện Chuyến & Sân Bay Trọn Gói Giá Rẻ 24/7`,
     description:
-      "Tổng đài gọi xe Taxi Vĩnh Phúc 24/7: 0961 299 934. Đón tận nơi các huyện Vĩnh Yên, Phúc Yên, Bình Xuyên, Yên Lạc, Vĩnh Tường. Giá trọn gói siêu rẻ, xe mới 100%.",
+      "Tổng đài gọi xe Taxi Vĩnh Phúc 24/7: 0829 387 338. Đón tận nơi các huyện Vĩnh Yên, Phúc Yên, Bình Xuyên, Yên Lạc, Vĩnh Tường. Giá trọn gói siêu rẻ, xe mới 100%.",
     images: [
       {
         url: "/images/hero-banner.jpg",
         width: 1200,
         height: 630,
-        alt: "Dịch Vụ Taxi Điện Vĩnh Phúc - Phú Thọ",
+        alt: "Dịch Vụ Taxi Vĩnh Phúc - Phú Thọ",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: `${siteConfig.brandName} - Dịch Vụ Taxi & Xe Tiện Chuyến Vĩnh Phúc`,
-    description: "Tổng đài đặt xe taxi Vĩnh Phúc 24/7 Hotline: 0961 299 934. Cam kết đúng giờ, giá trọn gói.",
+    description: "Tổng đài đặt xe taxi Vĩnh Phúc 24/7 Hotline: 0829 387 338. Cam kết đúng giờ, giá trọn gói.",
     images: ["/images/hero-banner.jpg"],
   },
   alternates: {
@@ -114,7 +114,7 @@ export default function RootLayout({
         "@type": ["LocalBusiness", "TaxiService", "AutoRental"],
         "@id": `${siteConfig.domain}/#organization`,
         name: siteConfig.brandName,
-        alternateName: [siteConfig.shortName, "Taxi Vĩnh Phúc", "Taxi Điện"],
+        alternateName: [siteConfig.shortName, "Taxi Vĩnh Phúc", siteConfig.brandName],
         image: `${siteConfig.domain}/images/hero-banner.jpg`,
         logo: `${siteConfig.domain}/logo.svg`,
         url: siteConfig.domain,

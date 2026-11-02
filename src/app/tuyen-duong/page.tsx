@@ -7,7 +7,7 @@ import { Navigation, Clock, ArrowRight, Phone, Sparkles } from "lucide-react";
 
 export const metadata: Metadata = {
   title: {
-    absolute: `Taxi Điện Vĩnh Phúc - Danh Sách Tuyến Xe Taxi Vĩnh Phúc Trọn Gói [${siteConfig.hotline}]`,
+    absolute: `Taxi Vĩnh Phúc - Danh Sách Tuyến Xe Taxi Vĩnh Phúc Trọn Gói [${siteConfig.hotline}]`,
   },
   description:
     "Tổng hợp các tuyến taxi xuất phát từ Vĩnh Phúc: Sân Bay Nội Bài, Hà Nội & Bệnh Viện, Việt Trì Phú Thọ, Tam Đảo, Tây Thiên, Xe hợp đồng KCN. Đón trả tận nơi 24/7.",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     canonical: `${siteConfig.domain}/tuyen-duong`,
   },
   openGraph: {
-    title: `Taxi Điện Vĩnh Phúc - Danh Sách Tuyến Xe Taxi Vĩnh Phúc Trọng Điểm [${siteConfig.hotline}]`,
+    title: `Taxi Vĩnh Phúc - Danh Sách Tuyến Xe Taxi Vĩnh Phúc Trọng Điểm [${siteConfig.hotline}]`,
     description: "Đưa đón sân bay Nội Bài chỉ từ 180K, xe tiện chuyến Hà Nội từ 150K, Tam Đảo, Tây Thiên 24/7.",
     url: `${siteConfig.domain}/tuyen-duong`,
     images: ["/images/hero-banner.jpg"],
@@ -140,7 +140,7 @@ export default function TuyenDuongPage() {
               Bạn Cần Đón Tuyến Khác Không Có Trong Danh Sách?
             </h2>
             <p className="text-xs sm:text-sm text-emerald-100 max-w-xl">
-              Taxi Điện Vĩnh Phúc - Phú Thọ nhận đưa đón theo yêu cầu tới bất kỳ tỉnh thành nào trên toàn quốc. Đơn giá chỉ từ 9.000đ/km, giảm tới 70% cước chiều về.
+              Taxi Vĩnh Phúc - Phú Thọ nhận đưa đón theo yêu cầu tới bất kỳ tỉnh thành nào trên toàn quốc. Đơn giá chỉ từ 9.000đ/km, giảm tới 70% cước chiều về.
             </p>
           </div>
 

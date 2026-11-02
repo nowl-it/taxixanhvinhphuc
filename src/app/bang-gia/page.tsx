@@ -9,15 +9,15 @@ import ZaloIcon from "@/components/ui/ZaloIcon";
 
 export const metadata: Metadata = {
   title: {
-    absolute: `Taxi Điện Vĩnh Phúc - Bảng Giá Cước Taxi Trọn Gói [${siteConfig.hotline}]`,
+    absolute: `Taxi Vĩnh Phúc - Bảng Giá Cước Taxi Trọn Gói [${siteConfig.hotline}]`,
   },
   description:
-    "Cập nhật bảng giá taxi Vĩnh Phúc trọn gói 2026: Tuyến Sân Bay Nội Bài từ 180K, Hà Nội đi ghép 150K, Việt Trì 200K, Tam Đảo 350K. Giảm 40% - 70% cước chiều về. Hotline 0961 299 934.",
+    "Cập nhật bảng giá taxi Vĩnh Phúc trọn gói 2026: Tuyến Sân Bay Nội Bài từ 180K, Hà Nội đi ghép 150K, Việt Trì 200K, Tam Đảo 350K. Giảm 40% - 70% cước chiều về. Hotline 0829 387 338.",
   alternates: {
     canonical: `${siteConfig.domain}/bang-gia`,
   },
   openGraph: {
-    title: `Taxi Điện Vĩnh Phúc - Bảng Giá Cước Taxi Trọn Gói [${siteConfig.hotline}]`,
+    title: `Taxi Vĩnh Phúc - Bảng Giá Cước Taxi Trọn Gói [${siteConfig.hotline}]`,
     description: "Bảng giá cước taxi đưa đón sân bay Nội Bài, Hà Nội, Tam Đảo, Tây Thiên trọn gói rẻ nhất Vĩnh Phúc.",
     url: `${siteConfig.domain}/bang-gia`,
     images: ["/images/hero-banner.jpg"],
@@ -69,7 +69,7 @@ export default function BangGiaPage() {
             name: "Giá cước có bao gồm phí cầu đường chưa?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Báo giá của Taxi Điện Vĩnh Phúc - Phú Thọ là giá trọn gói đã bao gồm phí cầu đường cơ bản, cam kết không phát sinh phụ phí ẩn.",
+              text: "Báo giá của Taxi Vĩnh Phúc - Phú Thọ là giá trọn gói đã bao gồm phí cầu đường cơ bản, cam kết không phát sinh phụ phí ẩn.",
             },
           },
         ],

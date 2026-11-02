@@ -359,7 +359,7 @@ export const routeDetailsList: RouteDetail[] = [
     distance: "25 - 80 km",
     duration: "40 - 90 phút",
     description:
-      "Thị trấn Tam Đảo nằm ở độ cao hơn 900m với cung đường đèo dài 13km dốc quanh co và thường xuyên có sương mù. Dịch vụ Taxi Điện Vĩnh Phúc - Phú Thọ sở hữu đội ngũ tài xế bản địa dày dặn kinh nghiệm lái đèo, xe số tự động đời mới có hỗ trợ khởi hành ngang dốc, mang lại chuyến đi êm ái và tuyệt đối an toàn.",
+      "Thị trấn Tam Đảo nằm ở độ cao hơn 900m với cung đường đèo dài 13km dốc quanh co và thường xuyên có sương mù. Dịch vụ Taxi Vĩnh Phúc - Phú Thọ sở hữu đội ngũ tài xế bản địa dày dặn kinh nghiệm lái đèo, xe số tự động đời mới có hỗ trợ khởi hành ngang dốc, mang lại chuyến đi êm ái và tuyệt đối an toàn.",
     prices: [
       { carType: "Vĩnh Yên ⇄ Tam Đảo (4 Chỗ)", oneWay: "350.000đ – 400.000đ", roundTrip: "600.000đ – 700.000đ (trong ngày)", notes: "Đón tại nhà, trả tận khách sạn" },
       { carType: "Vĩnh Yên ⇄ Tam Đảo (7 Chỗ)", oneWay: "450.000đ – 500.000đ", roundTrip: "750.000đ – 850.000đ (trong ngày)", notes: "Chở nhiều vali, đồ nướng BBQ dã ngoại" },
@@ -387,7 +387,7 @@ export const routeDetailsList: RouteDetail[] = [
     distance: "25 - 65 km",
     duration: "30 - 75 phút",
     description:
-      "Tây Thiên là quần thể danh thắng tâm linh nổi tiếng tại Vĩnh Phúc. Taxi Điện Vĩnh Phúc - Phú Thọ nhận đưa đón các đoàn phật tử, du khách từ khắp các tỉnh thành và Vĩnh Yên lên Tây Thiên với giá cước ưu đãi, phục vụ tận tâm.",
+      "Tây Thiên là quần thể danh thắng tâm linh nổi tiếng tại Vĩnh Phúc. Taxi Vĩnh Phúc - Phú Thọ nhận đưa đón các đoàn phật tử, du khách từ khắp các tỉnh thành và Vĩnh Yên lên Tây Thiên với giá cước ưu đãi, phục vụ tận tâm.",
     prices: [
       { carType: "Vĩnh Yên ⇄ Tây Thiên (4 Chỗ)", oneWay: "300.000đ – 350.000đ", roundTrip: "550.000đ (chờ 3-4 tiếng)", notes: "Đón trả tận bãi xe cáp treo" },
       { carType: "Vĩnh Yên ⇄ Tây Thiên (7 Chỗ)", oneWay: "400.000đ – 500.000đ", roundTrip: "700.000đ (chờ tham quan)", notes: "Thích hợp cho gia đình đi lễ" },

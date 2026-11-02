@@ -39,7 +39,7 @@ export default function Commitments() {
             <span>TẠI SAO HÀNG NGHÌN KHÁCH HÀNG TIN CHỌN?</span>
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-white tracking-tight">
-            4 Cam Kết Vàng Của Taxi Điện Vĩnh Phúc - Phú Thọ
+            4 Cam Kết Vàng Của Taxi Vĩnh Phúc - Phú Thọ
           </h2>
           <p className="text-slate-300 text-xs sm:text-base">
             Chúng tôi luôn đặt sự an toàn, trải nghiệm thoải mái và quyền lợi kinh tế của quý khách lên hàng đầu trong mỗi chuyến đi.

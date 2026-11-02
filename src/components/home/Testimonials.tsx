@@ -9,7 +9,7 @@ export default function Testimonials() {
       route: "Vĩnh Yên ⇄ Sân Bay Nội Bài",
       rating: 5,
       content:
-        "Gia đình mình thường xuyên bay công tác vào TP.HCM. Đặt xe Taxi Điện cực kỳ yên tâm, 4h sáng hẹn là 3h50 tài xế đã đỗ trước cửa nhà. Xe Vios mới tinh, bác tài chạy êm và hỗ trợ xách 3 vali to lên xe. Giá chỉ 280k trọn gói quá rẻ so với taxi thường.",
+        "Gia đình mình thường xuyên bay công tác vào TP.HCM. Đặt xe Taxi cực kỳ yên tâm, 4h sáng hẹn là 3h50 tài xế đã đỗ trước cửa nhà. Xe Vios mới tinh, bác tài chạy êm và hỗ trợ xách 3 vali to lên xe. Giá chỉ 280k trọn gói quá rẻ so với taxi thường.",
     },
     {
       name: "Chị Minh Thư",
@@ -49,7 +49,7 @@ export default function Testimonials() {
             Khách Hàng Nói Gì Về Chúng Tôi?
           </h2>
           <p className="text-slate-600 text-xs sm:text-base">
-            Sự hài lòng và an toàn của khách hàng chính là thước đo giá trị lớn nhất của Taxi Điện Vĩnh Phúc - Phú Thọ.
+            Sự hài lòng và an toàn của khách hàng chính là thước đo giá trị lớn nhất của Taxi Vĩnh Phúc - Phú Thọ.
           </p>
         </div>
 

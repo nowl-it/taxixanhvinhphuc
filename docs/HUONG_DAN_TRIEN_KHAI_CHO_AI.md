@@ -1,12 +1,12 @@
 # 🧭 HƯỚNG DẪN TRIỂN KHAI DÀNH CHO AI (MASTER PROMPT ROADMAP)
 
-> **Dành cho Agent AI / Developer:** Đọc kỹ tài liệu này trước khi bắt đầu code. Tài liệu hướng dẫn bạn triển khai dự án website Taxi Điện Vĩnh Phúc - Phú Thọ hoàn chỉnh theo mô hình Next.js App Router, lấy cảm hứng thiết kế từ **https://s8taxi.com/**.
+> **Dành cho Agent AI / Developer:** Đọc kỹ tài liệu này trước khi bắt đầu code. Tài liệu hướng dẫn bạn triển khai dự án website Taxi Vĩnh Phúc - Phú Thọ hoàn chỉnh theo mô hình Next.js App Router, lấy cảm hứng thiết kế từ **https://s8taxi.com/**.
 
 ---
 
 ## 🎯 1. Mục Tiêu Dự Án
-Tạo một website Next.js chuẩn SEO, siêu nhanh, tối ưu chuyển đổi di động cho dịch vụ Taxi Điện Vĩnh Phúc - Phú Thọ.  
-**Hotline & Zalo:** `0961 299 934`  
+Tạo một website Next.js chuẩn SEO, siêu nhanh, tối ưu chuyển đổi di động cho dịch vụ Taxi Vĩnh Phúc - Phú Thọ.  
+**Hotline & Zalo:** `0829 387 338`  
 Tham khảo toàn bộ dữ liệu giá và tuyến đường tại file [**`DANH_SACH_TUYEN_VA_GIA.md`**](./DANH_SACH_TUYEN_VA_GIA.md).
 
 ---
@@ -14,7 +14,7 @@ Tham khảo toàn bộ dữ liệu giá và tuyến đường tại file [**`DAN
 ## 🏗️ 2. Cấu Trúc Thư Mục Source Code Khuyên Dùng
 
 ```
-taxi-dien-vinh-phuc/
+taxi-vinh-phuc/
 ├── src/
 │   ├── app/
 │   │   ├── layout.tsx            # Global Layout chứa Navbar, Footer, FloatingCTA
@@ -33,7 +33,7 @@ taxi-dien-vinh-phuc/
 │   │   └── globals.css           # Cấu hình Tailwind và hiệu ứng animation
 │   ├── components/
 │   │   ├── layout/
-│   │   │   ├── Navbar.tsx        # Header menu + hotline 0961 299 934
+│   │   │   ├── Navbar.tsx        # Header menu + hotline 0829 387 338
 │   │   │   ├── Footer.tsx        # Footer thông tin chi tiết
 │   │   │   └── FloatingCTA.tsx   # Nút Gọi & Zalo rung lắc cố định (Mobile)
 │   │   ├── home/
@@ -61,10 +61,10 @@ taxi-dien-vinh-phuc/
 
 ### Bước 1: Khởi tạo Data Models (`src/data/`)
 1. Tạo `src/data/config.ts`:
-   * `brandName`: "Taxi Điện Vĩnh Phúc - Phú Thọ"
-   * `hotline`: "0961 299 934"
-   * `hotlineRaw`: "0961299934"
-   * `zalo`: "https://zalo.me/0961299934"
+   * `brandName`: "Taxi Vĩnh Phúc - Phú Thọ"
+   * `hotline`: "0829 387 338"
+   * `hotlineRaw`: "0829387338"
+   * `zalo`: "https://zalo.me/0829387338"
    * `address`: "TP. Vĩnh Yên, Tỉnh Vĩnh Phúc"
 2. Tạo `src/data/routes.ts`: Lưu trữ tất cả tuyến xe trong file `DANH_SACH_TUYEN_VA_GIA.md`.
 3. Tạo `src/data/cars.ts`: Thông tin xe 4 chỗ, 7 chỗ, 16 chỗ.
@@ -74,11 +74,11 @@ taxi-dien-vinh-phuc/
 1. **`FloatingCTA.tsx`**:
    * Ghim đáy màn hình (`fixed bottom-4 z-50`).
    * Bên trái: Nút Zalo tròn màu xanh biển (`bg-blue-600`), icon chat.
-   * Bên phải: Nút Gọi Hotline màu đỏ (`bg-red-600`) có hiệu ứng sóng lan tỏa (`animate-ping`) và rung lắc (`animate-bounce`), bấm là gọi `tel:0961299934`.
+   * Bên phải: Nút Gọi Hotline màu đỏ (`bg-red-600`) có hiệu ứng sóng lan tỏa (`animate-ping`) và rung lắc (`animate-bounce`), bấm là gọi `tel:0829387338`.
 2. **`Navbar.tsx`**:
    * Logo thương hiệu có icon xe hơi.
    * Danh sách links: Trang chủ, Bảng giá, Tuyến đường, Dịch vụ, Tin tức, Liên hệ.
-   * Nút bấm góc phải: *"Hotline: 0961 299 934"*.
+   * Nút bấm góc phải: *"Hotline: 0829 387 338"*.
    * Menu Mobile dạng Drawer thu gọn.
 3. **`Footer.tsx`**:
    * Đầy đủ thông tin pháp lý, các tuyến xe chính, liên kết Zalo/Hotline.
@@ -111,10 +111,10 @@ Lắp ráp các section theo thứ tự s8taxi.com:
 * `/lien-he`: Bản đồ Google Maps nhúng hoặc bản đồ Vĩnh Phúc, thông tin liên hệ.
 
 ### Bước 6: Tối ưu SEO & Build Kiểm Tra
-* Thiết lập Metadata tiêu đề: *"Taxi Điện Vĩnh Phúc - Phú Thọ - Dịch Vụ Taxi, Xe Tiện Chuyến Trọn Gói Giá Rẻ 24/7"*.
+* Thiết lập Metadata tiêu đề: *"Taxi Vĩnh Phúc - Phú Thọ - Dịch Vụ Taxi, Xe Tiện Chuyến Trọn Gói Giá Rẻ 24/7"*.
 * Thêm Schema `LocalBusiness` và `TaxiService` dạng JSON-LD vào `layout.tsx`.
 * Chạy `npm run build` để đảm bảo không có bất kỳ lỗi cú pháp hoặc TypeScript nào.
 
 ---
 
-> 💡 **Lưu ý quan trọng cho AI:** Mọi số điện thoại và đường dẫn liên hệ trên website đều phải trỏ chính xác về số Hotline **`0961 299 934`** và Zalo **`https://zalo.me/0961299934`**.
+> 💡 **Lưu ý quan trọng cho AI:** Mọi số điện thoại và đường dẫn liên hệ trên website đều phải trỏ chính xác về số Hotline **`0829 387 338`** và Zalo **`https://zalo.me/0829387338`**.

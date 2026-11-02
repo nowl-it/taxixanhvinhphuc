@@ -5,7 +5,7 @@ import { siteConfig } from "@/data/config";
 import { CheckCircle2, RotateCcw, Phone, Mail, MapPin } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Taxi Điện Vĩnh Phúc - Chính Sách Đặt Xe, Hủy Chuyến & Phương Thức Thanh Toán",
+  title: "Taxi Vĩnh Phúc - Chính Sách Đặt Xe, Hủy Chuyến & Phương Thức Thanh Toán",
   description: `Quy định đặt xe, chính sách miễn phí hủy chuyến 100% và các phương thức thanh toán linh hoạt tại ${siteConfig.brandName}.`,
   alternates: {
     canonical: `${siteConfig.domain}/chinh-sach-hoan-huy`,

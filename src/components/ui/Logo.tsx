@@ -21,11 +21,11 @@ export default function Logo({ className = "", isCompact = false }: LogoProps) {
       {!isCompact && (
         <div className="flex flex-col min-w-0">
           <div className="flex items-center gap-1 sm:gap-1.5 leading-none">
-            <span className="text-base sm:text-2xl xl:text-xl 2xl:text-2xl font-black tracking-tight text-slate-900 whitespace-nowrap">
-              TAXI ĐIỆN
+            <span className="text-base sm:text-xl md:text-2xl xl:text-xl 2xl:text-2xl font-black tracking-tight text-slate-900 whitespace-nowrap">
+              TAXI
             </span>
-            <span className="text-base sm:text-2xl xl:text-xl 2xl:text-2xl font-black tracking-tight text-emerald-600 whitespace-nowrap">
-              VĨNH PHÚC<span className="xl:hidden 2xl:inline"> - PHÚ THỌ</span>
+            <span className="text-base sm:text-xl md:text-2xl xl:text-xl 2xl:text-2xl font-black tracking-tight text-emerald-600 whitespace-nowrap">
+              VĨNH PHÚC<span className="hidden md:inline"> - PHÚ THỌ</span>
             </span>
           </div>
           <span className="text-[9px] sm:text-[11px] font-bold text-slate-500 uppercase tracking-wider mt-0.5 sm:mt-1 truncate max-w-[170px] sm:max-w-none">

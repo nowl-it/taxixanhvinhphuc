@@ -8,7 +8,7 @@ import { Calendar, Clock, BookOpen, ArrowRight, User, Phone } from "lucide-react
 
 export const metadata: Metadata = {
   title: {
-    absolute: `Taxi Điện Vĩnh Phúc - Cẩm Nang & Tin Tức Dịch Vụ Taxi Vĩnh Phúc [${siteConfig.hotline}]`,
+    absolute: `Taxi Vĩnh Phúc - Cẩm Nang & Tin Tức Dịch Vụ Taxi Vĩnh Phúc [${siteConfig.hotline}]`,
   },
   description:
     "Tổng hợp kinh nghiệm đặt xe taxi giá rẻ, cẩm nang du lịch Tam Đảo - Tây Thiên, so sánh xe 4 chỗ và 7 chỗ, dịch vụ xe tiện chuyến Hà Nội và hợp đồng KCN Vĩnh Phúc.",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     canonical: `${siteConfig.domain}/tin-tuc`,
   },
   openGraph: {
-    title: `Taxi Điện Vĩnh Phúc - Cẩm Nang & Kinh Nghiệm Đi Xe Taxi Vĩnh Phúc [${siteConfig.hotline}]`,
+    title: `Taxi Vĩnh Phúc - Cẩm Nang & Kinh Nghiệm Đi Xe Taxi Vĩnh Phúc [${siteConfig.hotline}]`,
     description: "Kinh nghiệm đặt xe sân bay, xe tiện chuyến và du lịch Vĩnh Phúc giá rẻ nhất.",
     url: `${siteConfig.domain}/tin-tuc`,
     images: ["/images/hero-banner.jpg"],

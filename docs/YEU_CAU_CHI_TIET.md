@@ -1,15 +1,15 @@
 # 📋 ĐẶC TẢ YÊU CẦU CHI TIẾT (SPECIFICATION)
 
-> **Mục tiêu:** Xây dựng website dịch vụ Taxi Điện Vĩnh Phúc - Phú Thọ chuyên nghiệp, sao chép cấu trúc và trải nghiệm người dùng từ website mẫu **[https://s8taxi.com/](https://s8taxi.com/)**, tối ưu hóa cho tỷ lệ chuyển đổi cuộc gọi và đặt xe trên điện thoại di động.
+> **Mục tiêu:** Xây dựng website dịch vụ Taxi Vĩnh Phúc - Phú Thọ chuyên nghiệp, sao chép cấu trúc và trải nghiệm người dùng từ website mẫu **[https://s8taxi.com/](https://s8taxi.com/)**, tối ưu hóa cho tỷ lệ chuyển đổi cuộc gọi và đặt xe trên điện thoại di động.
 
 ---
 
 ## 1. 🎨 Nhận Diện & Thiết Kế
-* **Tên thương hiệu:** Taxi Điện Vĩnh Phúc - Phú Thọ (hoặc Tổng Đài Taxi Vĩnh Phúc)
-* **Hotline tư vấn 24/7:** `0961 299 934` (Bấm là gọi: `tel:0961299934`)
-* **Zalo đặt xe:** `0961 299 934` (Link chat: `https://zalo.me/0961299934`)
+* **Tên thương hiệu:** Taxi Vĩnh Phúc - Phú Thọ (hoặc Tổng Đài Taxi Vĩnh Phúc)
+* **Hotline tư vấn 24/7:** `0829 387 338` (Bấm là gọi: `tel:0829387338`)
+* **Zalo đặt xe:** `0829 387 338` (Link chat: `https://zalo.me/0829387338`)
 * **Màu sắc chủ đạo:** 
-  * Xanh lục bảo / Xanh lá công nghệ (Emerald/Green: `#059669`, `#10B981`) tượng trưng cho "Taxi Điện", xe mới sạch sẽ, thân thiện môi trường.
+  * Xanh lục bảo / Xanh lá công nghệ (Emerald/Green: `#059669`, `#10B981`) tượng trưng cho "Taxi", xe mới sạch sẽ, thân thiện môi trường.
   * Màu phụ trợ: Vàng ánh kim (`#F59E0B`) tạo điểm nhấn cho nút bấm/giảm giá, Trắng và Xám nhạt cho nền sạch sẽ.
 * **Tối ưu Mobile First:** 90% khách hàng đặt taxi vào bằng điện thoại, vì vậy trải nghiệm trên mobile phải cực kỳ mượt mà, tải nhanh < 1.5s.
 
@@ -40,15 +40,15 @@
 ## 3. 🧩 Các Thành Phần (Components) Bắt Buộc
 
 ### 3.1. Header & Navigation
-* **Logo:** Text/SVG "Taxi Điện Vĩnh Phúc - Phú Thọ" kèm icon xe ô tô hiện đại.
+* **Logo:** Text/SVG "Taxi Vĩnh Phúc - Phú Thọ" kèm icon xe ô tô hiện đại.
 * **Menu:** Trang chủ | Bảng giá | Dịch vụ | Tuyến đường | Tin tức | Liên hệ.
-* **Nút Hotline trên Header:** Nút màu nổi bật với icon điện thoại nhấp nháy, hiển thị rõ số `0961 299 934`.
+* **Nút Hotline trên Header:** Nút màu nổi bật với icon điện thoại nhấp nháy, hiển thị rõ số `0829 387 338`.
 * **Mobile Menu:** Drawer hoặc Hamburger mượt mà.
 
 ### 3.2. Nút Nổi Chuyển Đổi Cuộc Gọi (Floating Action Buttons - CỰC KỲ QUAN TRỌNG)
 * Luôn ghim cố định ở 2 góc dưới màn hình trên cả Mobile và Desktop:
-  * **Góc trái dưới:** Nút Zalo (Màu xanh dương, icon Zalo, bấm nhảy thẳng sang app Zalo chat với `0961 299 934`).
-  * **Góc phải dưới:** Nút Gọi Hotline (Màu đỏ/xanh lá, hiệu ứng sóng lan tỏa rung lắc - pulse effect, bấm là gọi ngay `0961 299 934`).
+  * **Góc trái dưới:** Nút Zalo (Màu xanh dương, icon Zalo, bấm nhảy thẳng sang app Zalo chat với `0829 387 338`).
+  * **Góc phải dưới:** Nút Gọi Hotline (Màu đỏ/xanh lá, hiệu ứng sóng lan tỏa rung lắc - pulse effect, bấm là gọi ngay `0829 387 338`).
 
 ### 3.3. Hero Banner & Form Đặt Xe Nhanh (Trang chủ)
 * **Banner:** Hình ảnh xe hơi đời mới bóng đẹp, slogan: *"Dịch Vụ Taxi & Xe Tiện Chuyến Vĩnh Phúc - Đúng Giờ, Trọn Gói, Giá Rẻ Nhất"*.
@@ -88,4 +88,4 @@
 * Hiển thị 3 - 6 bài viết cẩm nang du lịch và kinh nghiệm đặt xe để phục vụ SEO Google.
 
 ### 3.9. Footer Chân Trang
-* Thông tin đầy đủ: Tên nhà xe, Hotline 0961 299 934, Địa chỉ văn phòng tại Vĩnh Phúc, Email, Danh sách liên kết nhanh, Bản quyền website.
+* Thông tin đầy đủ: Tên nhà xe, Hotline 0829 387 338, Địa chỉ văn phòng tại Vĩnh Phúc, Email, Danh sách liên kết nhanh, Bản quyền website.

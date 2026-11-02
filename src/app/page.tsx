@@ -12,7 +12,7 @@ import { siteConfig } from "@/data/config";
 
 export const metadata: Metadata = {
   title: {
-    absolute: `Taxi Điện Vĩnh Phúc - Dịch Vụ Taxi & Xe Tiện Chuyến Trọn Gói Giá Rẻ 24/7 [${siteConfig.hotline}]`,
+    absolute: `Taxi Vĩnh Phúc - Dịch Vụ Taxi & Xe Tiện Chuyến Trọn Gói Giá Rẻ 24/7 [${siteConfig.hotline}]`,
   },
 };
 
@@ -31,7 +31,7 @@ export default function HomePage() {
       },
       {
         "@type": "Question",
-        name: "Taxi Điện Vĩnh Phúc - Phú Thọ có đón tận nhà và phục vụ ban đêm không?",
+        name: "Taxi Vĩnh Phúc - Phú Thọ có đón tận nhà và phục vụ ban đêm không?",
         acceptedAnswer: {
           "@type": "Answer",
           text: "Có. Đội xe chúng tôi hoạt động liên tục 24/7 kể cả ngày lễ, Tết và ban đêm. Lái xe đón tận nhà tại tất cả các xã, huyện, thành phố thuộc tỉnh Vĩnh Phúc và đưa đến đúng điểm đến.",
@@ -47,10 +47,10 @@ export default function HomePage() {
       },
       {
         "@type": "Question",
-        name: "Đặt xe Taxi Điện Vĩnh Phúc - Phú Thọ như thế nào?",
+        name: "Đặt xe Taxi Vĩnh Phúc - Phú Thọ như thế nào?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Quý khách có thể gọi trực tiếp Hotline 24/7: 0961 299 934, nhắn tin Zalo số 0961 299 934 hoặc điền form đặt xe trên website taxidienvinhphuc.com. Tổng đài sẽ điều phối xe có mặt sau 10 - 15 phút.",
+          text: "Quý khách có thể gọi trực tiếp Hotline 24/7: 0829 387 338, nhắn tin Zalo số 0829 387 338 hoặc điền form đặt xe trên website taxivinhphuc.com. Tổng đài sẽ điều phối xe có mặt sau 10 - 15 phút.",
         },
       },
       {

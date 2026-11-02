@@ -1,7 +1,7 @@
 # 📍 DANH SÁCH TUYẾN ĐƯỜNG & BẢNG GIÁ DỊCH VỤ (VĨNH PHÚC)
 
 > Bảng giá cước thực tế tham khảo thị trường tỉnh Vĩnh Phúc. Đã bao gồm phí cầu đường cơ bản (trừ cao tốc phát sinh đặc biệt nếu có thỏa thuận).  
-> **Hotline báo giá nhanh 24/7:** `0961 299 934`
+> **Hotline báo giá nhanh 24/7:** `0829 387 338`
 
 ---
 
