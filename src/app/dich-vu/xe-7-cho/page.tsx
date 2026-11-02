@@ -95,7 +95,7 @@ export default function Xe7ChoPage() {
               <span>RỘNG RÃI & ÊM ÁI</span>
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
-              Dịch Vụ Thuê Xe Taxi 7 Chỗ Vĩnh Phúc
+              {`${siteConfig.brandName} [${siteConfig.hotline}] - Dịch Vụ Thuê Xe Taxi 7 Chỗ`}
             </h1>
             <p className="text-slate-700 font-bold text-base sm:text-lg">
               {car.tagline}

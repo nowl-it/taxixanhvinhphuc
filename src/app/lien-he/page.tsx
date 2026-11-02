@@ -90,7 +90,7 @@ export default function LienHePage() {
             <span>KẾT NỐI 24/7 VỚI CHÚNG TÔI</span>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
-            Liên Hệ Tổng Đài Taxi Vĩnh Phúc - Phú Thọ
+            {`${siteConfig.brandName} [${siteConfig.hotline}] - Liên Hệ Tổng Đài`}
           </h1>
           <p className="text-slate-600 text-sm sm:text-base">
             Tổng đài điều hành và đội xe hoạt động liên tục 24/7 kể cả ban đêm, ngày nghỉ lễ và Tết Nguyên Đán.
