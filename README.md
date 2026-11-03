@@ -1,64 +1,99 @@
-# Taxi Vĩnh Phúc - Phú Thọ (taxivinhphuc.com)
+# Taxi Vĩnh Phúc - Phú Thọ
 
-Hệ thống website giới thiệu dịch vụ, báo giá và đặt xe trực tuyến cho **Tổng đài Taxi Vĩnh Phúc - Phú Thọ (058 815 555)**.
+Website giới thiệu dịch vụ, báo giá và đặt xe trực tuyến cho **Tổng đài Taxi Vĩnh Phúc - Phú Thọ**.
 
----
+- **Hotline / Zalo 24/7:** `058 815 5551`
+- **Tên miền:** [taxivinhphuc.com](https://taxivinhphuc.com)
 
-## 🚀 Công Nghệ Sử Dụng
-- **Framework:** [Next.js 16](https://nextjs.org/) (App Router, Turbopack)
-- **UI & Styling:** Tailwind CSS v4, Modern Clean Responsive Design
-- **Icons:** [lucide-react](https://lucide.dev/)
-- **SEO & Performance:** JSON-LD Structured Data (LocalBusiness, TaxiService), Dynamic Sitemap & Robots, Web App Manifest
-- **Platform:** Tối ưu hóa triển khai trên [Vercel](https://vercel.com/)
+> Liên hệ chỉ qua Hotline & Zalo (đã gỡ email khỏi toàn bộ website).
 
 ---
 
-## 🛠️ Cài Đặt & Chạy Thử Nghiệm
+## 🚀 Công nghệ
+
+| Thành phần | Công nghệ |
+|-----------|-----------|
+| Framework | [Next.js 16](https://nextjs.org/) (App Router, Turbopack) |
+| Ngôn ngữ | TypeScript |
+| Styling | Tailwind CSS v4 (theme slate + taxi-amber, responsive) |
+| Icons | [lucide-react](https://lucide.dev/) |
+| SEO | JSON-LD (LocalBusiness/TaxiService/FAQ), dynamic sitemap & robots, Web App Manifest |
+| Chất lượng code | ESLint (eslint-config-next) |
+| Nền tảng triển khai | Vercel (tối ưu) |
+
+---
+
+## 🛠️ Cài đặt & chạy local
+
+Yêu cầu: **Node.js ≥ 20** và **pnpm** (project dùng `pnpm-lock.yaml`).
 
 ```bash
-# Cài đặt thư viện
-pnpm install
-
-# Khởi chạy server phát triển
-pnpm run dev
+pnpm install   # cài dependencies
+pnpm dev       # chạy dev server -> http://localhost:3000
 ```
 
-Mở [http://localhost:3000](http://localhost:3000) trên trình duyệt để kiểm tra giao diện.
+## 📦 Scripts
+
+| Lệnh | Mô tả |
+|------|-------|
+| `pnpm dev` | Dev server (Turbopack) |
+| `pnpm build` | Build production (kèm kiểm tra TypeScript) |
+| `pnpm start` | Chạy bản build production |
+| `pnpm lint` | Kiểm tra ESLint |
+| `pnpm lint:fix` | ESLint + tự sửa lỗi |
+| `pnpm typecheck` | Kiểm tra TypeScript `tsc --noEmit` |
 
 ---
 
-## 📦 Build Sản Phẩm
+## 📁 Cấu trúc thư mục
 
-```bash
-# Kiểm tra TypeScript và tạo bản build tối ưu
-pnpm run build
-
-# Chạy bản build sản phẩm
-pnpm run start
+```
+.
+├── docs/               # Tài liệu vận hành & hướng dẫn (tiếng Việt)
+├── public/             # Tinh (static assets): images, svg, favicon
+├── src/
+│   ├── app/            # Next.js App Router (mỗi route một thư mục)
+│   ├── components/     # Component chia theo muc dich: home, layout, booking, contact, ui
+│   ├── data/           # Du lieu noi dung: config, routes, cars, posts
+│   ├── lib/            # Tien ich (zalo, clipboard...)
+│   └── types/          # Dinh nghia TypeScript
+├── next.config.ts      # Cau hinh Next.js
+├── eslint.config.mjs   # Cau hinh ESLint
+└── package.json
 ```
 
 ---
 
-## 🌐 Hướng Dẫn Triển Khai Lên Vercel & Trỏ Tên Miền iNET
+## 🌐 Triển khai lên Vercel & trỏ tên miền iNET
 
-1. **Đẩy mã nguồn lên GitHub:**
+1. **Push mã nguồn lên GitHub:**
    ```bash
-   git init
-   git add .
-   git commit -m "feat: initial commit for Taxi Vinh Phuc - Phu Tho"
-   git branch -M main
-   git remote add origin <url-repo-github>
-   git push -u origin main
+   git push origin main
    ```
+2. **Deploy trên Vercel:**
+   - [vercel.com](https://vercel.com/) → đăng nhập GitHub → **Add New Project** → chọn repo → **Deploy** (tự build ~1 phút).
+3. **Gắn tên miền chính thức** (`Settings` → `Domains`), thêm `taxivinhphuc.com` và `www.taxivinhphuc.com`.
+   - Tại iNET → **Quản lý DNS**:
+     - Bản ghi **A**: `@` → `76.76.21.21`
+     - Bản ghi **CNAME**: `www` → `cname.vercel-dns.com`
 
-2. **Triển khai trên Vercel:**
-   - Truy cập [vercel.com](https://vercel.com/) -> Đăng nhập bằng tài khoản GitHub.
-   - Chọn **Add New...** -> **Project** -> Chọn repository vừa tạo.
-   - Nhấn **Deploy** (hệ thống tự động build trong ~1 phút).
+---
 
-3. **Gắn Tên Miền Chính Thức:**
-   - Tại trang quản lý dự án trên Vercel: vào **Settings** -> **Domains**.
-   - Thêm tên miền: `taxivinhphuc.com` và `www.taxivinhphuc.com`.
-   - Đăng nhập iNET -> **Quản lý DNS**:
-     - Thêm bản ghi **A**: Tên `@` $\rightarrow$ Giá trị `76.76.21.21`
-     - Thêm bản ghi **CNAME**: Tên `www` $\rightarrow$ Giá trị `cname.vercel-dns.com`
+## 🔒 Bảo mật & chống click ảo
+
+- Middleware `src/proxy.ts`: chặn IP theo blacklist + rate-limit (mặc định 60 request/phút).
+- Cấu hình trong `src/data/config.ts` (`security.blockedIps`, `enableRateLimit`, `maxRequestsPerMinute`).
+- Xem thêm: [`docs/HUONG_DAN_CHONG_CLICK_TAC_GOOGLE_ADS.md`](docs/HUONG_DAN_CHONG_CLICK_TAC_GOOGLE_ADS.md)
+
+---
+
+## 📚 Tài liệu (`docs/`)
+
+| Tài liệu | Nội dung |
+|----------|----------|
+| `YEU_CAU_CHI_TIET.md` | Yêu cầu chức năng chi tiết |
+| `HUONG_DAN_TRIEN_KHAI_CHO_AI.md` | Hướng dẫn triển khai cho AI/dev |
+| `DANH_SACH_TUYEN_VA_GIA.md` | Danh sách tuyến đường & bảng giá |
+| `PROMPTS_AI_CONTENT.md` | Prompt tạo nội dung bài viết |
+| `HUONG_DAN_QUAN_TRI_BAI_VIET_VA_LE_TET.md` | Quản trị bài viết & thông báo lễ Tết |
+| `HUONG_DAN_CHONG_CLICK_TAC_GOOGLE_ADS.md` | Chống click ảo Google Ads |

@@ -42,7 +42,7 @@ Khi yêu cầu AI (ChatGPT/Claude/Gemini) viết bài cho website, hãy copy c�
 Hãy đóng vai một chuyên gia SEO và chuyên viên nội dung ngành vận tải taxi. Hãy viết một bài viết chuẩn SEO bằng tiếng Việt theo yêu cầu sau:
 
 - Tiêu đề: [CHỌN 1 TRONG 6 TIÊU ĐỀ BÊN DƯỚI]
-- Mục tiêu: Tối ưu từ khóa tìm kiếm Google, cung cấp thông tin hữu ích và kích thích người đọc bấm gọi ngay Hotline: 058 815 555 hoặc nhắn Zalo 058 815 555 để đặt xe.
+- Mục tiêu: Tối ưu từ khóa tìm kiếm Google, cung cấp thông tin hữu ích và kích thích người đọc bấm gọi ngay Hotline: 058 815 5551 hoặc nhắn Zalo 058 815 5551 để đặt xe.
 - Định dạng: Markdown (gồm Heading H1, H2, H3, bảng giá tóm tắt, danh sách bullet point, hộp ghi chú cam kết).
 - Giọng văn: Thân thiện, uy tín, thực tế, nhấn mạnh xe đời mới sạch sẽ, đón trả đúng giờ, giá trọn gói không phụ phí.
 - Độ dài: Khoảng 800 - 1200 từ.
@@ -53,7 +53,7 @@ Hãy đóng vai một chuyên gia SEO và chuyên viên nội dung ngành vận 
 #### 📝 Bài 1: Taxi Sân Bay Nội Bài
 * **Tiêu đề:** *Bảng Giá Taxi Vĩnh Phúc Đi Sân Bay Nội Bài Trọn Gói Chỉ Từ 180K (Cập Nhật 2026)*
 * **Từ khóa chính:** `taxi vĩnh phúc nội bài`, `taxi phúc yên nội bài`, `taxi vĩnh yên đi sân bay`, `giá xe vĩnh phúc nội bài`
-* **Nội dung chính:** Khoảng cách & thời gian di chuyển; Bảng giá xe 4 chỗ và 7 chỗ từng huyện; Lý do chọn xe trọn gói thay vì taxi truyền thống; Hotline đặt xe 058 815 555 đón đúng giờ bay.
+* **Nội dung chính:** Khoảng cách & thời gian di chuyển; Bảng giá xe 4 chỗ và 7 chỗ từng huyện; Lý do chọn xe trọn gói thay vì taxi truyền thống; Hotline đặt xe 058 815 5551 đón đúng giờ bay.
 
 #### 📝 Bài 2: Xe Tiện Chuyến Vĩnh Phúc - Hà Nội
 * **Tiêu đề:** *Dịch Vụ Xe Tiện Chuyến Vĩnh Phúc - Hà Nội Đón Tận Nơi Các Bệnh Viện Lớn*

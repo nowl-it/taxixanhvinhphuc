@@ -1,4 +1,10 @@
-allowBuilds:
-  unrs-resolver: set this to true or false
+# pnpm workspace / security configuration
+# This project is a single package (no monorepo `packages:` globs needed).
+
+onlyBuiltDependencies:
+  # unrs-resolver needs its native binary (used by eslint-import-resolver)
+  - unrs-resolver
+
+# Allow freshly published package to be installed (skip release-age cooldown)
 minimumReleaseAgeExclude:
   - lucide-react@1.53.0

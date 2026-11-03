@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# tool caches / scratch
+.fallow/
+
+# agent test screenshots (local only)
+.harness-*
+*.harness-*.png
